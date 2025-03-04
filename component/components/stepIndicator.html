@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=2.0,user-scalable=yes">
+  <title>TV Principle</title>
+  <link rel="stylesheet" href="../../css/basic.css">
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="../../css/flexslider.css">
+  <script src="../../javascript/jquery-1.8.3.min.js"></script>
+  <script src="../../javascript/jquery.flexslider-min.js"></script>
+  <script>
+    var jqv = jQuery.noConflict();
+    window.parent.menuReCall("dep6_17");
+  </script>
+  <script src="../../javascript/sub_jquery.js"></script>
+  <script src="../../javascript/placeholders.min.js"></script>
+    <!--[if lt IE 9]>
+        <script src="../../javascript/html5shiv.js"></script>
+        <![endif]-->
+      </head>
+
+      <body>
+        <!-- #stepIndicator -->
+        <div id="stepIndicator" class="showCon">
+          <div class="conTop">
+            <h2>Step Indicator</h2>
+            <div class="tabBoxWrap">
+              <ul class="tabBox clfix">
+                <li><a href="">Definition</a></li>
+                <li><a href="">Usage</a></li>
+                <li><a href="">Interaction</a></li>
+                <li><a href="">Specs</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- //.conTop -->
+          <div class="conBottom">
+            <div class="conBottomInner">
+              <div class="subConInTit">
+                C_STEPINDICATOR
+              </div>
+              <dl class="infoList tabList type2">
+                <dt>Definition</dt>
+                <dd>
+                  Step Indicator shows the current step in a screen which allows users to configure settings in a set of predefined steps.
+                </dd>
+                <dt>Usage</dt>
+                <dd searchWord="C_STEPINDICATOR">
+                  <ul class="indentList type2">
+                    <li>- It is used on screen which has progress steps.</li>
+                    <li>- Indicator status is able to be described :
+                      <ul class="indentList type3">
+                        <li>
+                          . Indicator status
+                          <ul class="indentList type3">
+                            <li>1. Previous step : enabled with complete mark (v)</li>
+                            <li>2. Current step : highlighted</li>
+                            <li>3. Next step : neutral</li>
+                          </ul>
+                        </li>
+                        <li>. ‘Complete mark’ includes 2 options
+                          <ul class="indentList type3">
+                            <li>1. Completed : Step icon with checked mark (v)</li>
+                            <li>2. Skipped : Dimmed step icon</li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </dd>
+                <dt>Interaction</dt>
+                <dd>
+                  <img src="../../img/components/stepindicator/1.png" alt="">
+                </dd>
+                <dt>Specs</dt>
+                <dd>
+                  <dl class="infoList_1">
+                    <dt>Properties</dt>
+                    <dd>
+                      <dl class="infoList_1 type2 type5">
+                        <dt>Step Indicator consists of the following elements:</dt>
+                        <dd>
+                          <dl class="infoList_1_1">
+                            <dt>1. Step label (<span class="col_ora">Mandatory</span>)</dt>
+                            <dd>
+                              <ul class="indentList">
+                                <li>- display all steps</li>
+                                <li>- It has 4 status
+                                  <ul class="indentList">
+                                    <li>. Previous step which is completed</li>
+                                    <li>. Previous step which is skipped by user</li>
+                                    <li>. Current step</li>
+                                    <li>. Next step</li>
+                                  </ul>
+                                </li>
+                              </ul>
+                            </dd>
+                            <dt>2. Indicator icon (<span class="col_blue">Optional</span>)</dt>
+                            <dd>
+                              <ul class="indentList">
+                                <li>- has 3 options
+                                  <ul class="indentList">
+                                    <li>. Previous indicator : use if user can go to the previous page by pressing [LEFT] key </li>
+                                    <li>. Next indicator : use if user can go to the next page by pressing [RIGHT] key</li>
+                                    <li>. Skip indicator : use if user can skip the current step by pressing [RIGHT] key</li>
+                                  </ul>
+                                </li>
+                                <li>- Display Next indicator or Skip indicator</li>
+                                <li>- NOT display the indicator if moving between pages is NOT available</li>
+                              </ul>
+                            </dd>
+                            <dt>3. Text 1 (<span class="col_blue">Optional</span>)</dt>
+                            <dt>4. Text 2 (<span class="col_blue">Optional</span>)</dt>
+                          </dl>
+                          <ul class="listStyle02">
+                            <li><img src="../../img/components/stepindicator/2.png" alt=""></li>
+                          </ul>
+                        </dd>
+                      </dl>
+                    </dd>
+                    <dt>Property Table</dt>
+                    <dd>
+                      <table class="propertyTbl">
+                        <colgroup>
+                        <col width="25%">
+                        <col width="15%">
+                        <col>
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <th class="propertyTblTit" scope="col" colspan="3">C_STEPINDICATOR</th>
+                        </tr>
+                        <tr>
+                          <th scope="col">
+                            PROPERTY
+                          </th>
+                          <th scope="col">
+                            USE
+                          </th>
+                          <th scope="col">
+                            VALUE
+                          </th>
+                        </tr>
+                        <tr>
+                          <td>Step label</td>
+                          <td><span class="textO">◎</span></td>
+                          <td>&lt;&lt;total number of steps&gt;&gt;</td>
+                        </tr>
+                        <tr>
+                          <td>Indicator icon</td>
+                          <td><span class="textO">◎</span></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>Text 1</td>
+                          <td></td>
+                          <td>&lt;&lt;value&gt;&gt;</td>
+                        </tr>
+                        <tr>
+                          <td>Text 2</td>
+                          <td></td>
+                          <td>&lt;&lt;value&gt;&gt;</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </dd>
+                  <dt>Visual</dt>
+                  <dd>
+                    <dl class="infoList_1 type2 type5">
+                      <dt>GUI</dt>
+                      <dd>
+                        <dl class="visualTagList">
+                          <dt>C_STEPINDICATOR_WHITE</dt>
+                          <dd><img src="../../img/components/stepindicator/6.png" alt=""></dd>
+                        </dl>
+                      </dd>
+                      <dt>Motion</dt>
+                      <dd>
+                        <dl class="visualTagList">
+                          <dt>C_STEPINDICATOR</dt>
+                          <dd><img src="../../img/components/stepindicator/7.png" alt=""></dd>
+                          <dd><img src="../../img/components/stepindicator/8.png" alt=""></dd>
+                        </dl>
+                      </dd>
+                    </dl>
+                    <div class="visualImgTxt"><img src="../../img/components/stepindicator/5.png" alt=""><div class="tempLinkBox">
+                    LINK : <a href="javascript:parent.parentLocationChg('components/slider/basicSlider')">C_SLIDERBASIC</a>
+                  </div>
+                  </div>
+                    <div class="visualImgTxt"><img src="../../img/components/stepindicator/9.png" alt=""></div>
+                    <div class="btn_box">
+                      <a href="../../resources/png/component/c_stepindicator.zip" class="btn_download"><span>Download PNG Resources</span></a>
+                    </div>
+                  </dd>
+                </dl>
+              </dd>
+            </dl>
+            <dl class="tagDl">
+              <dt>*Tags :</dt>
+              <dd>
+                <span class="tagItem" linkTag="dep6_10">Pagination</span>
+              </dd>
+            </dl>
+          </div>
+        </div>
+        <!-- //.conBottom -->
+      </div>
+      <!-- //#stepIndicator.showCon -->
+    <!--[if lt IE 9]>
+    <script src="../../javascript/placeholders.min.js"></script>
+    <![endif]-->
+    <div class="topIcon"></div>
+  </body>
+
+  </html>

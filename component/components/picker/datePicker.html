@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=2.0,user-scalable=yes">
+  <title>TV Principle</title>
+  <link rel="stylesheet" href="../../../css/basic.css">
+  <link rel="stylesheet" href="../../../css/style.css">
+  <link rel="stylesheet" href="../../../css/flexslider.css">
+  <script src="../../../javascript/jquery-1.8.3.min.js"></script>
+  <script src="../../../javascript/jquery.flexslider-min.js"></script>
+  <script>
+    var jqv = jQuery.noConflict();
+    window.parent.menuReCall("dep9_3_1");
+  </script>
+  <script src="../../../javascript/sub_jquery.js"></script>
+  <script src="../../../javascript/placeholders.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="../../../javascript/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <div id="datePicker" class="showCon">
+      <div class="conTop">
+        <h2>DATE PICKER</h2>
+        <div class="tabBoxWrap">
+          <ul class="tabBox clfix">
+            <li><a href="">Definition</a></li>
+            <li><a href="">Usage</a></li>
+            <li><a href="">Interaction</a></li>
+            <li><a href="">Specs</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- //.conTop -->
+      <div class="conBottom">
+        <div class="conBottomInner">
+          <div class="subConInTit">
+            C_DATEPICKER
+          </div>
+          <dl class="infoList tabList type2">
+            <dt>Definition</dt>
+            <dd>
+              Use date picker to set a date with changing values continuously.
+            </dd>
+            <dt>Usage</dt>
+            <dd>
+              <p>
+                Display main text of setting value on the same line. (**Refer to <a href="javascript:parent.parentLocationChg('components/item/textItem')" class="col_green bbg tagItem">TEXT ITEM</a> for details)
+              </p>
+              <ul class="listStyle02">
+                <li><img src="../../../img/components/spincontrol/datepicker/6.png" alt=""></li>
+              </ul>
+            </dd>
+            <dt>Interaction</dt>
+            <dd>
+              <dl class="infoList_1">
+                <dt>Left/Right</dt>
+                <dd><img src="../../../img/components/spincontrol/datepicker/2.png" alt=""></dd>
+                <dt>Enter numbers</dt>
+                <dd><img src="../../../img/components/spincontrol/datepicker/3.png" alt=""></dd>
+              </dl>
+            </dd>
+            <dt>Specs</dt>
+            <dd>
+              <dl class="infoList_1">
+                <dt>Properties</dt>
+                <dd>
+                  <p>
+                    Date picker consists of Year, Month and Date.
+                    <br>The order of Year, Month and Date follows the standard date format used in each respective country.
+                    <br>Use the slash mark (/) between spin controls.
+                  </p>
+                  <dl class="infoList_1 type2">
+                    <dt>Date picker consists of the following elements:</dt>
+                    <dd>
+                      <dl class="infoList_1_1">
+                        <dt>1. Year spin control (<span class="col_ora">Mandatory</span>)</dt>
+                        <dt>2. Month spin control (<span class="col_ora">Mandatory</span>)</dt>
+                        <dt>3. Date spin control (<span class="col_ora">Mandatory</span>)</dt>
+                        <dt>4. Slash (<span class="col_ora">Mandatory</span>)</dt>
+                      </dl>
+                      <ul class="listStyle02">
+                        <li><img src="../../../img/components/spincontrol/datepicker/4.png" alt=""></li>
+                      </ul>
+                    </dd>
+                  </dl>
+                </dd>
+                <dt>Property Table</dt>
+                <dd>
+                  <table class="propertyTbl">
+                    <colgroup>
+                    <col width="25%">
+                    <col width="15%">
+                    <col>
+                    <col>
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <th class="propertyTblTit" scope="col" colspan="4">C_DATEPICKER</th>
+                    </tr>
+                    <tr>
+                      <th scope="col">
+                        PROPERTY
+                      </th>
+                      <th scope="col">
+                        USE
+                      </th>
+                      <th scope="col">
+                        VALUE
+                      </th>
+                      <th scope="col">
+                        ADDITIONAL
+                      </th>
+                    </tr>
+                    <tr>
+                      <td>Year</td>
+                      <td><span class="textO">◎</span></td>
+                      <td>&lt;&lt;value&gt;&gt;-&lt;&lt;value&gt;&gt;,&lt;&lt;default value&gt;&gt;</td>
+                      <td>value range (start value–end value)</td>
+                    </tr>
+                    <tr>
+                      <td>Month</td>
+                      <td><span class="textO">◎</span></td>
+                      <td>&lt;&lt;value&gt;&gt;-&lt;&lt;value&gt;&gt;,&lt;&lt;default value&gt;&gt;</td>
+                      <td>value range (start value–end value)</td>
+                    </tr>
+                    <tr>
+                      <td>Date</td>
+                      <td><span class="textO">◎</span></td>
+                      <td>&lt;&lt;value&gt;&gt;-&lt;&lt;value&gt;&gt;,&lt;&lt;default value&gt;&gt;</td>
+                      <td>value range (start value–end value)</td>
+                    </tr>
+                    <tr>
+                      <td>Slash</td>
+                      <td><span class="textO">◎</span></td>
+                      <td>-</td>
+                      <td></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </dd>
+              <dt>Visual</dt>
+              <dd>
+                <dl class="infoList_1 type2 type5">
+                  <dt>GUI</dt>
+                  <dd>
+                    <div class="visualImgBox">
+                      <img src="../../../img/components/picker/datePicker/5.png" alt="">
+                    </div>
+                    <dl class="visualTagList">
+                      <dt>C_DATEPICKER_WHITE</dt>
+                      <dd><img src="../../../img/components/picker/datePicker/3.png" alt=""></dd>
+                    </dl>
+                  </dd>
+                </dl>
+                <div class="visualImgTxt">
+                  <img src="../../../img/components/picker/datePicker/4.png" alt="">
+                  <div class="tempLinkBox">
+                    LINK : <a href="javascript:parent.parentLocationChg('components/spinControl')">C_SPINCONTROL</a>
+                  </div>
+                </div>
+                <div class="btn_box">
+                  <a href="../../../resources/png/pattern/c_datepicker.zip" class="btn_download"><span>Download PNG Resources</span></a>
+                </div>
+              </dd>
+            </dl>
+          </dd>
+        </dl>
+        <dl class="tagDl">
+          <dt>*Tags :</dt>
+          <dd>
+            <span class="tagItem" linktag="dep6_16">Spin Control</span>,
+            <span class="tagItem" linktag="dep6_25_2">Text Item</span>,
+            <span class="tagItem" linktag="dep9_3_2">Time Picker</span>
+          </dd>
+        </dl>
+      </div>
+    </div>
+    <!-- //.conBottom -->
+  </div>
+  <!--[if lt IE 9]>
+    <script src="../../../javascript/placeholders.min.js"></script>
+    <![endif]-->
+    <div class="topIcon"></div>
+  </body>
+
+  </html>

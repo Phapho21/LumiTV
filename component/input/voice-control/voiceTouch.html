@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=2.0,user-scalable=yes">
+	<title>TV Principle</title>
+	<link rel="stylesheet" href="../../../css/basic.css">
+	<link rel="stylesheet" href="../../../css/style.css">
+	<link rel="stylesheet" href="../../../css/flexslider.css">
+	<script src="../../../javascript/jquery-1.8.3.min.js"></script>
+	<script src="../../../javascript/jquery.flexslider-min.js"></script>
+	<script>
+	var jqv = jQuery.noConflict();
+	window.parent.menuReCall("dep3_2_2");
+	</script>
+	<script src="../../../javascript/sub_jquery.js"></script>
+	<script src="../../../javascript/placeholders.min.js"></script>
+	<!--[if lt IE 9]>
+		<script src="../../../javascript/html5shiv.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+	<div id="voiceTouch" class="showCon">
+		<div class="conTop">
+			<h2>Voice Touch</h2>
+			<div class="tabBoxWrap">
+				<ul class="tabBox clfix">
+					<li><a href="">Definition</a></li>
+					<li><a href="">Usage</a></li>
+					<li><a href="">Interaction</a></li>
+					<li><a href="">Specs</a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- //.conTop -->
+		<div class="conBottom">
+			<div class="conBottomInner">
+				<!-- <div class="subConInTit">
+					C_VOICE_TOUCH
+				</div> -->
+				<dl class="infoList tabList type2 noFunction">
+					<dt>Definition</dt>
+					<dd>
+						<p>This feature is for selecting item by saying its label, registered as the SID, which is actually seen on the screen and surely selectable
+							<br>(* Exceptionally, for uttering the &lt;&lt;Category Name&gt;&gt; or &lt;&lt;Sub Header&gt;&gt;, which is not a selective item, move focus to the very first item in the category.)</p>
+						<ul class="listStyle02">
+							<li><img src="../../../img/input/voice/touch/7.png" alt=""></li>
+						</ul>
+					</dd>
+					<dt>Usage</dt>
+					<dd>
+						<dl class="infoList_1">
+							<dt>Eden UI</dt>
+							<dd><img src="../../../img/input/voice/touch/1.png" alt=""></dd>
+							<dt>Search Result</dt>
+							<dd><img src="../../../img/input/voice/touch/2.png" alt=""></dd>
+							<dt>Extra</dt>
+							<dd><img src="../../../img/input/voice/touch/3.png" alt=""></dd>
+							<dt>Setting</dt>
+							<dd><img src="../../../img/input/voice/touch/4.png" alt=""></dd>
+							<dt>Popups</dt>
+							<dd><img src="../../../img/input/voice/touch/5.png" alt=""></dd>
+						</dl>
+					</dd>
+					<dt>Interaction</dt>
+					<dd>
+						<dl class="infoList_1">
+							<dt>Motion Feedback</dt>
+							<dd>
+								Move focus to the uttered item first, then show the selecting motion on it.
+							</dd>
+							<dt>Partial Matching <span class="col_red">(TBD)</span></dt>
+							<dd>
+								If the user uttered the part of the whole label text among the labels of the subjective buttons in the current screen,<br>
+								system can parse it partially matches and select it. If the multiple candidates are parsed out, show the candidate list to decide it.
+								<ul class="listStyle02">
+									<li><img src="../../../img/input/voice/touch/6.png" alt=""></li>
+								</ul>
+							</dd>
+						</dl>
+					</dd>
+					<dt>Specs</dt>
+					<dd>
+						<dl class="infoList_1 type2">
+							<dt>
+								- UI specifications
+								<br> The app that supports this feature needs to follow these rules:
+							</dt>
+							<dd>
+								<ul class="indentList">
+									<li>. Do not use text that is special character or abbreviation.</li>
+									<li>. Do not use long txt that cannot see totally in a moment.</li>
+									<li>. Do not mix the language for one label. (ex. TV스피커)</li>
+									<li>. For general control, grab the Voice Key<span class="col_red">(TBD)</span> and run as it is designated. (ex. Next page, Previous page)</li>
+								</ul>
+							</dd>
+							<dt>
+								- How to develop voice touch feature
+							</dt>
+							<dd>
+								<ul class="indentList">
+									<li>. The façade of Voice Touch feature is the method of extracting the displaying text processed by UIFW of EFL, VOLT or HALO and its coordination to select by speaking it.</li>
+									<li>. Most of text will be registered by the API provided by basic UIFW, however, each app shall register its availability for each text in advance.</li>
+									<li>. Partial-matching shall support but limited yet <span class="col_red">(TBD)</span></li>
+								</ul>
+							</dd>
+							<dt>
+								- Limitations
+							</dt>
+							<dd>
+								<ul class="indentList">
+									<li>. The app that does not followed by UI specification cannot support Voice Touch feature.</li>
+									<li>. UI component that is not selectable (ex. Gauge controls in Backlight UI) cannot control by Voice Touch.</li>
+									<li>. This will be controllable on EFL or VOLT. (The UI based on webbrowser or webapp cannot be supported yet due to technical reason).</li>
+								</ul>
+							</dd>
+						</dl>
+					</dd>
+				</dl>
+			</div>
+		</div>
+	</div>
+	<!--[if lt IE 9]>
+		<script src="../../../javascript/placeholders.min.js"></script>
+	<![endif]-->
+	<div class="topIcon"></div>
+</body>
+
+</html>

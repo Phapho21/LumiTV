@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=2.0,user-scalable=yes">
+  <title>TV Principle</title>
+  <link rel="stylesheet" href="../../css/basic.css">
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="../../css/flexslider.css">
+  <script src="../../javascript/jquery-1.8.3.min.js"></script>
+  <script src="../../javascript/jquery.flexslider-min.js"></script>
+	<script>
+		var jqv = jQuery.noConflict();
+		window.parent.menuReCall("dep2_5");
+	</script>
+	<script src="../../javascript/sub_jquery.js"></script>
+	<script src="../../javascript/placeholders.min.js"></script>
+  <!--[if lt IE 9]>
+		<script src="../../javascript/html5shiv.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+  <!-- #motion -->
+      <div id="motion" class="showCon">
+        <div class="conTop">
+          <h2>Motion</h2>
+          <div class="tabBoxWrap">
+            <ul class="tabBox clfix">
+              <li><a href="">Definition</a></li>
+              <li><a href="">Movement</a></li>
+              <li><a href="">Curve</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- //.conTop -->
+        <div class="conBottom">
+          <div class="conBottomInner">
+            <dl class="infoList tabList noFunction">
+              <dt>Definition</dt>
+              <dd searchWord="Motion">
+                Motion in the world of material design is used to describe spatial relationships, functionality, and intention with beauty and fluidity
+                <ul class="listStyle02">
+                  <li>
+                    <video controls loop><source src="../../resources/video/visual_style/motion/Principle_Motion_Tension.mp4" type="video/mp4"> Your browser does not support the video tag.</video>
+                  </li>
+                </ul>
+              </dd>
+              <dt>Movement</dt>
+              <dd>
+                <p>The movement of an element between two points within the bounds of the screen follows a natural, concave arc.<br>
+All on-screen movements use the standard curve</p>
+                <dl class="infoList_1">
+                  <dt>1. Tension</dt>
+                  <dd>
+                    <p>Tension effect is applied to give clear feedback and high visual hierarchy during the moment highlight takes place.</p>
+                    <ul class="listStyle02">
+                      <li>
+                        <video controls loop><source src="../../resources/video/visual_style/motion/Principle_Motion_Playful Animation.mp4" type="video/mp4"> Your browser does not support the video tag.</video>
+                      </li>
+                    </ul>
+                  </dd>
+                  <dt>2. Playful Animation</dt>
+                  <dd>
+                    <p>For item that is currently highlighted amongst those displayed on screen, provide more lively experience and allow for better recognition to user via animation.</p>
+                    <ul class="listStyle02">
+                      <li><img src="../../img/visual_style/motion/5.png" alt=""></li>
+                    </ul>
+                  </dd>
+                </dl>
+              </dd>
+              <dt>Curve</dt>
+              <dd>
+                <p>motion is responsive and natural. Use these easing curves and duration patterns to create smooth and consistent motion.</p>
+                <dl class="infoList_1">
+                  <dt>1. Focus-in (Tension)</dt>
+                  <dd>
+                    <dl class="infoList_1 type2">
+                      <dt>1-1. Bezier Type</dt>
+                      <dd>
+                        <p>
+                          <span class="col_red">V0 = (0,0), V1 = (0.3,0), V2 = (0,1), V3 = (1,1)</span><br>
+                          <span class="col_a3">Based on 60fps, Duration 334msec (20 frame)</span>
+                        </p>
+    										<ul class="listStyle02">
+    											<li><img src="../../img/visual_style/motion/7.png" alt=""></li>
+    										</ul>
+                      </dd>
+                      <dt>1-2. Elastic formula Type</dt>
+                      <dd>
+                        <div class="textareaWrap">
+                          <div class="textareaBox">
+                            _2PI = Math.PI * 2,<br>
+                            _createElastic = function(n, f, def) {<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;var c = _class("easing." + n, function(amplitude, period) {<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this._p1 = amplitude || 1;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this._p2 = period || def;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this._p3 = this._p2 / _2PI * (Math.asin(1 / this._p1) || 0);<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;}, true),<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;p = c.prototype = new Ease();<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;p.constructor = c;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;p.getRatio = f;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;p.config = function(amplitude, period) {<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return new c(amplitude, period);<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;};<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;return c;<br>
+                            },<br>
+                            ElasticOut = _createElastic("ElasticOut", function(p) {<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;return this._p1 * Math.pow(2, -10 * p) * Math.sin( (p - this._p3) * _2PI / this._p2 ) + 1;<br>
+                            }, 0.3),<br>
+                            ElasticIn = _createElastic("ElasticIn", function(p) {<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;return -(this._p1 * Math.pow(2, 10 * (p -= 1)) * Math.sin( (p - this._p3) * _2PI / this._p2 ));<br>
+                            }, 0.3),<br>
+                            ElasticInOut = _createElastic("ElasticInOut", function(p) {<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;return ((p *= 2) < 1) ? -.5 * (this._p1 * Math.pow(2, 10 * (p -= 1)) * Math.sin( (p - this._p3) * _2PI / this._p2)) : this._p1 *<br> Math.pow(2, -10 *(p -= 1))<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;* Math.sin( (p - this._p3) * _2PI / this._p2 ) *.5 + 1;<br>
+                            }, 0.45),
+                          </div>
+                        </div>
+                      </dd>
+                    </dl>
+                  </dd>
+                  <dt>2. Focus-Out</dt>
+                  <dd>
+                    <p>
+                      <span class="col_red">V0 = (0, 0), V1 = (0.19, 1), V2 = (0.22, 1), V3 = (1, 1)</span><br>
+                      <span class="col_a3">Based on 60fps, Duration 850msec</span>
+                    </p>
+                    <ul class="listStyle02">
+                      <li><img src="../../img/visual_style/motion/8.png" alt=""></li>
+                    </ul>
+                  </dd>
+                  <dt>3. Basic</dt>
+                  <dd>
+                    <p>
+                      <span class="col_red">V0 = (0, 0), V1 = (0.3, 0), V2 = (0.15, 1), V3 = (1, 1)</span><br>
+                      <span class="col_a3">Based on 60fps, Duration X msec</span>
+                    </p>
+                    <ul class="listStyle02">
+                      <li><img src="../../img/visual_style/motion/9.png" alt=""></li>
+                    </ul>
+                  </dd>
+                </dl>
+              </dd>
+            </dl>
+          </div>
+        </div>
+      </div><!-- //#motion.showCon -->
+
+  <!--[if lt IE 9]>
+    <script src="../../javascript/placeholders.min.js"></script>
+  <![endif]-->
+<div class="topIcon"></div>
+</body>
+
+</html>

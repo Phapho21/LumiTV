@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=2.0,user-scalable=yes">
+  <title>TV Principle</title>
+  <link rel="stylesheet" href="../../../css/basic.css">
+  <link rel="stylesheet" href="../../../css/style.css">
+  <link rel="stylesheet" href="../../../css/flexslider.css">
+  <script src="../../../javascript/jquery-1.8.3.min.js"></script>
+  <script src="../../../javascript/jquery.flexslider-min.js"></script>
+  <script>
+    var jqv = jQuery.noConflict();
+    window.parent.menuReCall("dep6_8_1");
+  </script>
+  <script src="../../../javascript/sub_jquery.js"></script>
+  <script src="../../../javascript/placeholders.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="../../../javascript/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <div id="basicList" class="showCon">
+      <div class="conTop">
+        <h2>Basic List</h2>
+        <div class="tabBoxWrap">
+          <ul class="tabBox clfix">
+            <li><a href="">Definition</a></li>
+            <li><a href="">Usage</a></li>
+            <li><a href="">Interaction</a></li>
+            <li><a href="">Specs</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- //.conTop -->
+      <div class="conBottom">
+        <div class="conBottomInner">
+          <div class="subConInTit">
+            C_LISTBASIC
+          </div>
+          <dl class="infoList tabList type2">
+            <dt>Definition</dt>
+            <dd>
+              Lists present multiple line items vertically as a single continuous element. (1xM)
+            </dd>
+            <dt>Usage</dt>
+            <dd searchWord="C_LISTBASIC">
+              <dl class="infoList_1 type2">
+                <dt>1. Text Item Size.</dt>
+                <dd>
+                  <ul class="indentList type2">
+                    <li>- The text item size is determined by the components and composition.</li>
+                    <li>- If text item sizes are different, make all text item sizes the same with the size of the biggest text item.</li>
+                    <li>- You can separately define the size and components when a text item is focused on.</li>
+                  </ul>
+                </dd>
+                <dt>2. Indicator</dt>
+                <dd>
+                  <ul class="indentList type2">
+                    <li>- Display a scroll indicator when scrolling is available.</li>
+                    <li>- A scroll indicator is the graphic itself that displays part of the next or previous item lying in the scrolling</li>
+                  </ul>
+                </dd>
+                <dt>3. Group Title Bar</dt>
+                <dd>
+                  <ul class="indentList type2">
+                    <li>- Use a group title bar when the items on the list can be categorized so that users can easily access them. Display a group title bar for each group.</li>
+                  </ul>
+                </dd>
+                <dt>Basic List</dt>
+                <dd>
+                  <img src="../../../img/components/list/basiclist/3.png" alt="" class="searchImg">
+                </dd>
+                <dt>Basic List With check mark (v)</dt>
+                <dd>
+                  <img src="../../../img/components/list/basiclist/4.png" alt="">
+                </dd>
+              </dl>
+            </dd>
+            <dt>Interaction</dt>
+            <dd>
+              <ul class="indentList type2">
+                <li>- Looping is not supported.</li>
+                <li>- If scroll starts, scroll bar will be displayed and same with scroll direction.</li>
+                <li>- The part of lists indicates that there is more lists over the screen.</li>
+              </ul>
+            </dd>
+            <dt>Specs</dt>
+            <dd>
+              <dl class="infoList_1">
+                <dt>Properties</dt>
+                <dd>
+                  <dl class="infoList_1 type2 type5">
+                    <dt>Basic lists consist of the following elements :</dt>
+                    <dd>
+                      <dl class="infoList_1_1">
+                        <dt>1. Item Type (<span class="col_ora">Mandatory</span>)</dt>
+                        <dd>
+                          <ul class="indentList">
+                            <li>- use the text item (**Refer to <a class="col_green bbg tagItem" href="javascript:parent.parentLocationChg('components/item/textItem')">C_ TEXTITEM</a> for details)</li>
+                          </ul>
+                        </dd>
+                        <dt>2. Selection icon (<span class="col_blue">Optional</span>, Mandatory for selecting from multiple items )</dt>
+                        <dd>
+                          <ul class="indentList">
+                            <li>- Provided edit function as displaying checkbox or check mark(v)</li>
+                          </ul>
+                        </dd>
+                      </dl>
+                      <ul class="listStyle02">
+                        <li><img src="../../../img/components/list/basiclist/5.png" alt=""></li>
+                      </ul>
+                    </dd>
+                  </dl>
+                </dd>
+                <dt>Property Table</dt>
+                <dd>
+                  <table class="propertyTbl">
+                    <colgroup>
+                    <col width="25%">
+                    <col width="15%">
+                    <col>
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <th class="propertyTblTit" scope="col" colspan="3">C_LISTBASIC</th>
+                    </tr>
+                    <tr>
+                      <th scope="col">
+                        PROPERTY
+                      </th>
+                      <th scope="col">
+                        USE
+                      </th>
+                      <th scope="col">
+                        VALUE
+                      </th>
+                    </tr>
+                    <tr>
+                      <td>Item type</td>
+                      <td><span class="textO">◎</span></td>
+                      <td><a href="javascript:parent.parentLocationChg('components/item/textItem')" class="tagItem">C_TEXTITEM</a></td>
+                    </tr>
+                    <tr>
+                      <td>Selection icon</td>
+                      <td></td>
+                      <td><a href="javascript:parent.parentLocationChg('components/selection/checkbox')" class="tagItem">C_CHECKBOX</a> / Check mark(v)</td>
+                    </tr>
+                    <tr>
+                      <th scope="col">
+                        FEATURE
+                      </th>
+                      <th colspan="2" scope="col">
+                        DESCRIPTION
+                      </th>
+                    </tr>
+                    <tr>
+                      <td>Default sort order</td>
+                      <td colspan="2">&lt;&lt;value&gt;&gt;</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </dd>
+              <dt>Visual</dt>
+              <dd>
+                <dl class="infoList_1 type2 type5">
+                  <dt>GUI</dt>
+                  <dd>
+                    <div class="visualImgBox">
+                      <img src="../../../img/components/list/basiclist/6.png" alt="">
+                    </div>
+                    <dl class="visualTagList">
+                      <dt>C_LISTBASIC</dt>
+                      <dd><img src="../../../img/components/list/basiclist/7.png" alt=""></dd>
+                    </dl>
+                  </dd>
+                </dl>
+                <div class="visualImgTxt">
+                  <img src="../../../img/components/list/basiclist/8.png" alt="">
+                  <div class="tempLinkBox">
+                    LINK : <a href="javascript:parent.parentLocationChg('components/item/textItem')">C_TEXTITEM</a>, <a href="javascript:parent.parentLocationChg('components/scrollbar')">C_SCROLLBAR</a>
+                  </div>
+                </div>
+                <div class="btn_box">
+                  <a href="../../../resources/png/pattern/c_list_basic.zip" class="btn_download"><span>Download PNG Resources</span></a>
+                </div>
+              </dd>
+            </dl>
+          </dd>
+        </dl>
+        <dl class="tagDl">
+          <dt>*Tags :</dt>
+          <dd>
+            <span class="tagItem" linktag="dep6_5">Grid</span>,
+            <span class="tagItem" linktag="dep6_14_1">Checkbox</span>,
+            <span class="tagItem" linktag="dep6_25_2">Text Item</span>
+          </dd>
+        </dl>
+      </div>
+    </div>
+    <!-- //.conBottom -->
+  </div>
+  <!--[if lt IE 9]>
+    <script src="../../../javascript/placeholders.min.js"></script>
+    <![endif]-->
+    <div class="topIcon"></div>
+  </body>
+
+  </html>

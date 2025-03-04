@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=2.0,user-scalable=yes">
+  <title>TV Principle</title>
+  <link rel="stylesheet" href="../../css/basic.css">
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="../../css/flexslider.css">
+  <script src="../../javascript/jquery-1.8.3.min.js"></script>
+  <script src="../../javascript/jquery.flexslider-min.js"></script>
+  <script>
+  var jqv = jQuery.noConflict();
+  window.parent.menuReCall("dep4_2");
+  </script>
+  <script src="../../javascript/sub_jquery.js"></script>
+  <script src="../../javascript/placeholders.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="../../javascript/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+  <!-- #timeout -->
+  <div id="timeout" class="showCon">
+    <div class="conTop">
+      <h2>Timeout</h2>
+      <div class="tabBoxWrap">
+        <ul class="tabBox clfix">
+          <li><a href="">Definition</a></li>
+          <li><a href="">Policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- //.conTop -->
+    <div class="conBottom">
+      <div class="conBottomInner">
+        <dl class="infoList tabList noFunction">
+          <dt>Definition</dt>
+          <dd>
+            <p>Use the timeout function to automatically go back to the viewing environment, which is the TV’s default state.</p>
+          </dd>
+          <dt>Policy</dt>
+          <dd>
+            <dl class="infoList_1 type2 type5">
+              <dt>
+                Apply the timeout function to close an OSD if there is no user input within a specified time length.
+                <br> When a user’s confirmation is mandatory, you may not apply the timeout function.
+                <br>
+                <br> Apply the timeout based on OSD type as follows. For OSD type, refer to the <a class="col_green bbg" href="javascript:parent.parentLocationChg('ui-strategy/overlay')">definition within the Overlay.</a>
+                <br> If there is the timeout rule specifying specially in each IA specification, you have to apply the specifications above all.
+                <br> In case it is not so, follow under common specifications.
+              </dt>
+              <dd>
+                <img src="../../img/ui_strategy/timeout/1.png" alt="">
+              </dd>
+              <dt>
+                Apply the timeout for patterns and components as follows. Basically, the timeout of a component follows the timeout of the OSD where the component is included.
+              </dt>
+              <dd>
+                <img src="../../img/ui_strategy/timeout/2.png" alt="">
+              </dd>
+            </dl>
+          </dd>
+        </dl>
+        <dl class="tagDl">
+          <dt>*Tags :</dt>
+          <dd>
+            <span class="tagItem" linkTag="dep4_1">Overlay</span>,
+            <span class="tagItem" linkTag="dep6_22_2">Tooltip</span>
+          </dd>
+        </dl>
+      </div>
+      <!-- .conBottomInner -->
+    </div>
+  </div>
+  <!-- //#timeout.showCon -->
+  <!--[if lt IE 9]>
+    <script src="../../javascript/placeholders.min.js"></script>
+  <![endif]-->
+  <div class="topIcon"></div>
+</body>
+
+</html>

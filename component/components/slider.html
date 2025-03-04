@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=2.0,user-scalable=yes">
+  <title>TV Principle</title>
+  <link rel="stylesheet" href="../../css/basic.css">
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="../../css/flexslider.css">
+  <script src="../../javascript/jquery-1.8.3.min.js"></script>
+  <script src="../../javascript/jquery.flexslider-min.js"></script>
+	<script>
+		var jqv = jQuery.noConflict();
+		window.parent.menuReCall("dep6_15");
+	</script>
+	<script src="../../javascript/sub_jquery.js"></script>
+	<script src="../../javascript/placeholders.min.js"></script>
+  <!--[if lt IE 9]>
+		<script src="../../javascript/html5shiv.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+  <!-- #slider -->
+      <div id="slider" class="showCon">
+        <div class="conTop">
+          <h2>SLIDER</h2>
+          <div class="tabBoxWrap">
+            <ul class="tabBox clfix">
+              <li><a href="">Definition</a></li>
+              <li><a href="">Usage</a></li>
+              <li><a href="">Interaction</a></li>
+              <li><a href="">Specs</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- //.conTop -->
+        <div class="conBottom">
+          <div class="conBottomInner">
+            <div class="subConInTit">
+      				C_SLIDER
+      			</div>
+            <dl class="infoList tabList type2">
+              <dt>Definition</dt>
+        			<dd>
+        				Sliders let users select a value from a continuous or discrete range of values by moving the slider thumb.
+        			</dd>
+        			<dt>Usage</dt>
+        			<dd>
+        				<ul class="indentList type2">
+									<li>- Use a slider to adjust the steps or strength of the brightness, contrast, etc.</li>
+									<li>- Sliders are classified into a horizontal type, vertical type, or multi type, depending on their directions and the number of sliders that are adjusted simultaneously.</li>
+									<li>- In some sliders, the center has a two-way adjustment bar to increase or decrease the value on either side around the center.</li>
+								</ul>
+								<ul class="listStyle02">
+									<li><img src="../../img/components/slider/1.png" alt=""></li>
+								</ul>
+								<dl class="infoList_1 type3">
+									<dt>1. How to Use a Horizontal Slider</dt>
+									<dd>
+										<p>
+											The horizontal slider is the most used slider type.<br>
+Horizontal sliders provide users with the most familiar experience.
+They can offer users a more comfortable experience than the television remote controls do.<br>
+If you need to add components other than the slider, do not place them in the orientation of the slider.<br>
+For example, for a vertical slider, components should be placed on the left or right of the slider.<br>
+Ensure that they are not placed at the top or bottom of it.
+										</p>
+										<ul class="listStyle02">
+											<li><img src="../../img/components/slider/2.png" alt=""></li>
+										</ul>
+									</dd>
+									<dt>2. How to Use a Vertical Slider</dt>
+									<dd>
+										<p>
+											Use a vertical slider when users are familiar with adjusting the values vertically.<br>
+Use vertical sliders in the equalizer settings menu.<br>
+If you need to add components other than the slider, do not place them in the orientation of the slider.<br>
+For example, for a vertical slider, components should be placed on the left or right of the slider.<br>
+Ensure that they are not placed at the top or bottom of it.
+										</p>
+										<ul class="listStyle02">
+											<li><img src="../../img/components/slider/3.png" alt=""></li>
+										</ul>
+									</dd>
+									<dt>3. How to Use a Multi Slider</dt>
+									<dd>
+										<p>
+											Display labels for sliders when multiple sliders are used. For horizontal sliders, display labels to the left of adjustment bars. For vertical sliders, display labels at the bottom of adjustment bars.<br>
+Multi sliders should display the current value of the focused adjustment bar while users are adjusting values.<br>
+If you need to add components other than the slider, do not place them in the orientation of the slider.<br>
+For example, for a vertical slider, components should be placed on the left or right of the slider.<br>
+Ensure that they are not placed at the top or bottom of it.
+										</p>
+										<ul class="listStyle02">
+											<li><img src="../../img/components/slider/4.png" alt=""></li>
+										</ul>
+									</dd>
+								</dl>
+        			</dd>
+        			<dt>Interaction</dt>
+        			<dd>
+        				<dl class="infoList_1">
+									<dt>1. Horizontal Slider > Left / Right</dt>
+									<dd><img src="../../img/components/slider/5.png" alt=""></dd>
+									<dt>2. Vertical Slider > Up / Down</dt>
+									<dd><img src="../../img/components/slider/6.png" alt=""></dd>
+								</dl>
+        			</dd>
+        			<dt>Specs</dt>
+        			<dd>
+								<dl class="infoList_1">
+									<dt>Properties</dt>
+        					<dd>
+										<dl class="infoList_1 type2 type5">
+													<dt>A slider consists of the following elements:</dt>
+													<dd>
+														<dl class="infoList_1_1">
+															<dt>1. Adjustment bar (<span class="col_ora">Mandatory</span>)</dt>
+															<dd>
+																<ul class="indentList">
+																	<li>- The directions of increasing the value of the adjustment bar are as follows:<br>
+																		. Horizontal type: The lowest value is located to the left and the highest value is located to the right.<br>
+																					. Vertical type: The lowest value is located at the bottom and the highest value is located at the top.
+																	</li>
+																</ul>
+															</dd>
+															<dt>2. Thumb (<span class="col_ora">Mandatory</span>)</dt>
+															<dd>
+																<ul class="indentList">
+																	<li>- Make the thumb of the slider the focused state when it is active.</li>
+																</ul>
+															</dd>
+															<dt>3. Current value (<span class="col_blue">Optional</span>, default = Y)</dt>
+															<dd>
+																<ul class="indentList">
+																	<li>- Display the current value if it is known.</li>
+																	<li>- If the value cannot be known, then it is not necessary to display the value because the value changes continuously.</li>
+																	<li>- If both ends of the slider display different values, display the two values at the same time and also put a slash (/) between the values.</li>
+																</ul>
+															</dd>
+															<dt>4. Increase/decrease indicator (<span class="col_ora">Mandatory</span>)</dt>
+															<dd>
+																<ul class="indentList">
+																	<li>- By default, the indicator is displayed as "<" or ">".</li>
+																	<li>- In exceptional cases, if two values should be recognized clearly, you can use the metaphor.<br>Example: Left/Right (Sound balance), +/- (Equalizer)</li>
+																	<li>- The increase/decrease indicator cannot be selected and focused on.</li>
+																</ul>
+															</dd>
+															<dt>5. Center point (<span class="col_ora">Mandatory</span>, for two-way increase/decrease type)</dt>
+															<dd>
+																<ul class="indentList">
+																	<li>- A two-way slider with different properties in both ends should display the center point.</li>
+																</ul>
+															</dd>
+														</dl>
+														<ul class="listStyle02">
+															<li><img src="../../img/components/slider/7.png" alt=""></li>
+														</ul>
+													</dd>
+												</dl>
+											</dd>
+									<dt>Property Table</dt>
+									<dd>
+										<img src="../../img/components/slider/8.png" alt="">
+									</dd>
+        					<dt>Visual</dt>
+        					<dd>
+        						<img src="../../img/tbd02.png" alt="">
+        					</dd>
+        					<dt>Motion</dt>
+        					<dd>
+        						<img src="../../img/tbd02.png" alt="">
+        					</dd>
+        				</dl>
+        			</dd>
+            </dl>
+          </div>
+        </div><!-- //.conBottom -->
+        </div><!-- //#slider.showCon -->
+
+  <!--[if lt IE 9]>
+    <script src="../../javascript/placeholders.min.js"></script>
+  <![endif]-->
+<div class="topIcon"></div>
+</body>
+
+</html>

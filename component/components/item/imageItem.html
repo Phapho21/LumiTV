@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=2.0,user-scalable=yes">
+  <title>TV Principle</title>
+  <link rel="stylesheet" href="../../../css/basic.css">
+  <link rel="stylesheet" href="../../../css/style.css">
+  <link rel="stylesheet" href="../../../css/flexslider.css">
+  <script src="../../../javascript/jquery-1.8.3.min.js"></script>
+  <script src="../../../javascript/jquery.flexslider-min.js"></script>
+  <script>
+  var jqv = jQuery.noConflict();
+  window.parent.menuReCall("dep6_25_1");
+  </script>
+  <script src="../../../javascript/sub_jquery.js"></script>
+  <script src="../../../javascript/placeholders.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="../../../javascript/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+  <div id="inputfiled" class="showCon">
+    <div class="conTop">
+      <h2>Image Item</h2>
+      <div class="tabBoxWrap">
+        <ul class="tabBox clfix">
+          <li><a href="">Definition</a></li>
+          <li><a href="">Usage</a></li>
+          <li><a href="">Interaction</a></li>
+          <li><a href="">Specs</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- //.conTop -->
+    <div class="conBottom">
+      <div class="conBottomInner">
+        <div class="subConInTit">
+          C_IMAGEITEM
+        </div>
+        <dl class="infoList tabList type2">
+          <dt>Definition</dt>
+          <dd>
+            Image item delivers information as image format and can be independently used with the additional information.
+          </dd>
+          <dt>Usage</dt>
+          <dd searchWord="C_IMAGEITEM">
+            <ul class="indentList">
+              <li>- An image item must contain a representative image. If it needs to display more information, it is able to use sub image.</li>
+              <li>- You can display up to several icons on the thumbnail according to the condition.</li>
+              <li>- Display a progress bar to represent the progress information like the live broadcasting content.</li>
+              <li>- The image item type with a pagination component, entered item will be operated as toggle function.</li>
+            </ul>
+            <ul class="inlineList">
+              <li><img src="../../../img/components/item/imageItem/8.png" alt="" class="searchImg"></li><li><img src="../../../img/components/item/imageItem/9.png" alt=""></li><li><img src="../../../img/components/item/imageItem/10.png" alt=""></li><li><img src="../../../img/components/item/imageItem/11.png" alt=""></li>
+            </ul>
+          </dd>
+          <dt>Interaction</dt>
+          <dd>
+            <ul class="indentList">
+              <li>- Entering the item changes screen while the relevant item is performed.</li>
+              <li>- If enter the item having toggle function, item will be changed without screen changes. (**Refer to <a href="javascript:parent.parentLocationChg('components/button/togglebutton')" class="col_green bbg tagItem">Toggle Button</a> for details.) </li>
+            </ul>
+          </dd>
+          <dt>Specs</dt>
+          <dd>
+            <dl class="infoList_1">
+              <dt>Properties</dt>
+              <dd>
+                <dl class="infoList_1 type2 type5">
+                  <dt>Image item consists of the following elements :</dt>
+                  <dd>
+                    <dl class="infoList_1_1">
+                      <dt>1. Main image (<span class="col_ora">Mandatory</span>)</dt>
+                      <dd>
+                        <ul class="indentList">
+                          <li>- A thumbnail must contain a representative image.</li>
+                        </ul>
+                      </dd>
+                      <dt>2. Sub image (<span class="col_blue">Optional</span>)</dt>
+                      <dd>
+                        <ul class="indentList">
+                          <li>- When the information transfer is insufficient with the main image, it is available to add the sub image. </li>
+                        </ul>
+                      </dd>
+                      <dt>3. Icon (<span class="col_blue">Optional</span>)</dt>
+                      <dd>
+                        <ul class="indentList">
+                          <li>- You can display up to several icons on the thumbnail.</li>
+                          <li>- Recommend to use icons’ count minimized.</li>
+                        </ul>
+                      </dd>
+                      <dt>4. Main text (<span class="col_blue">Optional</span>)</dt>
+                      <dd>
+                        <ul class="indentList">
+                          <li>- Minimize the information so that users can only read the essentials.</li>
+                        </ul>
+                      </dd>
+                      <dt>5. Sub text (<span class="col_blue">Optional</span>)</dt>
+                      <dt>6. Progress bar (<span class="col_blue">Optional</span>)</dt>
+                      <dd>
+                        <ul class="indentList">
+                          <li>- Use a progress bar to display a progress status. In this case, place it at the bottom of the representative image.</li>
+                        </ul>
+                      </dd>
+                      <dt>7. Pagination (<span class="col_blue">Optional</span>)</dt>
+                      <dd>
+                        <ul class="indentList">
+                          <li>- If the item has toggle function, use the pagination to represent the number of functions.</li>
+                        </ul>
+                      </dd>
+                    </dl>
+                    <ul class="listStyle02">
+                      <li><img src="../../../img/components/item/imageItem/2.png" alt=""></li>
+                    </ul>
+                  </dd>
+                </dl>
+              </dd>
+              <dt>Property Table</dt>
+              <dd>
+                <table class="propertyTbl">
+                  <colgroup>
+                    <col width="25%">
+                    <col width="15%">
+                    <col>
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <th class="propertyTblTit" scope="col" colspan="3">C_IMAGEITEM</th>
+                    </tr>
+                    <tr>
+                      <th scope="col">
+                        PROPERTY
+                      </th>
+                      <th scope="col">
+                        USE
+                      </th>
+                      <th scope="col">
+                        VALUE
+                      </th>
+                    </tr>
+                    <tr>
+                      <td>Main image</td>
+                      <td><span class="textO">◎</span></td>
+                      <td>&lt;&lt;value&gt;&gt;</td>
+                    </tr>
+                    <tr>
+                      <td>Sub image</td>
+                      <td></td>
+                      <td>&lt;&lt;value&gt;&gt;</td>
+                    </tr>
+                    <tr>
+                      <td>Icon</td>
+                      <td></td>
+                      <td>&lt;&lt;value&gt;&gt;</td>
+                    </tr>
+                    <tr>
+                      <td>Main text</td>
+                      <td></td>
+                      <td>&lt;&lt;value&gt;&gt;</td>
+                    </tr>
+                    <tr>
+                      <td>Sub text</td>
+                      <td></td>
+                      <td>&lt;&lt;value&gt;&gt;</td>
+                    </tr>
+                    <tr>
+                      <td>Progress bar</td>
+                      <td></td>
+                      <td><a href="javascript:parent.parentLocationChg('components/progress/progressBar')" class="tagItem">C_PROGRESSBAR</a></td>
+                    </tr>
+                    <tr>
+                      <td>Pagination</td>
+                      <td></td>
+                      <td><a href="javascript:parent.parentLocationChg('components/pagination')" class="tagItem">C_PAGINATION</a></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </dd>
+              <dt>Visual</dt>
+              <dd>
+                <dl class="infoList_1 type2 type5">
+                  <dt>GUI</dt>
+                  <dd>
+                    <div class="greyBox2"><img src="../../../img/components/item/imageItem/12.png" alt=""></div>
+                    <dl class="visualTagList">
+                      <dt>C_IMAGEITEM_SINGLELINE01</dt>
+                      <dd><img src="../../../img/components/item/imageItem/13.png" alt=""></dd>
+                      <dt>C_IMAGEITEM_SINGLELINE02</dt>
+                      <dd><img src="../../../img/components/item/imageItem/14.png" alt=""></dd>
+                      <dt>C_IMAGEITEM_MULTILINE01</dt>
+                      <dd><img src="../../../img/components/item/imageItem/15.png" alt=""></dd>
+                      <dt>C_IMAGEITEM_MULTILINE02</dt>
+                      <dd><img src="../../../img/components/item/imageItem/16.png" alt=""></dd>
+                      <dt>C_IMAGEITEM_MULTILINE03</dt>
+                      <dd><img src="../../../img/components/item/imageItem/17.png" alt=""></dd>
+                      <dt>C_IMAGEITEM_MULTILINE04</dt>
+                      <dd><img src="../../../img/components/item/imageItem/18.png" alt=""></dd>
+                      <dt>C_IMAGEITEM_MULTILINE05</dt>
+                      <dd><img src="../../../img/components/item/imageItem/19.png" alt=""></dd>
+                    </dl>
+                  </dd>
+                </dl>
+                <div class="visualImgTxt"><img src="../../../img/components/item/imageItem/20.png" alt="">
+                <div class="tempLinkBox">
+                    LINK : <a href="javascript:parent.parentLocationChg('visual-style/highlight')">R_HIGHLIGHT</a>, <a href="javascript:parent.parentLocationChg('components/progress/progressBar')">C_PROGRESSBAR</a>, <a href="javascript:parent.parentLocationChg('components/popup/basicPopup')">C_POPUPBASIC</a>
+                  </div></div>
+                <div class="visualImgTxt"><img src="../../../img/components/item/imageItem/21.png" alt=""></div>
+              </dd>
+            </dl>
+          </dd>
+        </dl>
+        <dl class="tagDl">
+          <dt>*Tags :</dt>
+          <dd>
+            <span class="tagItem" linktag="dep6_25_2">Text Item</span>,
+            <span class="tagItem" linktag="dep6_5">Grid</span>
+          </dd>
+        </dl>
+      </div>
+    </div>
+    <!-- //.conBottom -->
+  </div>
+  <!--[if lt IE 9]>
+    <script src="../../../javascript/placeholders.min.js"></script>
+  <![endif]-->
+  <div class="topIcon"></div>
+</body>
+
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=2.0,user-scalable=yes">
+	<title>TV Principle</title>
+	<link rel="stylesheet" href="../../../css/basic.css">
+	<link rel="stylesheet" href="../../../css/style.css">
+	<link rel="stylesheet" href="../../../css/flexslider.css">
+	<script src="../../../javascript/jquery-1.8.3.min.js"></script>
+	<script src="../../../javascript/jquery.flexslider-min.js"></script>
+	<script>
+	var jqv = jQuery.noConflict();
+	window.parent.menuReCall("dep4_3_2");
+	</script>
+	<script src="../../../javascript/sub_jquery.js"></script>
+	<script src="../../../javascript/placeholders.min.js"></script>
+	<!--[if lt IE 9]>
+		<script src="../../../javascript/html5shiv.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+	<!-- #basicButton -->
+	<div id="basicButton" class="showCon">
+		<div class="conTop">
+			<h2>Delete & Remove</h2>
+			<div class="tabBoxWrap">
+				<ul class="tabBox clfix">
+					<li><a href="">Definition</a></li>
+					<li><a href="">Usage</a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- //.conTop -->
+		<div class="conBottom">
+			<div class="conBottomInner">
+				<dl class="infoList tabList type2 noFunction">
+					<dt>Definition</dt>
+					<dd>
+						<p>
+							The Delete and Remove functions are used to delete or remove items. The Remove function removes an item from the current screen, not from the source path.
+							<br>The Delete function deletes an item from all paths in the TV.
+							<br>
+							<br> Example :
+							<br> Delete – When uninstalling an app from the TV
+							<br> Remove – When removing an app from the Home list
+						</p>
+					</dd>
+					<dt>Usage</dt>
+					<dd>
+						<ul class="indentList">
+							<li>- The Delete and Remove functions should be performed after obtaining a user’s confirmation. Basic popup is recommended for confirmation.</li>
+							<li>- It can or cannot indicate the progress status after the user confirmation.</li>
+							<li>- After finishing the Delete and Remove progress, it should inform users of the results. Toast popup is recommended for completion.</li>
+						</ul>
+						<ul class="listStyle02">
+							<li>
+								<img src="../../../img/ui_strategy/navigation/delete_remove/1.png" alt="">
+							</li>
+						</ul>
+					</dd>
+				</dl>
+				<dl class="tagDl">
+					<dt>*Tags :</dt>
+					<dd>
+						<span class="tagItem" linkTag="dep9_2_1">Basic Popup</span>,
+						<span class="tagItem" linkTag="dep9_2_2">Toast Popup</span>
+					</dd>
+				</dl>
+			</div>
+		</div>
+		<!-- //.conBottom -->
+	</div>
+	<!-- //#basicButton.showCon -->
+	<!--[if lt IE 9]>
+    <script src="../../../javascript/placeholders.min.js"></script>
+  <![endif]-->
+	<div class="topIcon"></div>
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<!doctype html>
+<html class="no-js">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=2.0,user-scalable=yes">
+  <title>TV Principle</title>
+  <link rel="stylesheet" href="../../css/basic.css">
+  <link rel="stylesheet" href="../../css/style.css">
+  <link href="search.css" rel="stylesheet" />
+  <script src="../../lib/jquery.min.js"></script>
+  <script src="../../data/search/searchData.js"></script>
+  <script src="../../javascript/search_action.js"></script>
+  <script src="search.js"></script>
+  <script src="../../javascript/modernizr-custom.js"></script>
+  <script>
+  window.parent.menuInit();
+
+  function parentLocationChg(url) {
+    window.parent.parentLocationChg(url)
+  }
+  </script>
+</head>
+
+<body onload="Search.render()">
+  <section id="introContent" class="showCon searchPageWrap">
+    <div class="conTop">
+      <h2></h2>
+    </div>
+    <div class="conBottom">
+      <div class="loadingbox"><span><img src="../../img/loading.gif" alt=""></span></div>
+      <div class="conBottomInner">
+      </div>
+    </div>
+  </section>
+</body>
+<script>
+function resizeIframe(obj) {
+  obj = document.getElementById("contentFrame");
+  var subContainer = obj.contentWindow.document.querySelector(".showCon");
+  var t = subContainer.getClientRects();
+  obj.style.height = parseInt(t[0].height, 10) + 50 + 'px';
+  var t = document.body.clientHeight;
+  var htmlTop = $(".headerPanel").outerHeight();
+  $(".rightPanel").css("padding-top", htmlTop);
+  obj.style.height = (t - htmlTop) + 'px';
+}
+</script>
+
+</html>

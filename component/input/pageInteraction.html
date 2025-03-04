@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=2.0,user-scalable=yes">
+  <title>TV Principle</title>
+  <link rel="stylesheet" href="../../css/basic.css">
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="../../css/flexslider.css">
+  <script src="../../javascript/jquery-1.8.3.min.js"></script>
+  <script src="../../javascript/jquery.flexslider-min.js"></script>
+  <script>
+  var jqv = jQuery.noConflict();
+  window.parent.menuReCall("dep3_3");
+  </script>
+  <script src="../../javascript/sub_jquery.js"></script>
+  <script src="../../javascript/placeholders.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="../../javascript/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+  <div class="showCon">
+    <div class="conTop">
+      <h2>Page Interaction</h2>
+      <div class="tabBoxWrap">
+        <ul class="tabBox clfix">
+          <li><a href="">Overall</a></li>
+          <li><a href="">Navigation</a></li>
+          <li><a href="">PAGE Key Long Press</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- //.conTop -->
+    <div class="conBottom">
+      <div class="conBottomInner">
+        <dl class="infoList tabList noFunction">
+          <dt>Overall</dt>
+          <dd>
+            <dl class="infoList_1 type2">
+              <dt>• page key in this chapter refers to the key value used for page navigation</dt>
+              <dd>
+                <ul class="indentList">
+                  <li>- Page Up key activates the function of going to the previous page</li>
+                  <li>- Page Down key activates the function of going to the next page</li>
+                  <li>- for example, while browsing GUIDE, pressing Channel Key up/down activates page up/down</li>
+                </ul>
+              </dd>
+              <dt>• Order of Priority for PAGE navigation</dt>
+              <dd>
+                <ul class="indentList">
+                  <li>- 1st : Vertical list (1-Direction) – vertical scroll</li>
+                  <li>- 2nd : Horizontal list (1-Direction) – horizontal scroll,</li>
+                  <li>- 3rd : 2-Directional Grid-type – vertical scroll only, horizontal scroll not allowed. </li>
+                </ul>
+              </dd>
+            </dl>
+          </dd>
+          <dt>Navigation</dt>
+          <dd>
+            <dl class="infoList_1">
+              <dt>Basic Navigation - Same Item Size</dt>
+              <dd>
+                <ul class="indentList">
+                  <li>- When paging up/down using PAGE key, moves to previous/next page respectively.</li>
+                  <li>- Items move to the opposite direction to the pressed direction.</li>
+                </ul>
+                <ul class="listStyle02">
+                  <li><img src="../../img/input/page/1.png" alt=""></li>
+                </ul>
+              </dd>
+              <dt>Basic Navigation - Vertical, horizontal type UI</dt>
+              <dd>
+                <ul class="indentList">
+                  <li>- The same principle is applied to the horizontal list.</li>
+                </ul>
+                <ul class="listStyle02">
+                  <li><img src="../../img/input/page/2.png" alt=""></li>
+                </ul>
+              </dd>
+              <dt>Basic Navigation - End of list</dt>
+              <dd>
+                <ul class="indentList">
+                  <li>- When using the PAGE key at the end of the list, pressing the PAGE key does not execute highligh movement, List movement.</li>
+                </ul>
+                <ul class="listStyle02">
+                  <li><img src="../../img/input/page/3.png" alt=""></li>
+                </ul>
+              </dd>
+              <dt>Basic Navigation - Different Item Size</dt>
+              <dd>
+                <dl class="infoList_1 type2">
+                  <dt>
+                    For items of different size, when pressing PAGE key, the highlight rule is as followed.
+                  </dt>
+                  <dd>
+                    <dl class="infoList_1_1">
+                      <dt>
+                        <ul class="indentList">
+                          <li>- 1st: Among items except for those partially shown, the item which is located on the point of pressing the key is highlighted.</li>
+                          <li>- 2nd: in case of two items satisfy the condition, the item which is closer to the point is highlighted.
+                            <br> If, the distance to the point is equal, the left item is highlighted. </li>
+                        </ul>
+                      </dt>
+                    </dl>
+                    <ul class="listStyle02">
+                      <li><img src="../../img/input/page/4.png" alt=""></li>
+                    </ul>
+                  </dd>
+                </dl>
+              </dd>
+              <dt>Basic Navigation - Unit of page in scrolling list </dt>
+              <dd>
+                <ul class="indentList">
+                  <li>- The end of item which is not completely shown in the current page becomes the first item of the list in the following page.</li>
+                </ul>
+                <ul class="listStyle02">
+                  <li><img src="../../img/input/page/5.png" alt=""></li>
+                </ul>
+              </dd>
+              <dt>Basic Navigation – In case of insufficient items in the following list</dt>
+              <dd>
+                <ul class="indentList">
+                  <li>- If next page item does not complete a page, pressing PAGE DOWN key shows a complete page including the last item.</li>
+                  <li>- If previous page item does not complete a page, pressing PAGE UP key show a complete page including the first item.</li>
+                </ul>
+                <ul class="listStyle02">
+                  <li><img src="../../img/input/page/6.png" alt=""></li>
+                </ul>
+              </dd>
+              <dt>Basic Navigation – tab UI</dt>
+              <dd>
+                <ul class="indentList">
+                  <li>- PAGE UP/DOWN interaction can also be applied to category tab UIs</li>
+                </ul>
+                <ul class="listStyle02">
+                  <li><img src="../../img/input/page/7.png" alt=""></li>
+                </ul>
+              </dd>
+              <dt>Page Change Frequency ( Specifications of the Full HD - 1920*1080 )</dt>
+              <dd>
+                <p>Number of page change during PAGE key long press</p>
+                <p>
+                  <strong>= Floor (1.67 * T) , if 0 < T < 1.5<br>
+                        = Floor (2 * T) , if 1.5 <= T</strong>
+                </p>
+                <p>where, T is an PAGE key long press time.</p>
+                <ul class="listStyle02">
+                  <li><img src="../../img/input/page/8.png" alt=""></li>
+                </ul>
+              </dd>
+            </dl>
+          </dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+  <!--[if lt IE 9]>
+    <script src="../../javascript/placeholders.min.js"></script>
+  <![endif]-->
+  <div class="topIcon"></div>
+</body>
+
+</html>

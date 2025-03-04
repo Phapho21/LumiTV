@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=2.0,user-scalable=yes">
+	<title>TV Principle</title>
+	<link rel="stylesheet" href="../../../css/basic.css">
+	<link rel="stylesheet" href="../../../css/style.css">
+	<link rel="stylesheet" href="../../../css/flexslider.css">
+	<script src="../../../javascript/jquery-1.8.3.min.js"></script>
+	<script src="../../../javascript/jquery.flexslider-min.js"></script>
+	<script>
+	var jqv = jQuery.noConflict();
+	window.parent.menuReCall("dep3_2_3");
+	</script>
+	<script src="../../../javascript/sub_jquery.js"></script>
+	<script src="../../../javascript/placeholders.min.js"></script>
+	<!--[if lt IE 9]>
+		<script src="../../../javascript/html5shiv.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+	<div id="voiceCommand" class="showCon">
+		<div class="conTop">
+			<h2>Voice Contextual Command</h2>
+			<div class="tabBoxWrap">
+				<ul class="tabBox clfix">
+					<li><a href="">Definition</a></li>
+					<li><a href="">Usage</a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- //.conTop -->
+		<div class="conBottom">
+			<div class="conBottomInner">
+				<!-- <div class="subConInTit">
+					C_VOICE_CONTEXTUAL_COMMAND
+				</div> -->
+				<dl class="infoList tabList type2 noFunction">
+					<dt>Definition</dt>
+					<dd>
+						<ul class="indentList">
+							<li>- This feature is for executing functions or providing guide related to the currently focused item by saying the designated contextual commands.</li>
+							<li>- Not only with the information of current focus, the external context can be used for execution.</li>
+							<li>- Refer to the Voice Interaction IA Guideline / All Cases Document for more details about the command guide.</li>
+						</ul>
+					</dd>
+					<dt>Usage</dt>
+					<dd>
+						<dl class="infoList_1">
+							<dt>Voice Key (By Command) <span class="col_red">(TBD)</span></dt>
+							<dd><img src="../../../img/input/voice/command/1.png" alt="">
+							</dd>
+							<dt>Link to E-manual (Setting UI)</dt>
+							<dd>
+								<p>
+									When the focus is located at a certain setting item on the setting UI, if the user starts voice chrome and commands “E-manual”,
+the E-manual App will be launched and automatically jump to the relative page with the currently focused item. For checking the supporting items,
+refer to the E-manual specification.
+								</p>
+								<ul class="listStyle02">
+									<li><img src="../../../img/input/voice/command/3.png" alt=""></li>
+								</ul>
+							</dd>
+							<dt>Command Guide <span class="col_red">(TBD)</span></dt>
+							<dd>
+								<ul class="indentList">
+									<li>- For Live TV watching context (No focus context)<br>
+									If the control command like channel or volume up/down is consecutively commanded more than 3 times, provide response which is the command recommendation for more useful one like tuning by channel name or set volume to the actual value directly.
+									</li>
+									<li>- For UI controlling context (Eden UI, Search UI, …) <span class="col_red">(TBD)</span><br>
+										If the designated command for asking to display command guide is commanded while using native app UI, provide contextual command guide which is currently valid and useful for using this UI.<br>
+										(※ Refer to the All cases document for the detailed information)
+									</li>
+									<li>- For Media playing context (Video, Recorded TV, Photo, Music)<br>
+   If the control playback command like “Play | Pause | Stop | Rewind | Fast Forward” is commanded, display its command guide.<br>
+   (※ Refer to the All cases document for the detailed information)
+
+									</li>
+								</ul>
+							</dd>
+							<dt>See More Options <span class="col_red">(TBD)</span></dt>
+							<dd>
+								<p>※ Subjected UIs are as follows : Eden UI, EPG, Schedule Manager, Video Player / Music Player / Photo Viewer</p>
+								<ul class="indentList">
+									<li>- If the focused item can launch the option menu by long pressing [SELECT] button, the menu can be launched by saying “More Options”.<br>
+									(※ Refer to each IA documents for the available item).</li>
+									<li>- In other words, If the user commands “More Options”, the same key as Long-pressing [SELECT] button will be sent to the focused item.</li>
+								</ul>
+							</dd>
+							<dt>Contextual command guide by time out</dt>
+							<dd>
+								<ul class="indentList">
+									<li>- If the user starts voice chrome but ends the recording without saying nothing or ends by timeout, the same key as the command for providing help will be sent.<br>
+									The guide will be provided relatively by the context. Only the valid commands are provided for useful commanding for next time.</li>
+								</ul>
+							</dd>
+						</dl>
+					</dd>
+				</dl>
+			</div>
+		</div>
+	</div>
+	<!--[if lt IE 9]>
+		<script src="../../../javascript/placeholders.min.js"></script>
+	<![endif]-->
+	<div class="topIcon"></div>
+</body>
+
+</html>

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=2.0,user-scalable=yes">
+  <title>TV Principle</title>
+  <link rel="stylesheet" href="../../css/basic.css">
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="../../css/flexslider.css">
+  <script src="../../javascript/jquery-1.8.3.min.js"></script>
+  <script src="../../javascript/jquery.flexslider-min.js"></script>
+  <script>
+  var jqv = jQuery.noConflict();
+  window.parent.menuReCall("dep3_2");
+  </script>
+  <script src="../../javascript/sub_jquery.js"></script>
+  <script src="../../javascript/placeholders.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="../../javascript/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+  <!-- #dpadInteraction -->
+  <div id="dpadInteraction" class="showCon">
+    <div class="conTop">
+      <h2>D-pad Interaction</h2>
+      <div class="tabBoxWrap">
+        <ul class="tabBox clfix">
+          <li><a href="">Overall</a></li>
+          <li><a href="">Navigation</a></li>
+          <li><a href="">D-Pad Long Press</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- //.conTop -->
+    <div class="conBottom">
+      <div class="conBottomInner">
+        <dl class="infoList tabList noFunction">
+          <dt>Overall</dt>
+          <dd>
+            <ul class="indentList type2">
+              <li>• Basic Short pressing UP / DOWN / RIGHT / LEFT key moves highlight (focus) up / down / right / left by 1 unit, respectively, unless defined otherwise.</li>
+              <li>• Long pressing (press & hold) UP/ DOWN / RIGHT / LEFT key move highlight (focus) up / down / right / left by 1 unit first, and after 0.5 sec, further moves the highlight continuously until the button is released.</li>
+              <li>• Regarding long press time out, use 1.0 sec when activating another function and 0.5 sec when activating continuous input of current key value.</li>
+              <li>• When the highlight reaches the end of a list, further input does not move the highlight to the first item (no circulation is allowed).</li>
+              <li>• In 2D item layout, when the layout is not a perfect grid but is composed of different sized items (e.g. GUIDE), therefore, when there are multiple items sharing a side of the current item, highlight moves to one of those multiple items minimizing the fluctuation of highlight movement.</li>
+              <li>• There are 4 types like below specified.</li>
+            </ul>
+          </dd>
+          <dt>Navigation</dt>
+          <dd>
+            <dl class="infoList_1">
+              <dt>1-Directonal Line UI (Same Item Size)</dt>
+              <dd>
+                <ul class="indentList">
+                  <li>- Before reaching either end of items presented on the current screen, moving highlight previous or next item moves not the list itself but the highlight. (Here, the end of item is defined as the leftmost or rightmost item fully shown in the current screen.)</li>
+                  <li>- When the highlight is on either end of the items presented on the current screen, further moving highlight moves the list to the opposite direction to the pressed direction by item size and the highlight moves to the next item.</li>
+                  <li>- Activity spec: Vertical type UI – Press Left/Right, Horizontal type UI – Press Up/Down Key</li>
+                </ul>
+                <ul class="listStyle02">
+                  <li><img src="../../img/input/interaction/1.png" alt=""></li>
+                </ul>
+              </dd>
+              <dt>1-Directonal Line UI (Different Item Size)</dt>
+              <dd>
+                <ul class="indentList">
+                  <li>- Before reaching either end of items presented on the current screen, moving highlight previous or next item moves not the list itself but the highlight. (Here, the end of item is defined as the leftmost or rightmost item fully shown in the current screen.)</li>
+                  <li>- When the highlight is on either end of the items presented on the current screen, further moving highlight moves the list to the opposite direction to the pressed direction by item size and the highlight moves to the next item.</li>
+                  <li>- Activity spec: Vertical type UI – Press Left/Right, Horizontal type UI – Press Up/Down Key</li>
+                </ul>
+                <ul class="listStyle02">
+                  <li><img src="../../img/input/interaction/2.png" alt=""></li>
+                </ul>
+              </dd>
+              <dt>2-Directonal Grid-Type items Basic Rule</dt>
+              <dd>
+                <ul class="indentList">
+                  <li>- Minimize the fluctuation item center coordination.</li>
+                  <li>- Fluctuation can be measured by variance or sum of absolute values of coordinates of recently navigated 5 items.</li>
+                </ul>
+                <dl class="infoList_1 type2">
+                  <dt>Highlight moves long the path ‘A’ because the path minimizes the variance of x-coordinates of recently navigated items.</dt>
+                  <dd>
+                    <img src="../../img/input/interaction/3.png" alt="">
+                  </dd>
+                  <dt>Highlight moves long the path ‘A’ because the path minimizes the variance of y-coordinates of recently navigated items.</dt>
+                  <dd>
+                    <img src="../../img/input/interaction/3.png" alt="">
+                  </dd>
+                </dl>
+              </dd>
+              <dt>2-Directonal Grid-Type items Basic Rule - General algorithm</dt>
+              <dd><img src="../../img/input/interaction/5.png" alt=""></dd>
+              <dt>2-Directonal Grid-Type items Basic Rule - Example case (1)</dt>
+              <dd><img src="../../img/input/interaction/6.png" alt=""></dd>
+              <dt>2-Directonal Grid-Type items Basic Rule - Example case (2)</dt>
+              <dd><img src="../../img/input/interaction/7.png" alt=""></dd>
+              <dt>2-Directonal Grid-Type items Basic Rule - Example case (3)</dt>
+              <dd>
+                <dl class="infoList_1_1">
+                  <dt>When moving highlight to the different level, move to the item closed to the current highlight.</dt>
+                  <dd>
+                    <img src="../../img/input/interaction/8.png" alt="">
+                  </dd>
+                </dl>
+              </dd>
+              <dt>2-Directonal Grid-Type items Basic Rule - When there is no last item in the list</dt>
+              <dd><img src="../../img/input/interaction/9.png" alt=""></dd>
+              <dt>Tab UI - basic navigation rule (1) immediate list change by moving highlight</dt>
+              <dd>
+                <ul class="indentList">
+                  <li>- When moving highlight from a category tab to sub-category item region, the first sub-category item has the highlight.</li>
+                  <li>- However, when moving highlight from a sub-category item to a category tab and moving the highlight back to the sub-category item region, the last focused item has the highlight</li>
+                </ul>
+                <ul class="listStyle02">
+                  <li><img src="../../img/input/interaction/10.png" alt=""></li>
+                </ul>
+              </dd>
+              <dt>Tab UI - basic navigation rule (2) list change by selecting highlight </dt>
+              <dd>
+                <ul class="indentList">
+                  <li>- When selecting highlight in category, the first sub-category item has the highlight.</li>
+                  <li>- However, when moving the highlight back to the category item region, the last focused item has the highlight.</li>
+                </ul>
+              </dd>
+            </dl>
+          </dd>
+          <dt>D-Pad Long Press</dt>
+          <dd>
+            <dl class="infoList_1">
+              <dt>Highlight Speed / Movement Curve</dt>
+              <dd>
+                <dl class="infoList_1 type2">
+                  <dt>
+                    <dl class="infoList_1 type2 type6">
+                      <dt>• Longpress Delay : 250ms</dt>
+                      <dd>The time long press gets triggered from the time D-Pad pressed.</dd>
+                      <dt>• Longpress Interval : 180ms / Item</dt>
+                      <dd>The time that highlight moves one item to the next while long press triggered.</dd>
+                    </dl>
+                  </dt>
+                  <dd><img src="../../img/input/interaction/11.png" alt=""></dd>
+                </dl>
+              </dd>
+              <dt>Example (1) - Horizontal List</dt>
+              <dd>
+                <ul class="indentList">
+                  <li>• Before reaching either end of items presented on the current screen, moving highlight previous or next item moves not the list itself but the highlight.</li>
+                  <li>• When the highlight is on either end of the items presented on the current screen, further moving highlight moves the list and the highlight does not move.</li>
+                </ul>
+                <ul class="listStyle02">
+                  <li><img src="../../img/input/interaction/15.png" alt=""></li>
+                </ul>
+              </dd>
+              <dt>Example (2) - Vertical List</dt>
+              <dd>
+                <ul class="indentList">
+                  <li>• Before reaching either end of items presented on the current screen, moving highlight previous or next item moves not the list itself but the highlight.</li>
+                  <li>• When the highlight is on either end of the items presented on the current screen, further moving highlight moves the list and the highlight does not move.</li>
+                </ul>
+                <ul class="listStyle02">
+                  <li><img src="../../img/input/interaction/16.png" alt=""></li>
+                </ul>
+              </dd>
+              <dt>Example (3) - Page Specified</dt>
+              <dd>
+                <ul class="indentList">
+                  <li>• when moving to next page by long pressing D-pad, move highlight to the first item in the list on the next page.</li>
+                </ul>
+                <ul class="listStyle02">
+                  <li><img src="../../img/input/interaction/17.png" alt=""></li>
+                </ul>
+              </dd>
+              <dt>Example (4) - Tab UI</dt>
+              <dd>
+                <ul class="indentList">
+                  <li>• Continuous highlight movement by long pressing D-pad key is valid only in the same list items.</li>
+                  <li>• Highlight movement across different lists, categories, depths follow below scenario.</li>
+                </ul>
+                <ul class="listStyle02">
+                  <li><img src="../../img/input/interaction/18.png" alt=""></li>
+                </ul>
+              </dd>
+            </dl>
+          </dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+  <!-- //#dpadInteraction.showCon -->
+  <!--[if lt IE 9]>
+    <script src="../../javascript/placeholders.min.js"></script>
+  <![endif]-->
+  <div class="topIcon"></div>
+</body>
+
+</html>

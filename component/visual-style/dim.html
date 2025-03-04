@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=2.0,user-scalable=yes">
+	<title>TV Principle</title>
+	<link rel="stylesheet" href="../../css/basic.css">
+	<link rel="stylesheet" href="../../css/style.css">
+	<link rel="stylesheet" href="../../css/flexslider.css">
+	<script src="../../javascript/jquery-1.8.3.min.js"></script>
+	<script src="../../javascript/jquery.flexslider-min.js"></script>
+	<script>
+	var jqv = jQuery.noConflict();
+	window.parent.menuReCall("dep2_9");
+	</script>
+	<script src="../../javascript/sub_jquery.js"></script>
+	<script src="../../javascript/placeholders.min.js"></script>
+	<!--[if lt IE 9]>
+		<script src="../../javascript/html5shiv.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+	<!-- #highlight -->
+	<div id="highlight" class="showCon">
+		<div class="conTop">
+			<h2>Dim</h2>
+			<div class="tabBoxWrap">
+				<ul class="tabBox clfix">
+					<li><a href="">Definition</a></li>
+					<li><a href="">Usage</a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- //.conTop -->
+		<div class="conBottom">
+			<div class="conBottomInner">
+				<dl class="infoList tabList noFunction">
+					<dt>Definition</dt>
+					<dd>
+						<p>
+							Dim is used to heighten the UI’s legibility for cases where there is an overlap between the UIs due to another UI that appears on top.<br>
+							However, if the UI appears on top of Live TV screen, the dim effect does not take place.<br>
+							For cases where another UI appears on top of full screen size UI and 2 pieces of UI overlaps on top of another, entire dim and partial dim are applied.<br>
+							Moreover, partial UI features like Eden, Notification, and Pairing are also exempt from the dim rule.
+						</p>
+					</dd>
+					<dt>Usage</dt>
+					<dd>
+						<dl class="infoList_1">
+							<dt>1. POPUP ON TOP OF APP SCREEN</dt>
+							<dd>
+								<p>
+									When popup appears on top of app screen, apply 50% dim to the entire app screen. (App screen size Black background Opacity 50%)
+								</p>
+								<ul class="listStyle02">
+									<li><img src="../../img/visual_style/dim/1.png" alt=""></li>
+								</ul>
+							</dd>
+							<dt>2. SUBLIST ON TOP OF LIST</dt>
+							<dd>
+								<p>
+									When sublist appears on top of list, apply 70% opacity to the list text. (List text Opacity 70%)
+								</p>
+								<ul class="listStyle02">
+									<li><img src="../../img/visual_style/dim/2.png" alt=""></li>
+								</ul>
+							</dd>
+							<dt>3. THUMBNAIL</dt>
+							<dd>
+								<p>
+									When other thumbnails besides the selected thumbnail is inactive, apply 50% opacity to the thumbnails. (Thumbnail Opacity 50%)
+								</p>
+								<ul class="listStyle02">
+									<li><img src="../../img/visual_style/dim/3.png" alt=""></li>
+								</ul>
+							</dd>
+							<dt>4. MULTIPLE POPUPS DURING LIVE TV</dt>
+							<dd>
+								<p>
+									When multiple popups appear during Live TV mode, apply 40% dim to popup without the focus. (Black background to be equal size as the popup Opacity 40%)
+								</p>
+								<ul class="listStyle02">
+									<li><img src="../../img/visual_style/dim/4.png" alt=""></li>
+								</ul>
+							</dd>
+							<dt>5. MULTIPLE POPUP DURING APP SCREEN</dt>
+							<dd>
+								<p>
+									When multiple popups appear on App screen, apply 50% dim to the entire app screen and also apply 40% dim to the popup without focus.<br>
+									(Black background to be equal size as the app screen Opacity 50% /  Black background to be equal size as the popup Opacity 40%)
+								</p>
+								<ul class="listStyle02">
+									<li><img src="../../img/visual_style/dim/5.png" alt=""></li>
+								</ul>
+							</dd>
+						</dl>
+					</dd>
+				</dl>
+			</div>
+		</div>
+	</div>
+	<!-- //#highlight.showCon -->
+	<!--[if lt IE 9]>
+		<script src="../../javascript/placeholders.min.js"></script>
+	<![endif]-->
+	<div class="topIcon"></div>
+</body>
+
+</html>

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=2.0,user-scalable=yes">
+  <title>TV Principle</title>
+  <link rel="stylesheet" href="../../../css/basic.css">
+  <link rel="stylesheet" href="../../../css/style.css">
+  <link rel="stylesheet" href="../../../css/flexslider.css">
+  <script src="../../../javascript/jquery-1.8.3.min.js"></script>
+  <script src="../../../javascript/jquery.flexslider-min.js"></script>
+  <script>
+  var jqv = jQuery.noConflict();
+  window.parent.menuReCall("dep6_2_1");
+  </script>
+  <script src="../../../javascript/sub_jquery.js"></script>
+  <script src="../../../javascript/placeholders.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="../../../javascript/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+  <!-- #basicButton -->
+  <div id="basicButton" class="showCon">
+    <div class="conTop">
+      <h2>Basic Button</h2>
+      <div class="tabBoxWrap">
+        <ul class="tabBox clfix">
+          <li><a href="">Definition</a></li>
+          <li><a href="">Usage</a></li>
+          <li><a href="">Interaction</a></li>
+          <li><a href="">Specs</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- //.conTop -->
+    <div class="conBottom">
+      <div class="conBottomInner">
+        <div class="subConInTit"> C_BUTTONBASIC </div>
+        <dl class="infoList tabList type2">
+          <dt>Definition</dt>
+          <dd>
+            <p>Basic button is used the most, and fundamental button. </p>
+          </dd>
+          <dt>Usage</dt>
+          <dd searchWord="C_BUTTONBASIC">
+            <ul class="indentList type2">
+              <li>- Use this button as the first priority unless there are any other critical issues.</li>
+              <li>- Display the button label that describes the button action.</li>
+            </ul>
+            <ul class="listStyle02">
+              <li><img src="../../../img/components/button/basic/1.png" alt="" class="searchImg"></li>
+            </ul>
+            <dl class="infoList_1">
+              <dt>Button Label</dt>
+              <dd>
+                <ul class="indentList">
+                  <li>- Use short, concise labels that sufficiently explain the action.</li>
+                  <li>- Start labels with an imperative verb for buttons used to perform actions.
+                    <br>Choose labels that contain part of or the entire function name or secondary window's title for buttons used to open another function or window.</li>
+                  <li>- Avoid using generic labels, such as "Yes" or "OK". Choose specific labels that clearly describe the action of a button.</li>
+                  <li>- Provide users with a button to cancel the selected actions. Use a standard Cancel button when there is no other button that allows users to cancel an action.
+                    <br> In this case, place the Cancel button to the right or at the bottom of the screen.</li>
+                  <li>- Do not provide a Cancel button when the action cannot be canceled.</li>
+                  <li>- Use the OK button for a simple confirmation.</li>
+                </ul>
+              </dd>
+              <dt>Button Order</dt>
+              <dd>
+                <ul class="indentList">
+                  <li>- Place the buttons required to perform an action first and the buttons required to cancel the current task or close the window, such as the Cancel or Done button, last.</li>
+                  <li>- Place the button required to perform a recommended action as the very first option.</li>
+                  <li>- For "Yes" and "No" buttons, place the "Yes" button first. However, make the "No" button the focused button when it is the recommended action.</li>
+                </ul>
+              </dd>
+            </dl>
+          </dd>
+          <dt>Interaction</dt>
+          <dd>
+            <ul class="indentList type2">
+              <li>- Use icon button if there is no space.</li>
+              <li>- Place button label on icon button’s tooltip when focus on.</li>
+            </ul>
+            <ul class="listStyle02">
+              <li><img src="../../../img/components/button/basic/2.png" alt=""></li>
+            </ul>
+          </dd>
+          <dt>Specs</dt>
+          <dd>
+            <dl class="infoList_1 searchCon">
+              <dt>Properties</dt>
+              <dd>
+                <dl class="infoList_1 type2 type5">
+                  <dt>Basic button consists of the following elements :</dt>
+                  <dd>
+                    <dl class="infoList_1_1">
+                      <dt>1. Text or Icon (<span class="col_ora">Mandatory</span>)</dt>
+                      <dd>
+                        <ul class="indentList">
+                          <li>- The Icon Should clearly describe the button action.</li>
+                          <li>- The text label alone clearly describe the button action.</li>
+                        </ul>
+                      </dd>
+                      <dt>2. Tooltip (<span class="col_blue">Optional</span>, if icon type, Mandatory)</dt>
+                      <dd>
+                        <ul class="indentList">
+                          <li>- Provide a button label in a tooltip when the button is focused on.</li>
+                          <li>- Display a tooltip if necessary to facilitate the user’s understanding, besides when focused on.</li>
+                        </ul>
+                      </dd>
+                    </dl>
+                    <ul class="listStyle02">
+                      <li><img src="../../../img/components/button/basic/3.png" alt=""></li>
+                    </ul>
+                  </dd>
+                </dl>
+              </dd>
+              <dt>Property Table</dt>
+              <dd>
+                <table class="propertyTbl">
+                  <colgroup>
+                    <col width="25%">
+                    <col width="15%">
+                    <col>
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <th class="propertyTblTit" scope="col" colspan="3">C_BUTTONBASIC</th>
+                    </tr>
+                    <tr>
+                      <th scope="col">
+                        PROPERTY
+                      </th>
+                      <th scope="col">
+                        USE
+                      </th>
+                      <th scope="col">
+                        VALUE
+                      </th>
+                    </tr>
+                    <tr>
+                      <td>Text/Icon</td>
+                      <td><span class="textO">◎</span></td>
+                      <td>Text/Icon, &lt;&lt;text label or icon description&gt;&gt;</td>
+                    </tr>
+                    <tr>
+                      <td>Tooltip</td>
+                      <td></td>
+                      <td><a href="javascript:parent.parentLocationChg('components/tooltip')" class="tagItem">C_TOOLTIP</a></td>
+                    </tr>
+                    <tr>
+                      <th scope="col">
+                        FEATURE
+                      </th>
+                      <th colspan="2" scope="col">
+                        DESCRIPTION
+                      </th>
+                    </tr>
+                    <tr>
+                      <td>Function</td>
+                      <td colspan="2">&lt;&lt;Describe the button action&gt;&gt;</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </dd>
+              <dt>Visual</dt>
+              <dd>
+                <dl class="infoList_1 type2 type5">
+                  <dt>GUI</dt>
+                  <dd>
+                    <div class="greyBox2"><img src="../../../img/components/button/basic/10.png" alt=""></div>
+                    <dl class="visualTagList">
+                      <dt>C_BUTTONBASIC_WHITETEXT</dt>
+                      <dd><img src="../../../img/components/button/basic/7.png" alt=""></dd>
+                      <dt>C_BUTTONBASIC_WHITEICON</dt>
+                      <dd><img src="../../../img/components/button/basic/8.png" alt=""></dd>
+                    </dl>
+                  </dd>
+                  <dt>Motion</dt>
+                  <dd>
+                    <dl class="visualTagList">
+                      <dt>C_BUTTONBASIC_TEXT</dt>
+                      <dd><img src="../../../img/components/button/basic/11.png" alt=""></dd>
+                      <dd><img src="../../../img/components/button/basic/12.png" alt=""></dd>
+                      <dd><img src="../../../img/components/button/basic/13.png" alt=""></dd>
+                      <dt>C_BUTTONBASIC_ICON</dt>
+                      <dd><img src="../../../img/components/button/basic/14.png" alt=""></dd>
+                      <dd><img src="../../../img/components/button/basic/15.png" alt=""></dd>
+                      <dd><img src="../../../img/components/button/basic/16.png" alt=""></dd>
+                    </dl>
+                  </dd>
+                </dl>
+                <div class="visualImgTxt">
+                  <img src="../../../img/components/button/basic/9.png" alt="">
+                  <div class="tempLinkBox">
+                    LINK : <a href="javascript:parent.parentLocationChg('components/tooltip')" class="tagItem">C_TOOLTIP</a>, <a href="javascript:parent.parentLocationChg('visual-style/highlight')">R_HIGHLIGHT</a>
+                  </div>
+                </div>
+                <div class="visualImgTxt">
+                  <img src="../../../img/components/button/basic/17.png" alt="">
+                </div>
+                <div class="btn_box">
+                  <a href="../../../resources/png/component/c_button_basic.zip" class="btn_download"><span>Download PNG Resources</span></a>
+                </div>
+              </dd>
+            </dl>
+          </dd>
+        </dl>
+        <dl class="tagDl">
+          <dt>*Tags :</dt>
+          <dd>
+            <span class="tagItem" linkTag="dep6_2_2">Dropdown Button</span>,
+            <span class="tagItem" linkTag="dep6_2_3">Toggle Button</span>,
+            <span class="tagItem" linkTag="dep6_14_2">Radio button</span>,
+            <span class="tagItem" linkTag="dep6_22_2">Tooltip</span>
+          </dd>
+        </dl>
+      </div>
+    </div>
+    <!-- //.conBottom -->
+  </div>
+  <!-- //#basicButton.showCon -->
+  <!--[if lt IE 9]>
+    <script src="../../../javascript/placeholders.min.js"></script>
+  <![endif]-->
+  <div class="topIcon"></div>
+</body>
+
+</html>

@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=2.0,user-scalable=yes">
+	<title>TV Principle</title>
+	<link rel="stylesheet" href="../../css/basic.css">
+	<link rel="stylesheet" href="../../css/style.css">
+	<link rel="stylesheet" href="../../css/flexslider.css">
+	<script src="../../javascript/jquery-1.8.3.min.js"></script>
+	<script src="../../javascript/jquery.flexslider-min.js"></script>
+	<script>
+	var jqv = jQuery.noConflict();
+	window.parent.menuReCall("dep7_1");
+	</script>
+	<script src="../../javascript/sub_jquery.js"></script>
+	<script src="../../javascript/placeholders.min.js"></script>
+	<!--[if lt IE 9]>
+		<script src="../../javascript/html5shiv.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+	<!-- #accessibility -->
+	<div id="accessibility" class="showCon">
+		<div class="conTop">
+			<h2>Accessibility</h2>
+			<div class="tabBoxWrap">
+				<ul class="tabBox clfix">
+					<li><a href="">Definition</a></li>
+					<li><a href="">Voice Guide</a></li>
+					<li><a href="">Enlarge</a></li>
+					<li><a href="">High Contrast</a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- //.conTop -->
+		<div class="conBottom">
+			<div class="conBottomInner">
+				<dl class="infoList tabList noFunction">
+					<dt>Definition</dt>
+					<dd>
+						Accessibility includes Voice Guide, Enlarge and High Contrast.
+						<br>
+						<br> Basically, accessibility features need to be applied in overall TV functions excluding some 3rd party apps. And there is an additional access point for accessibility. If the volume key is long-pressed at smart control, the shortcut menu for accessibility is displayed. (**Refer to Accessibility Shortcuts document for details.)
+					</dd>
+					<dt>Voice Guide</dt>
+					<dd>
+						<p>Voice Guide provides verbal feedback about the selected items. Voice Guide has setting options like Voice Guide On/Off, Volume, Speed and Pitch (Excluding Description Level). </p>
+						<dl class="infoList_1 type7">
+							<dt>Basic Rule </dt>
+							<dd>
+								<dl class="infoList_1 type2">
+									<dt>When voice guide is turned on,</dt>
+									<dd>
+										<ul class="indentList">
+											<li>- timeout for each UI becomes 3 time longer.
+												<br><span class="col_b5">e.g. original: 10 sec voice guide on: 30 sec</span></li>
+											<li>- AUI level is automatically set as high.</li>
+											<li>- Sound feedback is provided when turns on/off the TV power.</li>
+										</ul>
+									</dd>
+									<dt>Initial Setup</dt>
+									<dd>
+										<ul class="indentList">
+											<li>- The shortcut menu for Accessibility works on Initial Setup step.</li>
+											<li>- So if voice guide is turned on, voice guide is supported on Initial Setup step.</li>
+										</ul>
+									</dd>
+									<dt>User Application</dt>
+									<dd>
+										<ul class="indentList">
+											<li>- Exceptionally, some applications(e.g. 3rd Party App, Web Browser..) can follow the voice guide rule on their own.</li>
+										</ul>
+									</dd>
+								</dl>
+							</dd>
+							<dt>Basic TTS Rule</dt>
+							<dd>
+								<dl class="infoList_1 type2">
+									<dt>(When user key input) Voice Guide(TTS) is produced after AUI(Beep) sound.</dt>
+									<dt>Basically, Read all the words in brackets.</dt>
+									<dt>Key input before end of Voice Guide(TTS) </dt>
+									<dd>
+										<ul class="indentList">
+											<li>- Voice Guide(TTS) is stopped immediately and the AUI(Beep) and Voice Guide(TTS) by the last key input is produced.</li>
+											<li>- AUI(Beep) and Voice Guide(TTS) by the last key input should be a particular priority. </li>
+										</ul>
+									</dd>
+									<dt>Continuous key inputs </dt>
+									<dd>
+										<ul class="indentList">
+											<li>- Related AUI(Beep) sound for continuous key input is produced while a user make continuous key inputs.</li>
+											<li>- And then Voice Guide(TTS) for the last screen(item) is produced.</li>
+										</ul>
+										<ul class="listStyle02">
+											<li><img src="../../img/usability/accessibility/1.png" alt=""></li>
+										</ul>
+									</dd>
+									<dt>Reading Order</dt>
+									<dd>
+										<ul class="indentList">
+											<li>- Read sequentially from 1 (No.1 → No.2 → No.3……No.n)</li>
+											<li>- Available items for each cases are guided, missing information is skipped even if it has prior order</li>
+										</ul>
+										<ul class="listStyle02">
+											<li><img src="../../img/usability/accessibility/2.png" alt=""></li>
+										</ul>
+									</dd>
+									<dt>Even if the feature/function does not have the title on screen, when first entered to the feature/function, the “title” is guided.</dt>
+									<dd>
+										<ul class="listStyle02">
+											<li><img src="../../img/usability/accessibility/3.png" alt=""></li>
+										</ul>
+									</dd>
+									<dt>If the title has a category meaning, the “category” can be guided.</dt>
+									<dd>
+										<ul class="listStyle02">
+											<li><img src="../../img/usability/accessibility/4.png" alt=""></li>
+										</ul>
+									</dd>
+									<dt>Even if the source screen does not have the UI or title, when first entered to the source screen, the “title” is guided.</dt>
+									<dd>
+										<ul class="indentList">
+											<li>- “title” = “Source Name” = &lt;&lt;SOURCE_VALUE&gt;&gt;, &lt;&lt;DEVICE_TYPE&gt;&gt;, &lt;&lt;BRAND/PROVIDER&gt;&gt;.</li>
+											<li>- Voice Guide for Source Name: **Refer to Source document for details.</li>
+										</ul>
+										<ul class="listStyle02">
+											<li><img src="../../img/usability/accessibility/5.png" alt=""></li>
+										</ul>
+									</dd>
+									<dt>Number</dt>
+									<dd>
+										<ul class="indentList">
+											<li>- Basically, cardinal number is recommended for overall cases considering the translation issues.</li>
+										</ul>
+										<ul class="listStyle02">
+											<li><img src="../../img/usability/accessibility/6.png" alt=""></li>
+										</ul>
+									</dd>
+									<dt>Abbreviation</dt>
+									<dd>
+										<ul class="indentList">
+											<li>- Basically, read to full-string.
+												<br>* Exceptional case: Read the abbreviation of time as it stands. (AM, PM)</li>
+										</ul>
+										<ul class="listStyle02">
+											<li><img src="../../img/usability/accessibility/7.png" alt=""></li>
+										</ul>
+									</dd>
+									<dt>Date</dt>
+									<dd>
+										<ul class="indentList">
+											<li>- In case of ‘Date’, ordinal number for ‘Day’ and distinguished name of twelve months is used.</li>
+										</ul>
+										<ul class="listStyle02">
+											<li><img src="../../img/usability/accessibility/8.png" alt=""></li>
+										</ul>
+										<ul class="indentList marT50">
+											<li>- Day & Month : Terms (SID)
+												<br>Korean: “&lt;&lt;A&gt;&gt;월 &lt;&lt;B&gt;&gt;일”
+												<br>Other Language: “&lt;&lt;A&gt;&gt; &lt;&lt;B&gt;&gt;”</li>
+											<li>- Year : Terms (SID)
+												<br>Korean: “&lt;&lt;A&gt;&gt;년”
+												<br>Other Language: “&lt;&lt;A&gt;&gt;”</li>
+										</ul>
+										<ul class="listStyle02">
+											<li><img src="../../img/usability/accessibility/9.png" alt=""></li>
+										</ul>
+									</dd>
+									<dt>Time</dt>
+									<dd>
+										<ul class="indentList">
+											<li>- Terms (SID)
+												<br>Korean: “&lt;&lt;A&gt;&gt;시 &lt;&lt;B&gt;&gt;분”
+												<br>Other Language: “&lt;&lt;A&gt;&gt;:&lt;&lt;B&gt;&gt;”</li>
+										</ul>
+										<ul class="listStyle02">
+											<li><img src="../../img/usability/accessibility/10.png" alt=""></li>
+										</ul>
+									</dd>
+									<dt>Not supported</dt>
+									<dd>
+										<ul class="indentList">
+											<li>- If voice guide is not supported when focused item is selected, say “Voice guide is not supported for this function.” before selecting the item.</li>
+											<li>- After the item is selected, say “Voice guide is not supported for this function. Press Return on your remote to go back to the previous screen.”</li>
+										</ul>
+										<ul class="listStyle02">
+											<li><img src="../../img/usability/accessibility/11.png" alt=""></li>
+										</ul>
+									</dd>
+									<dt>Not supported (for 3rd party App/Game)</dt>
+									<dd>
+										<ul class="indentList">
+											<li>- Most of the current 3rd party App/Game do not support the voice guide.</li>
+											<li>- If each app/game is unable to support the voice guide, say “Voice Guide is not available for all apps.” when first enter the list (e.g. Home, Apps and so on).</li>
+										</ul>
+										<ul class="listStyle02">
+											<li><img src="../../img/usability/accessibility/12.png" alt=""></li>
+										</ul>
+									</dd>
+								</dl>
+							</dd>
+							<dt>Basic Navigation and Selection </dt>
+							<dd>
+								<dl class="infoList_1 type2">
+									<dt>If first entered to a menu, describe the UI(Title/Message..) if needed, then guide the number of list(menu) items and the focused item, value.</dt>
+									<dt>If focus is moved within this level, guide mainly about the information which has changed, such as current focused item, value.</dt>
+									<dt>Page/List/Menu context</dt>
+									<dd>
+										<ul class="indentList">
+											<li>- First entered: a) page/list/menu title (if available) → b) number of list/menu items → c) name of focused item → d) value of focused item (if available) → e) status of focused item (if disabled)</li>
+											<li>- Moved focus: a) name of focused item → b) value of focused item (if available) → c) status of focused item (if disabled)</li>
+										</ul>
+									</dd>
+									<dt>Dropdown & Option list(such as values, context menu) context</dt>
+									<dd>
+										<ul class="indentList">
+											<li>- First entered: a) Sub menu/list title (if available) → b) number of list items → c) name/value of focused item → d) status of focused item (if disabled)</li>
+											<li>- Moved focus: a) name/value of focused item → b) status of focused item (if disabled)</li>
+										</ul>
+									</dd>
+									<dt>Popup context</dt>
+									<dd>
+										<ul class="indentList">
+											<li>- First entered: a) popup title → b) message(body text) of popup → c) name of focused button → d) status of focused button (if disabled)</li>
+											<li>- Moved focus: a) name of focused button → b) status of focused button (if disabled)</li>
+										</ul>
+									</dd>
+									<dt>Watching context : Banner OSD</dt>
+									<dd>
+										<ul class="indentList">
+											<li>- Volume : Provide current figure status
+												<ul class="indentList">
+													<li>. First entered: a) volume → b) current figure</li>
+													<li>. Volume up/down: a) current figure</li>
+												</ul>
+												<li>- Channel : Provide all information of the current channel
+													<ul class="indentList">
+														<li>. First entered: a) channel → b) CH number → c) service name → d) program name → e) start-end time (if available) → f) audio description (if available)</li>
+														<li>. Channel up/down: a) CH number → b) service name → c) program name → d) start-end time (if available) → e) audio description (if available)</li>
+													</ul>
+												</li>
+										</ul>
+									</dd>
+								</dl>
+							</dd>
+							<dt>Guideline for template</dt>
+							<dd>
+								<dl class="infoList_1_1">
+									<dt>
+										Template for each cases:
+										<br>
+										<br> Read each items, following the number #1~#n.
+									</dt>
+									<dd>
+										<ul class="indentList">
+											<li>- Skip items if null. (e.g. if not “audio description”, don’t read it and skip)</li>
+										</ul>
+									</dd>
+									<dt>
+										Add “,” between each items, and “.” after the last item.
+										<br>
+										<br> “item(s)” is used by the difference between the singular and plural number of &lt;&lt;NUMBER_ALL_ITEMS&gt;&gt;.
+									</dt>
+									<dd>
+										<ul class="indentList">
+											<li>- &lt;&lt;NUMBER_ALL_ITEMS&gt;&gt;, item(s) : “one, item” / “two, items” / “three, items”</li>
+										</ul>
+										<ul class="listStyle02">
+											<li><img src="../../img/usability/accessibility/13.png" alt=""></li>
+										</ul>
+									</dd>
+								</dl>
+							</dd>
+							<dt>Usage</dt>
+							<dd>
+								<dl class="infoList_1 type2">
+									<dt>
+										Banner | Channel Banner
+									</dt>
+									<dd>
+										<ul class="indentList">
+											<li>- first entered: <span class="col_ora">Channel</span>, &lt;&lt;CHANNEL_NUMBER&gt;&gt;, &lt;&lt;CHANNEL_NAME&gt;&gt;, &lt;&lt;PROGRAM_NAME&gt;&gt;, &lt;&lt;START_TIME&gt;&gt; to &lt;&lt;END_TIME&gt;&gt;, &lt;&lt;AUDIO_DESCRIPTION&gt;&gt;.</li>
+											<li>- Channel up/down: &lt;&lt;CHANNEL_NUMBER&gt;&gt;, &lt;&lt;CHANNEL_NAME&gt;&gt;, &lt;&lt;PROGRAM_NAME&gt;&gt;, &lt;&lt;START_TIME&gt;&gt; to &lt;&lt;END_TIME&gt;&gt;, &lt;&lt;AUDIO_DESCRIPTION&gt;&gt;.</li>
+										</ul>
+										<ul class="listStyle02">
+											<li><img src="../../img/usability/accessibility/14.png" alt=""></li>
+										</ul>
+									</dd>
+									<dt>
+										Banner | Volume Banner
+									</dt>
+									<dd>
+										<ul class="indentList">
+											<li>- First entered: <span class="col_ora">Volume</span>, &lt;&lt;VOL_VALUE&gt;&gt;.</li>
+											<li>- Volume up/down: &lt;&lt;VOL_VALUE&gt;&gt;. </li>
+											<li>- Mute on: Mute.</li>
+										</ul>
+										<ul class="listStyle02">
+											<li><img src="../../img/usability/accessibility/15.png" alt=""></li>
+										</ul>
+									</dd>
+									<dt>
+										Checkbox
+									</dt>
+									<dd>
+										<ul class="indentList">
+											<li>- Checkbox focused: <span class="col_ora">checkbox</span>, &lt;&lt;CURRENT_VALUE&gt;&gt;, &lt;&lt;MESSAGE&gt;&gt;.</li>
+											<li>- Check/uncheck: &lt;&lt;CURRENT_VALUE&gt;&gt;.</li>
+										</ul>
+										<ul class="listStyle02">
+											<li><img src="../../img/usability/accessibility/16.png" alt=""></li>
+										</ul>
+									</dd>
+									<dt>
+										Checkbox | Multi selection list
+									</dt>
+									<dd>
+										<ul class="indentList">
+											<li>- First entered: &lt;&lt;TITLE&gt;&gt;, &lt;&lt; NUMBER_ALL_ITEMS &gt;&gt;, item(s), <span class="col_ora">checkbox</span>, &lt;&lt;CURRENT_VALUE&gt;&gt;, &lt;&lt;ITME_NAME&gt;&gt;.</li>
+											<li>- Moved focus: <span class="col_ora">checkbox</span>, &lt;&lt;CURRENT_VALU¬¬E&gt;&gt;, &lt;&lt;ITME_NAME&gt;&gt;.</li>
+										</ul>
+										<ul class="listStyle02">
+											<li><img src="../../img/usability/accessibility/17.png" alt=""></li>
+										</ul>
+									</dd>
+									<dt>
+										Dropdown
+									</dt>
+									<dd>
+										<ul class="indentList">
+											<li>- First entered: &lt;&lt;TITLE&gt;&gt;, &lt;&lt;NUMBER_ALL_ITEMS&gt;&gt;, item(s), &lt;&lt;CURRENT_VALUE&gt;&gt;.</li>
+											<li>- Moved focus: &lt;&lt;CURRENT_VALUE&gt;&gt;.</li>
+											<li>- Value changed: <span class="col_ora">set to</span> &lt;&lt;CURRENT_VALUE&gt;&gt;.</li>
+										</ul>
+										<ul class="listStyle02">
+											<li><img src="../../img/usability/accessibility/18.png" alt=""></li>
+										</ul>
+									</dd>
+									<dt>
+										Input | Input Field & IME
+									</dt>
+									<dd>
+										<ul class="indentList">
+											<li>- First entered: &lt;&lt;TITLE&gt;&gt;, &lt;&lt;MESSAGE&gt;&gt;, <span class="col_ora">Text box</span>, &lt;&lt;EDIT_BOX_VALUE&gt;&gt;.</li>
+											<li>- Launch IME: <span class="col_ora">On-screen keyboard</span>, &lt;&lt;ITEM_NAME&gt;&gt;</li>
+											<li>- Moved focus: &lt;&lt;BUTTON_NAME&gt;&gt;, <span class="col_ora">button</span>.</li>
+											<li>- Disabled: &lt;&lt;BUTTON_NAME&gt;&gt;, <span class="col_ora">button</span>, disabled.</li>
+										</ul>
+										<ul class="listStyle02">
+											<li><img src="../../img/usability/accessibility/19.png" alt=""></li>
+										</ul>
+									</dd>
+									<dt>
+										Input | PIN
+									</dt>
+									<dd>
+										<ul class="indentList">
+											<li>- First entered: &lt;&lt;ALL_MESSAGES&gt;&gt;.</li>
+											<li>- Value entered, password: star.</li>
+											<li>- Finished (succeeded): PIN accepted.</li>
+											<li>- Finished (failed): &lt;&lt;ERROR_MESSAGE_ONLY&gt;&gt;</li>
+										</ul>
+										<ul class="listStyle02">
+											<li><img src="../../img/usability/accessibility/20.png" alt=""></li>
+										</ul>
+									</dd>
+									<dt>
+										List & Grid
+									</dt>
+									<dd>
+										<ul class="indentList">
+											<li>- First entered: &lt;&lt;TITLE&gt;&gt;, &lt;&lt;NUMBER_ALL_ITEMS&gt;&gt;, item(s), &lt;&lt;ITEM_NAME&gt;&gt;, &lt;&lt;CURRENT_VALUE&gt;&gt;.</li>
+											<li>- Moved focus: &lt;&lt;ITEM_NAME&gt;&gt;, &lt;&lt;CURRENT_VALUE&gt;&gt;.</li>
+											<li>- Disabled: &lt;&lt;ITEM_NAME&gt;&gt;, &lt;&lt;CURRENT_VALUE&gt;&gt;, disabled.</li>
+										</ul>
+										<ul class="listStyle02">
+											<li><img src="../../img/usability/accessibility/21.png" alt=""></li>
+										</ul>
+									</dd>
+									<dt>
+										List | Page scrolled
+									</dt>
+									<dd>
+										<ul class="indentList">
+											<li>- First entered: &lt;&lt;TITLE&gt;&gt;, Page &lt;&lt;NUMBER_CURRENT_PAGE&gt;&gt; of &lt;&lt;NUMBER_ALL_PAGES&gt;&gt;, &lt;&lt;NUMBER_ALL_ITEMS&gt;&gt;, item(s), &lt;&lt;ITEM_NAME&gt;&gt;, &lt;&lt;CURRENT_VALUE&gt;&gt;.</li>
+											<li>- Moved focus: &lt;&lt;ITEM_NAME&gt;&gt;, &lt;&lt;CURRENT_VALUE&gt;&gt;.</li>
+											<li>- Disabled: &lt;&lt;ITEM_NAME&gt;&gt;, &lt;&lt;CURRENT_VALUE&gt;&gt;, disabled.</li>
+										</ul>
+										<ul class="listStyle02">
+											<li><img src="../../img/usability/accessibility/22.png" alt=""></li>
+										</ul>
+									</dd>
+									<dt>
+										List | No title
+									</dt>
+									<dd>
+										<ul class="indentList">
+											<li>- First entered: <span class="col_ora">&lt;&lt;OPTIONAL_TITLE&gt;&gt; list</span>, &lt;&lt;NUMBER_ALL_ITEMS&gt;&gt;, item(s), <span class="col_ora">&lt;&lt;OPTIONAL_ITEM_NAME&gt;&gt;.</span></li>
+											<li>- Moved focus: <span class=col_ora>&lt;&lt;OPTIONAL_ITEM_NAME&gt;&gt;.</span></li>
+											<li>- Disabled: <span class="col_ora">&lt;&lt;OPTIONAL_ITEM_NAME&gt;&gt;</span>, disabled.</li>
+										</ul>
+										<ul class="indentList">
+											<li>* &lt;&lt;OPTIONAL_TITLE&gt;&gt; / &lt;&lt;OPTIONAL_ITEM_NAME&gt;&gt;</li>
+											<li>- Even if the list does not have the title on screen, when first entered to the list, the “optional title” should be guided.</li>
+											<li>- Even if the item does not have the name on screen, when focused to the item, the “optional name” should be guided.</li>
+										</ul>
+										<ul class="listStyle02">
+											<li><img src="../../img/usability/accessibility/23.png" alt=""></li>
+										</ul>
+									</dd>
+									<dt>
+										List | Empty list
+									</dt>
+									<dd>
+										<ul class="indentList">
+											<li>- First entered: &lt;&lt;TITLE&gt;&gt;, &lt;&lt;NO_ITMES_MESSAGE&gt;&gt;, &lt;&lt;RETURN_GUIDE&gt;&gt;.</li>
+											<li>- The message for empty list on the screen precedes default statement.</li>
+											<li>. The page does not have a message for empty list: &lt;&lt; TITLE &gt;&gt;, <span class="col_ora">no items</span>, &lt;&lt;RETURN_GUIDE&gt;&gt;.</li>
+											<li>. The page does not have a message for return guide: &lt;&lt; TITLE &gt;&gt;, &lt;&lt;NO_ITMES_MESSAGE&gt;&gt;, <span class="col_ora">Press Return on your remote to go back to the previous screen.</span></li>
+										</ul>
+										<ul class="listStyle02">
+											<li><img src="../../img/usability/accessibility/24.png" alt=""></li>
+										</ul>
+									</dd>
+									<dt>
+										List | Contextual Menu
+									</dt>
+									<dd>
+										<ul class="indentList">
+											<li>- First entered: &lt;&lt;TITLE&gt;&gt;, &lt;&lt;NUMBER_ALL_ITEMS&gt;&gt;, item(s), &lt;&lt;ITEM_NAME&gt;&gt;.</li>
+											<li>- Moved focus: &lt;&lt;ITEM_NAME&gt;&gt;.</li>
+											<li>- Disabled: &lt;&lt;ITEM_NAME&gt;&gt;, disabled.</li>
+										</ul>
+										<ul class="listStyle02">
+											<li><img src="../../img/usability/accessibility/25.png" alt=""></li>
+										</ul>
+									</dd>
+									<dt>
+										List | Dropdown List
+									</dt>
+									<dd>
+										<ul class="indentList">
+											<li>- First entered:&lt;&lt;TITLE&gt;&gt;,&lt;&lt;NUMBER_ALL_ITEMS&gt;&gt;, item(s),&lt;&lt;CURRENT_VALUE&gt;&gt;.</li>
+											<li>- Moved focus:&lt;&lt;CURRENT_VALUE&gt;&gt;.</li>
+											<li>- Value changed: <span class="col_ora">set to</span>&lt;&lt;CURRENT_VALUE&gt;&gt;.</li>
+										</ul>
+										<ul class="listStyle02">
+											<li><img src="../../img/usability/accessibility/26.png" alt=""></li>
+										</ul>
+									</dd>
+									<dt>
+										Notification
+									</dt>
+									<dd>
+										<ul class="indentList">
+											<li>- First entered: <span class="col_ora">Notification</span>, &lt;&lt;TITLE&gt;&gt;, &lt;&lt;MESSAGE&gt;&gt;, &lt;&lt;BUTTON_NAME&gt;&gt;, <span class="col_ora">button</span>.</li>
+											<li>- Moved focus: &lt;&lt;BUTTON_NAME&gt;&gt;, <span class="col_ora">button</span>.</li>
+										</ul>
+										<ul class="listStyle02">
+											<li><img src="../../img/usability/accessibility/27.png" alt=""></li>
+										</ul>
+									</dd>
+									<dt>
+										Popup
+									</dt>
+									<dd>
+										<ul class="indentList">
+											<li>- First entered: &lt;&lt;TITLE&gt;&gt;, &lt;&lt;MESSAGE&gt;&gt;, &lt;&lt;BUTTON_NAME&gt;&gt;, <span class="col_ora">button</span>.</li>
+											<li>- Moved focus: &lt;&lt;BUTTON_NAME&gt;&gt;, <span class="col_ora">button</span>.</li>
+											<li>- Disabled: &lt;&lt;BUTTON_NAME&gt;&gt;, <span class="col_ora">button</span>, disabled.</li>
+										</ul>
+										<ul class="listStyle02">
+											<li><img src="../../img/usability/accessibility/28.png" alt=""></li>
+										</ul>
+									</dd>
+									<dt>
+										Progress Indicator | Loading
+									</dt>
+									<dd>
+										<ul class="indentList">
+											<li>- First entered: <span class="col_ora">loading, please wait.</span> </li>
+										</ul>
+										<ul class="listStyle02">
+											<li><img src="../../img/usability/accessibility/29.png" alt=""></li>
+										</ul>
+									</dd>
+									<dt>
+										Progress Indicator | Progress Bar (Percentage)
+									</dt>
+									<dd>
+										<ul class="indentList">
+											<li>- First entered: &lt;&lt;TITLE&gt;&gt;, &lt;&lt;MESSAGE&gt;&gt;, <span class="col_ora">please wait</span>, &lt;&lt;BUTTON_NAME&gt;&gt;, <span class="col_ora">button</span>.</li>
+											<li>- <span class="col_ora">Every five seconds</span>: &lt;&lt;MESSAGE&gt;&gt;, &lt;&lt;CURRENT_VALUE&gt;&gt;, <span class="col_ora">percent, please wait</span>, &lt;&lt;BUTTON_NAME&gt;&gt;, <span class="col_ora">button</span>.</li>
+											<li>- Finished progress (OK button): &lt;&lt;MESSAGE&gt;&gt;, &lt;&lt;CURRENT_VALUE&gt;&gt;, <span class="col_ora">percent</span>, &lt;&lt;BUTTON_NAME&gt;&gt;, <span class="col_ora">button</span>.</li>
+											<li>- Finished progress (back to previous screen): &lt;&lt;MESSAGE&gt;&gt;, <span class="col_ora">complete</span>, &lt;&lt;voice guide of previous screen&gt;&gt;.</li>
+										</ul>
+										<ul class="listStyle02">
+											<li><img src="../../img/usability/accessibility/30.png" alt=""></li>
+										</ul>
+									</dd>
+									<dt>
+										Progress Indicator | Progress Bar (Count)
+									</dt>
+									<dd>
+										<ul class="indentList">
+											<li>- First entered: &lt;&lt;TITLE&gt;&gt;, &lt;&lt;MESSAGE&gt;&gt;, please wait, &lt;&lt;BUTTON_NAME&gt;&gt;, button. </li>
+											<li>- Every five seconds: &lt;&lt;MESSAGE&gt;&gt;, &lt;&lt;NUMBER_CURRENT_ITEM&gt;&gt; of &lt;&lt;NUMBER_ALL_ITEM&gt;&gt;, please wait, &lt;&lt;BUTTON_NAME&gt;&gt;, button.</li>
+											<li>- Finished progress: &lt;&lt;MESSAGE&gt;&gt;, &lt;&lt;NUMBER_CURRENT_ITEM&gt;&gt; of &lt;&lt;NUMBER_ALL_ITEM&gt;&gt;, &lt;&lt;BUTTON_NAME&gt;&gt;, button.</li>
+											<li>** When both Percentage and Count displayed, read only Count.</li>
+										</ul>
+										<ul class="listStyle02">
+											<li><img src="../../img/usability/accessibility/31.png" alt=""></li>
+										</ul>
+									</dd>
+									<dt>
+										Slider
+									</dt>
+									<dd>
+										<ul class="indentList">
+											<li>- First entered: &lt;&lt;TITLE&gt;&gt;, &lt;&lt;RANGE_START&gt;&gt; to &lt;&lt;RANGE_END&gt;&gt;, &lt;&lt;CURRENT_VALUE&gt;&gt;.</li>
+											<li>- Moved focus: &lt;&lt;CURRENT_VALUE&gt;&gt;.</li>
+											<li>- Value changed: <span class="col_ora">set to</span> &lt;&lt;CURRENT_VALUE&gt;&gt;.</li>
+										</ul>
+										<ul class="listStyle02">
+											<li><img src="../../img/usability/accessibility/32.png" alt=""></li>
+										</ul>
+									</dd>
+									<dt>
+										Slider | Tint
+									</dt>
+									<dd>
+										<ul class="indentList">
+											<li>- First focused: &lt;&lt;TITLE&gt;&gt;, <span class="col_ora">Green</span> &lt;&lt;CURRENT_VALUE&gt;&gt;, <span class="col_ora">Red</span> &lt;&lt;CURRENT_VALUE&gt;&gt;.</li>
+											<li>- <span class="col_ora">Moved focus (G&lt;&lt;#&gt;&gt;/R&lt;&lt;#&gt;&gt;)</span>: <span class="col_ora">Green</span> &lt;&lt;CURRENT_VALUE&gt;&gt;, <span class="col_ora">Red</span> &lt;&lt;CURRENT_VALUE&gt;&gt;.</li>
+											<li>- Value changed: <span class="col_ora">set to Green</span> &lt;&lt;CURRENT_VALUE&gt;&gt;, <span class="col_ora">Red</span> &lt;&lt;CURRENT_VALUE&gt;&gt;.</li>
+										</ul>
+										<ul class="listStyle02">
+											<li><img src="../../img/usability/accessibility/33.png" alt=""></li>
+										</ul>
+									</dd>
+									<dt>
+										Slider | Equalizer
+									</dt>
+									<dd>
+										<ul class="indentList">
+											<li>- First entered: &lt;&lt;TITLE&gt;&gt;, &lt;&lt;NUMBER_ALL_ITEMS&gt;&gt;, item(s), &lt;&lt;ITEM_NAME&gt;&gt;, &lt;&lt;CURRENT_VALUE&gt;&gt;.</li>
+											<li>- <span class="col_ora">Moved focus (-/+): plus</span> &lt;&lt;CURRENT_VALUE&gt;&gt; / <span class="col_ora">minus</span> &lt;&lt;CURRENT_VALUE&gt;&gt; / zero</li>
+											<li>- <span class="col_ora">Moved focus (L/R): right</span> &lt;&lt;CURRENT_VALUE&gt;&gt; / <span class="col_ora">left</span> &lt;&lt;CURRENT_VALUE&gt;&gt; / <span class="col_ora">center</span></li>
+											<li>- Disabled: &lt;&lt;ITEM_NAME&gt;&gt;, disabled.</li>
+										</ul>
+										<ul class="listStyle02">
+											<li><img src="../../img/usability/accessibility/34.png" alt=""></li>
+										</ul>
+									</dd>
+									<dt>
+										Slider | Playback Slider
+									</dt>
+									<dd>
+										<ul class="indentList">
+											<li>- First entered: &lt;&lt;FILE_NAME&gt;&gt;, &lt;&lt;BUTTON_NAME&gt;&gt;, button.</li>
+											<li>- Controller focused: <span class="col_ora">control bar</span>, &lt;&lt;CURRENT_HOUR&gt;&gt; <span class="col_ora">hour(s)</span>, &lt;&lt;CURRENT_MINUTE&gt;&gt; <span class="col_ora">minute(s)</span>, &lt;&lt;CURRENT_SECOND&gt;&gt; <span class="col_ora">second(s)</span>, <span class="col_ora">of</span>, &lt;&lt;TOTAL_HOUR&gt;&gt; <span class="col_ora">hour(s)</span>, &lt;&lt;TOTAL_MINUTE&gt;&gt; <span class="col_ora">minute(s)</span>, &lt;&lt;TOTAL_SECOND&gt;&gt; <span class="col_ora">second(s)</span>.</li>
+											<li>- Moved Left/right : &lt;&lt;CURRENT_HOUR&gt;&gt; <span class="col_ora">hour(s)</span>, &lt;&lt;CURRENT_MINUTE&gt;&gt; <span class="col_ora">minute(s)</span>, &lt;&lt;CURRENT_SECOND&gt;&gt; <span class="col_ora">second(s)</span>.</li>
+										</ul>
+										<ul class="listStyle02">
+											<li><img src="../../img/usability/accessibility/35.png" alt=""></li>
+										</ul>
+									</dd>
+									<dt>
+										Spin Control
+									</dt>
+									<dd>
+										<ul class="indentList">
+											<li>- First entered: &lt;&lt;TITLE&gt;&gt;, &lt;&lt;NUMBER_ALL_ITEMS&gt;&gt;, item(s), &lt;&lt;CURRENT_VALUE&gt;&gt;.</li>
+											<li>- Moved focus: &lt;&lt;CURRENT_VALUE&gt;&gt;.</li>
+											<li>- Value changed: <span class="col_ora">set to</span> &lt;&lt;CURRENT_VALUE&gt;&gt;.</li>
+										</ul>
+										<ul class="listStyle02">
+											<li><img src="../../img/usability/accessibility/36.png" alt=""></li>
+										</ul>
+									</dd>
+								</dl>
+							</dd>
+						</dl>
+					</dd>
+					<dt>Enlarge</dt>
+					<dd>
+						<dl class="infoList_1  type2">
+							<dt>Enlarge enables users to see the elements on the screen with a larger, or zoomed-in, effect.
+								<br>
+								<br> This is the key idea of Enlarge.</dt>
+							<dd>
+								<ul class="indentList">
+									<li>- Basically, the recommended Enlarge size is 1.2 ~ 1.5 times bigger than original size.</li>
+									<li>- Enlarge is only applied to those items that can have focus on it; such as Image Item, Button, Checkbox (including text legend), etc.</li>
+									<li>- In a Enlarge mode, do not support ‘sliding text’ feature. Even if the item is focused, keep the ellipsis(…) mark continuously.</li>
+								</ul>
+								<p class="col000 marT15">**refer to GUI Guideline for more detail information.</p>
+							</dd>
+						</dl>
+					</dd>
+					<dt>High Contrast</dt>
+					<dd>
+						<dl class="infoList_1  type2">
+							<dt>High Contrast mode configures the TV to display all menus with an opaque black background and a white or yellow font
+								<br>
+								<br> This is the key idea of High Contrast. . </dt>
+							<dd>
+								<ul class="indentList">
+									<li>- Background color is Black & Foreground Color is White.</li>
+									<li>- Background color is White & Foreground Color is Black.</li>
+									<li>- In a High Contrast mode, do not support ‘sliding text’ feature. Even if the item is focused, keep the ellipsis(…) mark continuously.</li>
+								</ul>
+								<p class="col000 marT15">**refer to GUI Guideline for more detail information.</p>
+							</dd>
+						</dl>
+					</dd>
+				</dl>
+				<dl class="tagDl">
+					<dt>*Tags :</dt>
+					<dd>
+						<span class="tagItem" linktag="dep6_14_1">Checkbox</span>,
+						<span class="tagItem" linktag="dep9_1">Dropdown</span>,
+						<span class="tagItem" linktag="dep6_2">Button</span>,
+						<span class="tagItem" linktag="dep6_6_2">Input Field</span>,
+						<span class="tagItem" linktag="dep6_6_3">1-line PIN Field</span>,
+						<span class="tagItem" linktag="dep6_6_4">2-line PIN Field</span>,
+						<span class="tagItem" linktag="dep6_12_1">Loading</span>,
+						<span class="tagItem" linkTag="dep6_12_3">Progress Bar</span>,
+						<span class="tagItem" linktag="dep6_24">Slider</span>,
+						<span class="tagItem" linktag="dep6_16">Spin Control</span>,
+						<span class="tagItem" linktag="dep6_5">Grid</span>,
+						<span class="tagItem" linktag="dep6_8">List</span>,
+						<span class="tagItem" linktag="dep6_9">Notification</span>,
+						<span class="tagItem" linktag="dep9_2">Popup</span>
+					</dd>
+				</dl>
+			</div>
+			<!-- .conBottomInner -->
+		</div>
+	</div>
+	<!-- //#accessibility.showCon -->
+	<!--[if lt IE 9]>
+		<script src="../../javascript/placeholders.min.js"></script>
+	<![endif]-->
+	<div class="topIcon"></div>
+</body>
+
+</html>

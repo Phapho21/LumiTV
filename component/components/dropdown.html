@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=2.0,user-scalable=yes">
+  <title>TV Principle</title>
+  <link rel="stylesheet" href="../../css/basic.css">
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="../../css/flexslider.css">
+  <script src="../../javascript/jquery-1.8.3.min.js"></script>
+  <script src="../../javascript/jquery.flexslider-min.js"></script>
+  <script>
+    var jqv = jQuery.noConflict();
+    window.parent.menuReCall("dep9_1");
+  </script>
+  <script src="../../javascript/sub_jquery.js"></script>
+  <script src="../../javascript/placeholders.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="../../javascript/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <!-- #previewpane -->
+    <div id="previewpane" class="showCon tabActive displayBlock">
+      <div class="conTop">
+        <h2>Dropdown</h2>
+        <div class="tabBoxWrap">
+          <ul class="tabBox clfix">
+            <li><a href="">Definition</a></li>
+            <li><a href="">Usage</a></li>
+            <li><a href="">Interaction</a></li>
+            <li><a href="">Specs</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- //.conTop -->
+      <div class="conBottom">
+        <div class="conBottomInner">
+          <div class="subConInTit">
+            C_DROPDOWN
+          </div>
+          <dl class="infoList tabList type2">
+            <dt>Definition</dt>
+            <dd>
+              A dropdown allows users to choose an item from a list of mutually exclusive values.
+            </dd>
+            <dt>Usage</dt>
+            <dd searchWord="C_DROPDOWN">
+              <ul class="indentList">
+                <li>- The list of items in a dropdown should be similar or be related in some way.</li>
+                <li>- Dropdown is composed of the selectable button (or item) and dropdown list appearing on the screen.</li>
+                <li>- Display the open/close indicator to let users know that there are more options available and whether the dropdown is displayed or closed.</li>
+              </ul>
+              <ul class="listStyle02">
+                <li><img src="../../img/components/dropdown/1.png" alt="" class="searchImg"></li>
+              </ul>
+            </dd>
+            <dt>Interaction</dt>
+            <dd>
+              <img src="../../img/components/dropdown/2.png" alt="">
+            </dd>
+            <dt>Specs</dt>
+            <dd>
+              <dl class="infoList_1">
+                <dt>Properties</dt>
+                <dd>
+                  <dl class="infoList_1 type2 type5">
+                    <dt>Dropdown consists of the following elements :</dt>
+                    <dd>
+                      <dl class="infoList_1_1">
+                        <dt>1. Icon (<span class="col_blue">Optional</span>)</dt>
+                        <dd>If the list of items has each icon, display the icon on the same position.</dd>
+                        <dt>2. Button text (<span class="col_ora">Mandatory</span>)</dt>
+                        <dd>
+                          Display the currently selected value in the top button.
+                        </dd>
+                        <dt>3. Indicator (<span class="col_ora">Mandatory</span>)</dt>
+                        <dd>
+                          Display the open/close indicator to let users know that there are more options available and whether the dropdown is displayed or closed.
+                        </dd>
+                        <dt>4. Dropdown list (<span class="col_ora">Mandatory</span>)</dt>
+                        <dt>5. Selection icon (<span class="col_ora">Mandatory</span>)</dt>
+                        <dd>Displayed beside the current value.</dd>
+                      </dl>
+                      <ul class="listStyle02">
+                        <li><img src="../../img/components/dropdown/4.png" alt=""></li>
+                      </ul>
+                    </dd>
+                  </dl>
+                </dd>
+                <dt>Property Table</dt>
+                <dd>
+                  <table class="propertyTbl">
+                    <colgroup>
+                    <col width="25%">
+                    <col width="15%">
+                    <col>
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <th class="propertyTblTit" scope="col" colspan="3">C_DROPDOWN</th>
+                    </tr>
+                    <tr>
+                      <th scope="col">
+                        PROPERTY
+                      </th>
+                      <th scope="col">
+                        USE
+                      </th>
+                      <th scope="col">
+                        VALUE
+                      </th>
+                    </tr>
+                    <tr>
+                      <td>Icon</td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>Button Text</td>
+                      <td><span class="textO">◎</span></td>
+                      <td>&lt;&lt;value&gt;&gt;</td>
+                    </tr>
+                    <tr>
+                      <td>Indicator</td>
+                      <td><span class="textO">◎</span></td>
+                      <td>-</td>
+                    </tr>
+                    <tr>
+                      <td>List Text</td>
+                      <td><span class="textO">◎</span></td>
+                      <td>
+                        [Item1]<br>
+                        [Item2]<br>
+                        [Item3]
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Selection icon</td>
+                      <td><span class="textO">◎</span></td>
+                      <td>
+                        Check mark (v)
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </dd>
+              <dt>Visual</dt>
+              <dd>
+                <dl class="infoList_1 type2 type5">
+                  <dt>GUI</dt>
+                  <dd>
+                    <dl class="visualTagList">
+                      <dt>C_DROPDOWN_WHITE</dt>
+                      <dd><img src="../../img/components/dropdown/5.png" alt=""></dd>
+                    </dl>
+                  </dd>
+                </dl>
+
+                <div class="visualImgTxt">
+                  <img src="../../img/components/dropdown/6.png" alt="">
+                  <div class="tempLinkBox">
+                    LINK : <a href="javascript:parent.parentLocationChg('components/button/dropDownbutton')">C_BUTTONDROPDOWN</a>
+                  </div>
+                </div>
+                <div class="btn_box">
+                  <a href="../../resources/png/pattern/c_dropdown.zip" class="btn_download"><span>Download PNG Resources</span></a>
+                </div>
+              </dd>
+            </dl>
+          </dd>
+        </dl>
+        <dl class="tagDl">
+          <dt>*Tags :</dt>
+          <dd>
+            <span class="tagItem" linkTag="dep6_2_2">Dropdown Button</span>,
+            <span class="tagItem" linkTag="dep6_8_3">Dropdown List</span>
+          </dd>
+        </dl>
+      </div>
+    </div>
+    <!-- //.conBottom -->
+  </div>
+  <!-- //#previewpane.showCon -->
+  <!--[if lt IE 9]>
+    <script src="../../javascript/placeholders.min.js"></script>
+    <![endif]-->
+    <div class="topIcon"></div>
+  </body>
+
+  </html>

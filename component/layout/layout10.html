@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=2.0,user-scalable=yes">
+  <title>TV Principle</title>
+  <link rel="stylesheet" href="../../css/basic.css">
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="../../css/flexslider.css">
+  <script src="../../javascript/jquery-1.8.3.min.js"></script>
+  <script src="../../javascript/jquery.flexslider-min.js"></script>
+  <script>
+  var jqv = jQuery.noConflict();
+  window.parent.menuReCall("dep5_13");
+  </script>
+  <script src="../../javascript/sub_jquery.js"></script>
+  <script src="../../javascript/placeholders.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="../../javascript/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+  <div id="layout10" class="showCon">
+    <div class="conTop">
+      <h2>Layout 10</h2>
+      <div class="tabBoxWrap">
+        <ul class="tabBox clfix">
+          <li><a href="">Definition</a></li>
+          <li><a href="">Specs</a></li>
+          <li><a href="">Examples</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- //.conTop -->
+    <div class="conBottom">
+      <div class="conBottomInner">
+        <dl class="infoList tabList noFunction">
+          <dt>Definition</dt>
+          <dd>
+            Use Layout 10 to play videos or music.
+          </dd>
+          <dt>Specs</dt>
+          <dd>
+            <dl class="infoList_1">
+              <dt>Properties</dt>
+              <dd>
+                <div class="typeTab">
+                  <ul class="typeTabList clfix">
+                    <li class="active"><a href="">Detail view</a></li>
+                    <li><a href="">Simple view</a></li>
+                  </ul>
+                  <ul class="typeTabCon">
+                    <li class="active">
+                      <img src="../../img/layout/10/1.png" alt="">
+                    </li>
+                    <li>
+                      <img src="../../img/layout/10/3.png" alt="">
+                    </li>
+                  </ul>
+                </div>
+              </dd>
+              <dt>Note</dt>
+              <dd>
+                <ul class="indentList">
+                  <li>1. Buttons to control playback should be provided. Buttons in this area should be composed of an icon and a tooltip.</li>
+                  <li>2. Playback slider used in Layout 10 should include a bar, a main text, a sub text and an icon to present playback status.
+                    <br> The total duration would be a main text and the current playback time would be a sub text.</li>
+                  <li>3. Display the title of the content currently played.</li>
+                  <li>4. Buttons in this area should be composed of an icon and a tooltip. If a function will go into effect immediately, it can be provided on this area.</li>
+                  <li>5. Display the list of items related to the current content.</li>
+                  <li>6. Text items used in Layout 10 should include a main text.</li>
+                  <li>7. When the focus moves up and down in the list, display the vertical scroll bar on the side of the screen.</li>
+                </ul>
+              </dd>
+              <dt>Initial State</dt>
+              <dd>
+                <ul class="indentList">
+                  <li>- The focus is on the PLAY/PAUSE button.</li>
+                </ul>
+              </dd>
+              <dt>Layout Element Table</dt>
+              <dd>
+                <img src="../../img/layout/10/2.png" alt="">
+                <div class="tempLinkBox">
+                  LINK : <a href="javascript:parent.parentLocationChg('components/button/basicButton')">C_BUTTONBASIC</a>, <a href="javascript:parent.parentLocationChg('components/slider/playbackSlider')">C_SLIDERPLAYBACK</a>, <a href="javascript:parent.parentLocationChg('components/item/textItem')">C_TEXTITEM</a>, <a href="javascript:parent.parentLocationChg('components/list/basicList')">C_LISTBASIC</a>, <a href="javascript:parent.parentLocationChg('components/scrollbar')">C_SCROLLBAR</a>
+                </div>
+              </dd>
+            </dl>
+          </dd>
+          <dt>Examples</dt>
+          <dd>
+            - My Content (video player, music player)
+          </dd>
+        </dl>
+        <dl class="tagDl">
+          <dt>*Tags :</dt>
+          <dd>
+            <span class="tagItem" linkTag="dep6_24_2">Playback Slider</span>,
+            <span class="tagItem" linkTag="dep6_2_1">Basic Button</span>,
+            <span class="tagItem" linkTag="dep6_8_1">Basic List</span>,
+            <span class="tagItem" linktag="dep6_25_2">Text Item</span>,
+            <span class="tagItem" linkTag="dep6_13">Scroll Bar</span>
+          </dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+  <!--[if lt IE 9]>
+    <script src="../../javascript/placeholders.min.js"></script>
+  <![endif]-->
+  <div class="topIcon"></div>
+</body>
+
+</html>

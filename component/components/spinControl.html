@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=2.0,user-scalable=yes">
+  <title>TV Principle</title>
+  <link rel="stylesheet" href="../../css/basic.css">
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="../../css/flexslider.css">
+  <script src="../../javascript/jquery-1.8.3.min.js"></script>
+  <script src="../../javascript/jquery.flexslider-min.js"></script>
+  <script>
+  var jqv = jQuery.noConflict();
+  window.parent.menuReCall("dep6_16");
+  </script>
+  <script src="../../javascript/sub_jquery.js"></script>
+  <script src="../../javascript/placeholders.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="../../javascript/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+  <div id="spincontrolBasic" class="showCon">
+    <div class="conTop">
+      <h2>Spin Control</h2>
+      <div class="tabBoxWrap">
+        <ul class="tabBox clfix">
+          <li><a href="">Definition</a></li>
+          <li><a href="">Usage</a></li>
+          <li><a href="">Interaction</a></li>
+          <li><a href="">Specs</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- //.conTop -->
+    <div class="conBottom">
+      <div class="conBottomInner">
+        <div class="subConInTit">
+          C_SPINCONTROL
+        </div>
+        <dl class="infoList tabList type2">
+          <dt>Definition</dt>
+          <dd>
+            Spin Control is used for items with continuously changing values when users can easily predict a set of values.
+          </dd>
+          <dt>Usage</dt>
+          <dd searchWord="C_SPINCONTROL">
+            <ul class="indentList">
+              <li>- You can use one to four separate spin controls to adjust values.</li>
+              <li>- When you use multiple spin controls, adjust the valid values of the relevant other spin controls based on the user's last setting.</li>
+              <li>- When using multiple spin controls, you can display a delimiter between spin controls.</li>
+            </ul>
+            <ul class="listStyle02">
+              <li><img src="../../img/components/spincontrol/basic/1.png" alt="" class="searchImg"></li>
+            </ul>
+          </dd>
+          <dt>Interaction</dt>
+          <dd>
+            <ul class="indentList">
+              <li>- When a valid value is entered, the next item will be focused on.</li>
+              <li>- When an invalid value is entered, the previous value will be returned and the current item will be still focused on.</li>
+              <li>- When a valid value is entered, the changed value will be saved and the next item will be focused on.</li>
+              <li>- At the last item, it will remain focused.</li>
+            </ul>
+            <dl class="infoList_1">
+              <dt>Up/Down</dt>
+              <dd><img src="../../img/components/spincontrol/basic/2.png" alt=""></dd>
+              <dt>Up/Down long press</dt>
+              <dd><img src="../../img/components/spincontrol/basic/3.png" alt=""></dd>
+              <dt>Entering Numbers</dt>
+              <dd><img src="../../img/components/spincontrol/3.png" alt=""></dd>
+            </dl>
+          </dd>
+          <dt>Specs</dt>
+          <dd>
+            <dl class="infoList_1">
+              <dt>Properties</dt>
+              <dd>
+                <dl class="infoList_1 type2 type5">
+                  <dt>Spin control consists of the following elements:</dt>
+                  <dd>
+                    <dl class="infoList_1_1">
+                      <dt>1. Text (<span class="col_ora">Mandatory</span>)</dt>
+                      <dd>
+                        <ul class="indentList">
+                          <li>- If there is no default value,
+                            <ul class="indentList">
+                              <li>. Numeric values : Display hyphens (-) as many as the number of digits, in the spin box</li>
+                              <li>. Non-numeric values : Display four consecutive hyphens (----) in the spin box</li>
+                            </ul>
+                          </li>
+                          <li>- Ensure that a spin control always displays a selected value except when users are entering a value.</li>
+                        </ul>
+                      </dd>
+                      <dt>2. Icon (<span class="col_ora">Mandatory</span>)</dt>
+                      <dd>
+                        <ul class="indentList">
+                          <li>- Up/Down arrow indicator</li>
+                          <li>- Make the arrow dimmed if users cannot progress in a direction any longer</li>
+                        </ul>
+                      </dd>
+                    </dl>
+                    <ul class="listStyle02">
+                      <li><img src="../../img/components/spincontrol/basic/4.png" alt=""></li>
+                    </ul>
+                  </dd>
+                </dl>
+              </dd>
+              <dt>Property Table</dt>
+              <dd>
+                <table class="propertyTbl">
+                  <colgroup>
+                    <col width="25%">
+                    <col width="15%">
+                    <col>
+                    <col>
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <th class="propertyTblTit" scope="col" colspan="4">C_SPINCONTROL</th>
+                    </tr>
+                    <tr>
+                      <th scope="col">
+                        PROPERTY
+                      </th>
+                      <th scope="col">
+                        USE
+                      </th>
+                      <th scope="col">
+                        VALUE
+                      </th>
+                      <th scope="col">
+                        ADDITIONAL
+                      </th>
+                    </tr>
+                    <tr>
+                      <td>Text</td>
+                      <td><span class="textO">◎</span></td>
+                      <td>&lt;&lt;value&gt;&gt;-&lt;&lt;value&gt;&gt;, &lt;&lt;default value&gt;&gt;</td>
+                      <td>value range (start value–end value)</td>
+                    </tr>
+                    <tr>
+                      <td>Icon</td>
+                      <td><span class="textO">◎</span></td>
+                      <td>-</td>
+                      <td></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </dd>
+              <dt>Visual</dt>
+              <dd>
+                <dl class="infoList_1 type2 type5">
+                  <dt>GUI</dt>
+                  <dd>
+                    <dl class="visualTagList">
+                      <dt>C_SPINCONTROL_WHITE</dt>
+                      <dd><img src="../../img/components/spincontrol/4.png" alt=""></dd>
+                    </dl>
+                  </dd>
+                  <dt>Motion</dt>
+                  <dd>
+                    <dl class="visualTagList">
+                      <dt>C_SPINCONTROL_BASIC</dt>
+                      <dd><img src="../../img/components/spincontrol/6.png" alt=""></dd>
+                      <dd><img src="../../img/components/spincontrol/7.png" alt=""></dd>
+                      <dd><img src="../../img/components/spincontrol/8.png" alt=""></dd>
+                      <dd><img src="../../img/components/spincontrol/9.png" alt=""></dd>
+                      <dd><img src="../../img/components/spincontrol/10.png" alt=""></dd>
+                    </dl>
+                  </dd>
+                </dl>
+                <div class="visualImgTxt"><img src="../../img/components/spincontrol/5.png" alt="">
+                <div class="tempLinkBox">
+                    LINK : <a href="javascript:parent.parentLocationChg('components/input/inputfiled')">C_INPUTFIELD</a>
+                  </div>
+                  </div>
+                <div class="visualImgTxt"><img src="../../img/components/spincontrol/11.png" alt=""></div>
+                <div class="btn_box">
+                  <a href="../../resources/png/component/c_spincontrol.zip" class="btn_download"><span>Download PNG Resources</span></a>
+                </div>
+              </dd>
+            </dl>
+          </dd>
+        </dl>
+        <dl class="tagDl">
+          <dt>*Tags :</dt>
+          <dd>
+            <span class="tagItem" linktag="dep9_3_2">Time Picker</span>,
+            <span class="tagItem" linktag="dep9_3_1">Date Picker</span>
+          </dd>
+        </dl>
+      </div>
+    </div>
+    <!-- //.conBottom -->
+  </div>
+  <!--[if lt IE 9]>
+    <script src="../../javascript/placeholders.min.js"></script>
+  <![endif]-->
+  <div class="topIcon"></div>
+</body>
+
+</html>

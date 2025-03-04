@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=2.0,user-scalable=yes">
+  <title>TV Principle</title>
+  <link rel="stylesheet" href="../../../css/basic.css">
+  <link rel="stylesheet" href="../../../css/style.css">
+  <link rel="stylesheet" href="../../../css/flexslider.css">
+  <script src="../../../javascript/jquery-1.8.3.min.js"></script>
+  <script src="../../../javascript/jquery.flexslider-min.js"></script>
+  <script>
+  var jqv = jQuery.noConflict();
+  window.parent.menuReCall("dep6_12_2");
+  </script>
+  <script src="../../../javascript/sub_jquery.js"></script>
+  <script src="../../../javascript/placeholders.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="../../../javascript/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+  <div id="progressCircle" class="showCon">
+    <div class="conTop">
+      <h2>Progress Circle</h2>
+      <div class="tabBoxWrap">
+        <ul class="tabBox clfix">
+          <li><a href="">Definition</a></li>
+          <li><a href="">Usage</a></li>
+          <li><a href="">Interaction</a></li>
+          <li><a href="">Specs</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- //.conTop -->
+    <div class="conBottom">
+      <div class="conBottomInner">
+        <div class="subConInTit">
+          C_PROGRESSCIRCLE
+        </div>
+        <dl class="infoList tabList type2">
+          <dt>Definition</dt>
+          <dd>
+            Use this to show the ongoing status with a circle. This is useful to display the progress status on a circle icon.
+          </dd>
+          <dt>Usage</dt>
+          <dd searchWord="C_PROGRESSCIRCLE">
+            <ul class="indentList">
+              <li>- When displaying progress rate, it is recommended to use progress circle.</li>
+              <li>- Use progress bars or progress circles to show the progress rate, depending on the screen layout.</li>
+              <li>- Place the number on the center of circle icon.</li>
+            </ul>
+          </dd>
+          <dt>Interaction</dt>
+          <dd>
+            <dl class="infoList_1">
+              <dt>Status</dt>
+              <dd>
+                <ul class="indentList">
+                  <li>- Determinate : This is displayed when it's predictable to estimate how much time will take.</li>
+                  <li>- Indeterminate : This is displayed when it's unpredictable to estimate how much time will take.</li>
+                  <li>- Buffer : This is displayed when it's necessary to show the buffering status.</li>
+                </ul>
+                <ul class="listStyle02">
+                  <li><img src="../../../img/components/indicator/progresscircle/2.png" alt=""></li>
+                </ul>
+              </dd>
+              <dt>How to change the status</dt>
+              <dd>
+                <ul class="indentList">
+                  <li>- Indeterminate and Determinate : This is displayed when the processing time was unpredictable first but becomes predictable later.</li>
+                  <li>- Determinate and Indeterminate : This is displayed when processing time was predictable first but becomes unpredictable later (e.g. app download and installation).</li>
+                </ul>
+                <ul class="listStyle02">
+                  <li><img src="../../../img/components/indicator/progresscircle/3.png" alt=""></li>
+                </ul>
+              </dd>
+            </dl>
+          </dd>
+          <dt>Specs</dt>
+          <dd>
+            <dl class="infoList_1">
+              <dt>Properties</dt>
+              <dd>
+                <dl class="infoList_1 type2 type5">
+                  <dt>Progress circle consists of the following elements:</dt>
+                  <dd>
+                    <dl class="infoList_1_1">
+                      <dt>1. Circle (<span class="col_ora">Mandatory</span>)</dt>
+                      <dt>1. Text (<span class="col_blue">Optional</span>, default = none)</dt>
+                      <dd>
+                        <ul class="indentList">
+                          <li>- Display text information as progress value</li>
+                        </ul>
+                      </dd>
+                    </dl>
+                    <ul class="listStyle02">
+                      <li><img src="../../../img/components/indicator/progresscircle/1.png" alt=""></li>
+                    </ul>
+                  </dd>
+                </dl>
+              </dd>
+              <dt>Property Table</dt>
+              <dd>
+                <table class="propertyTbl">
+                  <colgroup>
+                    <col width="25%">
+                    <col width="15%">
+                    <col>
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <th class="propertyTblTit" scope="col" colspan="3">C_PROGRESSCIRCLE</th>
+                    </tr>
+                    <tr>
+                      <th scope="col">
+                        PROPERTY
+                      </th>
+                      <th scope="col">
+                        USE
+                      </th>
+                      <th scope="col">
+                        VALUE
+                      </th>
+                    </tr>
+                    <tr>
+                      <td>Circle icon</td>
+                      <td><span class="textO">◎</span></td>
+                      <td>-</td>
+                    </tr>
+                    <tr>
+                      <td>Text</td>
+                      <td></td>
+                      <td>&lt;&lt;value&gt;&gt;</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </dd>
+              <dt>Visual</dt>
+              <dd>
+                <dl class="infoList_1 type2 type5">
+                  <dt>GUI</dt>
+                  <dd>
+                    <dl class="visualTagList">
+                      <dt>C_PROGRESSCIRCLE_WHITESMALL</dt>
+                      <dd><img src="../../../img/components/indicator/progresscircle/13.png" alt=""></dd>
+                      <dt>C_PROGRESSCIRCLE_WHITEMEDIUM</dt>
+                      <dd><img src="../../../img/components/indicator/progresscircle/14.png" alt=""></dd>
+                      <dt>C_PROGRESSCIRCLE_WHITELARGE</dt>
+                      <dd><img src="../../../img/components/indicator/progresscircle/15.png" alt=""></dd>
+                    </dl>
+                  </dd>
+                  <dt>Motion</dt>
+                  <dd>
+                    <dl class="visualTagList">
+                      <dt>C_PROGRESSCIRCLE_SMALL</dt>
+                      <dd><img src="../../../img/components/indicator/progresscircle/16.png" alt=""></dd>
+                      <dt>C_PROGRESSCIRCLE_MEDIUM</dt>
+                      <dd><img src="../../../img/components/indicator/progresscircle/17.png" alt=""></dd>
+                      <dt>C_PROGRESSCIRCLE_LARGE</dt>
+                      <dd><img src="../../../img/components/indicator/progresscircle/18.png" alt=""></dd>
+                    </dl>
+                  </dd>
+                </dl>
+                <div class="visualImgTxt">
+                  <img src="../../../img/components/indicator/progresscircle/19.png" alt="">
+                </div>
+                <div class="btn_box">
+                  <a href="../../../resources/png/component/c_progresscircle.zip" class="btn_download"><span>Download PNG Resources</span></a>
+                </div>
+              </dd>
+            </dl>
+          </dd>
+        </dl>
+        <dl class="tagDl">
+          <dt>*Tags :</dt>
+          <dd>
+            <span class="tagItem" linkTag="dep6_12_3">Progress Bar</span>,
+            <span class="tagItem" linkTag="dep6_12_1">Loading</span>
+          </dd>
+        </dl>
+      </div>
+    </div>
+    <!-- //.conBottom -->
+  </div>
+  <!--[if lt IE 9]>
+    <script src="../../../javascript/placeholders.min.js"></script>
+  <![endif]-->
+  <div class="topIcon"></div>
+</body>
+
+</html>

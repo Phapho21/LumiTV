@@ -1,0 +1,649 @@
+* {
+	box-sizing: border-box;
+}
+body {
+    margin: 0px;
+    padding: 0px;
+}
+#mainBody{
+	overflow:hidden;
+}
+a {
+	text-decoration: none;
+	color: black;
+}
+
+@font-face {
+    font-family: 'SamsungOneGui-400';
+    src: url("../resources/font/SamsungOneGui/SamsungOneUI-400.woff") format('woff'),
+	url("../resources/font/SamsungOneGui/SamsungOneUI-400.woff") format('woff');
+}
+@font-face {
+    font-family: 'SamsungOneGui700';
+    src: url("../resources/font/SamsungOneGui/SamsungOneUI-700.woff") format('woff'), 
+	url("../resources/font/SamsungOneGui/SamsungOneUI-700.woff") format('woff');
+}
+@font-face {
+    font-family: 'SamsungOneGui-700';
+    font-style:  normal;
+    src: url("../resources/font/SamsungOneGui/SamsungOneUI-700.woff"), url("../resources/font/SamsungOneGui/SamsungOneUI-700.woff");
+}
+@font-face {
+    font-family: 'SamsungOneGui400';
+    font-style:  normal;
+    src: url("../resources/font/SamsungOneGui/SamsungOneUI-400.woff"), url("../resources/font/SamsungOneGui/SamsungOneUI-400.woff");
+}
+@font-face {
+    font-family: 'SamsungOneGui-400';
+    font-style:  normal;
+    src: url("../resources/font/SamsungOneGui/SamsungOneUI-400.woff"), url("../resources/font/SamsungOneGui/SamsungOneUI-400.woff");
+}
+
+.contianer {
+    width: 100%;
+    margin: 0px auto;
+    position: relative;
+}
+header {
+    width: 100%;
+    height: 84px;
+    background-color: #00bcd5;
+    position: fixed;
+    margin: 0px auto;
+    z-index: 2;
+    
+    background-image: url("../resources/images/logo.jpg");
+    background-repeat: no-repeat;
+    background-position:  center center;
+}
+header .topSearch {
+    position: absolute;
+    top: 23px;
+    right: 26px;
+    width: 288px;
+    height: 38px;
+    background-color: green;
+    background: url("../resources/images/searchbg.png");
+    color: #a9e5f0;
+    line-height: 38px;
+    padding-left: 18px;
+    font-family: SamsungOneGui-400;
+    font-size: 16px;
+}
+
+header .topIcon {
+    position: absolute;
+    top: 206px;
+    right: 2px;
+    width: 46px;
+    height: 32px;
+    background-color: green;
+    background: url("../resources/images/btn_gototop.png");
+	cursor: pointer;
+}
+
+nav {
+    width: 240px;
+    height: calc(100%);
+    background-color: #f6f6f6;
+    border-right: 1px solid #d8e2e3;
+    position: fixed;
+    margin: 84px auto 0px auto;
+    z-index: 1;
+}
+
+nav ul {
+    list-style: none;
+    margin: 26px 0px 0px 0px;
+    padding: 0;
+}
+nav ul li {
+    color: black;
+    font-family: SamsungOneGui-400;
+    font-size: 16px;
+    padding: 12px 0px 12px 25px;
+    text-transform: uppercase;
+	overflow:hidden;
+}
+nav ul li span{
+	z-index:10;
+}
+nav ul li.focus {
+	font-family: SamsungOneGui-700;
+}
+
+nav ul li ul {
+    list-style: none;
+    margin: 11px 0px 0px 0px;
+    padding: 0;
+}
+nav ul li ul li {
+    color: black;
+    font-family: SamsungOneGui-400;
+    font-size: 16px;
+    padding: 8px 0px 8px 14px;
+    text-transform: capitalize;
+}
+nav ul li ul li.focus {
+	font-family: SamsungOneGui-700;
+	color: #f7364d;
+}
+.subMenuCont{
+	overflow:hidden;
+	height:auto;
+	width:inherit;
+}
+
+section.rightPanel {
+    width: calc(100% - 240px);
+    position: relative;
+    left: 240px;
+    top: 84px;
+}
+
+section .heading {
+    height: 107px;
+	border-bottom: 1px solid #e0e0e0;
+	position: fixed;
+	
+	top:0px;
+}
+section .heading .title {
+    color: #f87885;
+    font-family: SamsungOneGui-400;
+    font-size: 50px;
+	line-height: 107px;
+    padding: 0px 0px 0px 60px;
+    text-transform: capitalize;
+}
+
+section .heading .menu {
+	position: absolute;
+	width: 720px;
+	height: 50px;
+	right: 0px;
+	bottom: 0px;
+}
+section .heading .menu ul {
+	list-style: none;
+	display: inline;
+	margin: 0;
+	padding: 0;
+	float: right;
+}
+section .heading .menu ul li {
+	display: inline;
+	height: 50px;
+	line-height: 50px;
+	text-align: right;
+	margin: 0px 50px 0px 0px;
+    color: black;
+    font-family: SamsungOneGui-400;
+    font-size: 20px;
+}
+section .heading .menu ul li::after {
+	content: "|";
+	position: relative;
+	left: 25px;
+    color: black;
+    font-family: SamsungOneGui-400;
+    font-size: 20px;
+}
+
+section.subContainer article.para {
+	margin: 60px 60px 60px 58px;
+}
+section.subContainer article.para .title {
+	height: 48px;
+	font-size: 20px;
+    font-family: SamsungOneGui-400;
+    color: #8b0616;
+}
+section.subContainer article.para .content-head {
+	font-size: 16px;
+    font-family: SamsungOneGui-400;
+    color: black;
+	fo nt-weight: bold;
+}
+section.subContainer article.para .content {
+	font-size: 16px;
+    font-family: SamsungOneGui-400;
+    color: black;
+}
+
+section.subContainer article.para .grid {
+	margin: 50px 0px 50px 0px;
+	clear: both;
+}
+section.subContainer article.para .grid-left {
+	width: 50%;
+	float: left;
+}
+section.subContainer article.para .grid-right {
+	width: 50%;
+	float: right;
+}
+
+section.subContainer article.para .grid-right  .secLeftCont{
+	height:200px;
+		width:272;
+		margin-right:30px;
+		margin-left:15px;
+		float:left;
+}
+
+section.subContainer article.para .grid-right  .secRightCont{
+		height:200px;
+		width:272;
+		float:left;
+}
+section.subContainer article.para .grid-right  .sections.left{
+	width: 272px;
+	float:left;
+	border:1px solid #7E7E7E;
+	height:150px;
+	margin:0px;
+}
+
+section.subContainer article.para .grid-right  .sections.right{
+	width: 272px;
+	float:left;
+	border:1px solid #7E7E7E;
+	height:150px;
+}
+
+
+section.subContainer article.para .grid-right  .sections .btn_right{
+	height:56px;
+	background:#8296A1;
+	width:240px;
+	margin:47px auto;
+	border:4px solid transparent;
+	border-bottom:4px solid #99A8AF;	
+	box-sizing: border-box;
+}
+section.subContainer article.para .grid-right  .sections .btn_right:hover{
+	border: 4px solid #44B8E1;
+}
+/*section.subContainer article.para .grid-right  .sections.left:after{
+	content: "DO"; 
+	position:absolute;
+	margin: 10px 0 0 125px;
+	width:auto;
+	font-size:15px;
+	font-family: SamsungOneGui-400;
+}
+
+section.subContainer article.para .grid-right  .sections.right:after{
+	content: "DO[Korean text]"; 
+	position:absolute;
+	margin: 10px 0 0 100px;
+	width:auto;
+	font-family: SamsungOneGui-400;
+	font-size:15px;
+}
+*/
+section.subContainer article.para .grid-right  .sections .btn_right .btn_circle{
+	position:relative;
+	left:15px;
+	top:12px;
+	width:25px;
+	height:25px;
+	background: #D9E0EA;
+	border-radius:50px;
+}
+
+section.subContainer article.para .grid-right  .sections .btn_right .btn_text{
+	position:relative;
+	width:50px;
+	left:50px;
+	bottom:12px;
+	color:White;
+	font-size:22px;	
+	font-family: SamsungOneGui-400;
+}
+section.subContainer article.para .grid-right  .sections .btn_right .down{
+	position:relative;
+	left:200px;
+	bottom:37px;
+}
+section.subContainer article.para .grid-right  .sections .btn_right:hover .gloss{
+        animation: gloss_bg 4s linear infinite reverse;
+		opacity:1;
+}
+
+@keyframes gloss_bg {
+            0%{transform: rotate(0deg);}
+            100%{transform: rotate(360deg);}
+}
+
+section.subContainer article.para .grid-right  .sections .btn_right .btn_text.expand{
+	display:none;
+}
+
+section.subContainer article.para .grid-right  .sections-expand{
+	width: auto;
+	float:left;
+	border:1px solid #7E7E7E;
+	height:88px;
+	margin:10px;
+	margin-left:15px;
+}
+
+section.subContainer article.para .grid-right  .sections-expand .btn_right{
+	height:56px;
+	background:#8296A1;
+	width:53px;
+	margin:15px;
+	border: 4px solid transparent;
+	border-bottom: 4px solid #99A8AF;	
+	box-sizing: border-box;
+	transition: width 0.5s;
+}
+
+section.subContainer article.para .grid-right  .sections-expand .btn_right:hover{
+	height:56px;
+	background:#8296A1;
+	width:250px;
+	margin:15px;
+	border:4px solid #44B8E1;	
+}
+section.subContainer article.para .grid-right  .sections-expand .btn_right .btn_text.expand{
+	display:none;
+}
+section.subContainer article.para .grid-right  .sections-expand .btn_right:hover .btn_text.expand{
+	display:block;
+}
+section.subContainer article.para .grid-right  .sections-expand .btn_right .btn_circle{
+	position:relative;
+	left:11px;
+	top:12px;
+	width:25px;
+	height:25px;
+	background: #D9E0EA;
+	border-radius:50px;
+}
+section.subContainer article.para .grid-right  .sections-expand .btn_right .btn_text{
+	position:relative;
+	width:50%;
+	left:50px;
+	bottom:12px;
+	color:White;
+	font-size:22px;
+	font-family: SamsungOneGui-400;	
+}
+section.subContainer article.para .grid-right  .sections-icon{
+	width: 255px;
+	float:left;
+	border:1px solid #7E7E7E;
+	height:150px;
+	margin:10px;
+	margin-left:0px;
+}
+section.subContainer article.para .grid-right  .sections-icon.right{
+	/*margin:10px 0px 0px 30px;*/
+}
+section.subContainer article.para .grid-right  .sections-icon .btn_right{
+	height:56px;
+	background:#8296A1;
+	width:55px;
+	margin:10px;
+	float:left;	
+	margin:25px 6px 0px 19px;
+	border: 4px solid transparent;
+	border-bottom:4px solid #99A8AF;	
+	box-sizing: border-box;	
+}
+section.subContainer article.para .grid-right  .sections-icon .btn_right:hover{
+	border: 4px solid #44B8E1;
+}
+section.subContainer article.para .grid-right  .sections-icon .btn_sqre {
+	height: 100%;
+	width: 100%;
+}
+/*section.subContainer article.para .grid-right  .sections-icon .btn_sqre.back{
+	background-image: url("../resources/images/back.png");
+	background-repeat:no-repeat;
+	background-position: center center;  
+}
+section.subContainer article.para .grid-right  .sections-icon .btn_sqre.play{
+	background-image: url("../resources/images/play.png");
+	background-repeat:no-repeat;
+	background-position: center; 
+}
+section.subContainer article.para .grid-right  .sections-icon .btn_sqre.frwd{
+	background-image: url("../resources/images/forward.png");
+	background-repeat:no-repeat;
+	background-position: center center; 
+}
+section.subContainer article.para .grid-right  .sections-icon .btn_right.back:hover:after {
+	content:"Backward";
+	position:relative;
+	top:25px;
+	left:-10px;		
+	font-size:15px;
+	border:2px solid #839299;
+	padding:10px 25px;
+	color:#839299;
+	font-family: SamsungOneGui-400;
+}
+section.subContainer article.para .grid-right  .sections-icon .btn_right.play:hover:after{
+	content:"Play";
+	position:relative;
+	top:25px;
+	left:-10px;	
+	font-size:15px;
+	border:2px solid #839299;
+	padding:10px 25px;
+	color:#839299;
+	font-family: SamsungOneGui-400;
+}
+section.subContainer article.para .grid-right  .sections-icon .btn_right.frwd:hover:after{
+	content:"Forward";
+	position:relative;
+	top:25px;
+	left:-40px;	
+	font-size:15px;
+	border:2px solid #839299;
+	padding:10px 25px;
+	color:#839299;
+	font-family: SamsungOneGui-400;
+}
+section.subContainer article.para .grid-right  .sections-icon .btn_sqre.option{
+	background-image: url("../resources/images/options.png");
+	background-repeat:no-repeat;
+	background-position:-6px center; 
+}
+section.subContainer article.para .grid-right  .sections-icon .btn_right.right{
+	margin:25px 95px 25px 95px;
+}
+section.subContainer article.para .grid-right  .sections-icon.right:hover:after{
+	content: "Options";
+	margin:0px 0px 30px 70px;
+	font-size:15px;
+	border:2px solid #839299;
+	padding:10px 25px;
+	color:#839299;
+	font-family: SamsungOneGui-400;
+}*/
+section.subContainer article.para .grid-right .text-do{
+	position:relative;
+	height:20px;
+	width:200px;
+	left: 120px;
+	font-family: SamsungOneGui-400;
+	font-size:15px;
+}
+section.subContainer article.para .grid-right .text-kor{
+    position: relative;
+    top: 110px;
+    height: 20px;
+    width: 200px;
+    left: 75px;
+    font-family: SamsungOneGui-400;
+    font-size: 15px;
+}
+section.subContainer article.para .grid-right .text-do2 {
+    position: relative;
+    top: -30px;
+    height: 20px;
+    width: 200px;
+    left: 120px;
+    font-family: SamsungOneGui-400;
+    font-size: 15px;
+}
+
+section.subContainer article.para .grid-right .text-kor2 {
+    position: relative;
+    top: -30px;
+    height: 20px;
+    width: 200px;
+    left: 80px;
+    font-family: SamsungOneGui-400;
+    font-size: 15px;
+}
+
+section.subContainer article.para .grid-right  .sections-button{
+	width: 272px;
+	float:left;
+	height:150px;
+	margin:10px;
+}
+/*section.subContainer article.para .grid-right  .sections-button .btn_right{
+	height:71px;
+	background:#8296A1;
+	width:245px;
+	margin:15px;
+	border:4px solid transparent;
+}
+section.subContainer article.para .grid-right  .sections-button .btn_right:hover{
+	border:4px solid #44B8E1;
+}
+section.subContainer article.para .grid-right  .sections-button .btn_right .btn_circle{
+	position:relative;
+	left:20px;
+	top:18px;
+	width:30px;
+	height:30px;
+	background: #D9E0EA;
+	border-radius:50px;
+}
+section.subContainer article.para .grid-right  .sections-button .btn_right .btn_text{
+	position:relative;
+	width:50%;
+	left:65px;
+	bottom:13px;
+	color:White;
+	font-size:28px;	
+	font-family: SamsungOneGui-400;
+}
+section.subContainer article.para .grid-right  .sections-button .btn_right.mid{
+	height:105px;
+	background:#8296A1;
+	width:135px;
+	margin:15px;
+}
+section.subContainer article.para .grid-right  .sections-button.mid .btn_right .btn_circle.mid{	
+	left:50px;
+	top:18px;
+}
+section.subContainer article.para .grid-right  .sections-button .btn_right .btn_text.mid{
+	left:42px;
+	top:30px;
+}*/
+
+section.subContainer article.para .grid-right  .sections-button .btn_right .down{
+	position:relative;
+	left:210px;
+	bottom:40px;
+}
+
+section.subContainer article.para2 {
+	margin: 60px 60px 60px 0px;
+}
+iframe{
+	width:100%;
+
+}
+
+@media (min-width: 1500px) {
+   .subContainer article{
+        width: 1250px;
+    }
+	.subContainer{
+		width:100%;
+	}
+	.heading{
+	    width: 100%;
+	}
+    header {
+        width: 100%;
+    }
+}
+@media (min-width: 960px) and  (max-width: 1500px){
+  .subContainer article{
+        width: calc(100% - 250px);
+    }
+	
+	.subContainer{
+		width:100%;
+	}
+	.heading{
+	    width: 100%;
+	}
+    header {
+        width: 100%;
+    }
+}
+
+@media (max-width: 960px) {
+    .subContainer article{
+        width: 960px;
+    }
+	
+	.subContainer{
+		width:960;
+	}
+		.heading{
+	    width: 960px;
+	}
+    header {
+        width: 960px;
+    }
+}
+
+@media (max-width: 1210px){
+	 .subContainer article{
+        width: 960px;
+    }
+	
+}
+@media (max-width: 1400px){
+	 .subContainer article.para2{
+        width: 1150px;
+    }
+	
+}
+#introContent {
+		margin-top:107px;
+	overflow:auto;
+
+	height:calc(100% - 107px);
+}
+#buttonContent {
+		margin-top:107px;
+	overflow:auto;
+
+	height:calc(100% - 107px);
+}
+li.focus #submenu{
+	margin-top:10px;
+	z-index:1;
+	display:block;
+}
+#submenu {
+	d isplay: none;
+	z-index:-10;
+	margin-top:-750px;
+    transition: margin-top 1s;
+}

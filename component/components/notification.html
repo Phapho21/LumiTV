@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=2.0,user-scalable=yes">
+  <title>TV Principle</title>
+  <link rel="stylesheet" href="../../css/basic.css">
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="../../css/flexslider.css">
+  <script src="../../javascript/jquery-1.8.3.min.js"></script>
+  <script src="../../javascript/jquery.flexslider-min.js"></script>
+  <script>
+  var jqv = jQuery.noConflict();
+  window.parent.menuReCall("dep6_9");
+  </script>
+  <script src="../../javascript/sub_jquery.js"></script>
+  <script src="../../javascript/placeholders.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="../../javascript/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+  <!-- #notification -->
+  <div id="notification" class="showCon tabActive displayBlock">
+    <div class="conTop">
+      <h2>NOTIFICATION</h2>
+      <div class="tabBoxWrap">
+        <ul class="tabBox clfix">
+          <li><a href="">Definition</a></li>
+          <li><a href="">Usage</a></li>
+          <!-- <li><a href="">Interaction</a></li> -->
+          <li><a href="">Specs</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- //.conTop -->
+    <div class="conBottom">
+      <div class="conBottomInner">
+        <div class="subConInTit">
+          C_NOTIFICATION
+        </div>
+        <dl class="infoList tabList type2">
+          <dt>Definition</dt>
+          <dd>
+            Use a notification to show users event alerts or the system status that are not related to the current task.
+            <br> A notification should take up the minimal amount of space so as not to interrupt the user experience.
+          </dd>
+          <dt>Usage</dt>
+          <dd searchWord="C_NOTIFICATION">
+            <ul class="indentList">
+              <li>- Use this, like program reminders, to let users know the results of the previous action or push alerts from the connected devices.</li>
+              <li>- Display event notifications at the top of the screen.</li>
+            </ul>
+          </dd>
+          <!-- <dt>Interaction</dt>
+          <dd>
+            <img src="../../img/tbd02.png" alt="">
+          </dd> -->
+          <dt>Specs</dt>
+          <dd>
+            <dl class="infoList_1">
+              <dt>Properties</dt>
+              <dd>
+                <dl class="infoList_1 type2 type5">
+                  <dt>Notification consists of the following elements:</dt>
+                  <dd>
+                    <dl class="infoList_1_1">
+                      <dt>1. Icon/Image (<span class="col_ora">Mandatory</span>)</dt>
+                      <dd>
+                        <ul class="indentList">
+                          <li>- display only 1 icon or image. NOT display both icon and imavbge at the same time</li>
+                        </ul>
+                      </dd>
+                      <dt>2. Main Text (<span class="col_ora">Mandatory</span>)</dt>
+                      <dd>
+                        <ul class="indentList">
+                          <li>- the message that users should be informed of</li>
+                        </ul>
+                      </dd>
+                      <dt>3. Sub text (<span class="col_blue">Optional</span>)</dt>
+                      <dd>
+                        <ul class="indentList">
+                          <li>- the source of the notification : sender, device, app, CH information, etc.</li>
+                          <li>- clip any overflowed text and replace it with an ellipsis (...) without auto scrolling</li>
+                        </ul>
+                      </dd>
+                      <dt>4. Button (<span class="col_blue">Optional</span>)</dt>
+                      <dd>
+                        <ul class="indentList">
+                          <li>- Maximum number of buttons : 3</li>
+                          <li>- Place the recommended button first and put the initial focus on it</li>
+                          <li>- **refer to <a href="javascript:parent.parentLocationChg('components/button/basicButton')" class="col_green bbg">Basic Button</a> for details</li>
+                        </ul>
+                      </dd>
+                      <dt>5. Progress bar (<span class="col_blue">Optional</span>)</dt>
+                      <dd>
+                        <ul class="indentList">
+                          <li>- Display a progress bar to show the status of an ongoing task (**refer to <a href="javascript:parent.parentLocationChg('components/progress/progressBar')" class="col_green bbg" >Progress Bar</a> for details)</li>
+                        </ul>
+                      </dd>
+                    </dl>
+                    <ul class="listStyle02">
+                      <li><img src="../../img/components/notification/1.png" alt=""></li>
+                    </ul>
+                  </dd>
+                </dl>
+              </dd>
+              <dt>Property Table</dt>
+              <dd>
+                <table class="propertyTbl">
+                  <colgroup>
+                    <col width="25%">
+                    <col width="15%">
+                    <col>
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <th class="propertyTblTit" scope="col" colspan="3">C_NOTIFICATION</th>
+                    </tr>
+                    <tr>
+                      <th scope="col">
+                        PROPERTY
+                      </th>
+                      <th scope="col">
+                        USE
+                      </th>
+                      <th scope="col">
+                        VALUE
+                      </th>
+                    </tr>
+                    <tr>
+                      <td>Icon / Image</td>
+                      <td><span class="textO">◎</span></td>
+                      <td>&lt;&lt;info of icon/image&gt;&gt;</td>
+                    </tr>
+                    <tr>
+                      <td>Main Text</td>
+                      <td><span class="textO">◎</span></td>
+                      <td>&lt;&lt;info of main text&gt;&gt;</td>
+                    </tr>
+                    <tr>
+                      <td>Sub Text</td>
+                      <td></td>
+                      <td>&lt;&lt;info of sub text&gt;&gt;</td>
+                    </tr>
+                    <tr>
+                      <td>Button</td>
+                      <td></td>
+                      <td>&lt;&lt;number of buttons&gt;&gt;, <a href="javascript:parent.parentLocationChg('components/button/basicButton')">C_BUTTONBASIC</a></td>
+                    </tr>
+                    <tr>
+                      <td>Progress bar</td>
+                      <td></td>
+                      <td><a href="javascript:parent.parentLocationChg('components/progress/progressBar')">C_PROGRESSBAR</a></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </dd>
+              <dt>Visual</dt>
+              <dd>
+                <dl class="infoList_1 type2 type5">
+                      <dt>GUI</dt>
+                      <dd>
+                        <dl class="visualTagList">
+                          <dt>C_NOTIFICATION</dt>
+                          <dd><img src="../../img/components/notification/5.png" alt=""></dd>
+                          <dd><img src="../../img/components/notification/6.png" alt=""></dd>
+                          <dd><img src="../../img/components/notification/7.png" alt=""></dd>
+                          <dd><img src="../../img/components/notification/8.png" alt=""></dd>
+                        </dl>
+                      </dd>
+                    </dl>
+                    <div class="visualImgTxt"><img src="../../img/components/notification/9.png" alt="">
+                      <div class="tempLinkBox">
+                    LINK : <a href="javascript:parent.parentLocationChg('components/progress/progressBar')">C_PROGRESSBAR</a>, <a href="javascript:parent.parentLocationChg('components/button/basicButton')">C_BUTTONBASIC</a>
+                  </div>
+                    </div>
+                    <div class="visualImgTxt"><img src="../../img/components/notification/10.png" alt=""></div>
+                    <div class="btn_box">
+                      <a href="../../resources/png/pattern/c_notification.zip" class="btn_download"><span>Download PNG Resources</span></a>
+                    </div>
+              </dd>
+            </dl>
+          </dd>
+        </dl>
+        <dl class="tagDl">
+          <dt>*Tags :</dt>
+          <dd>
+            <span class="tagItem" linkTag="dep6_2_1">Basic Button</span>,
+            <span class="tagItem" linkTag="dep6_12_3">Progress Bar</span>,
+            <span class="tagItem" linkTag="dep9_4">Pairing</span>
+          </dd>
+        </dl>
+      </div>
+    </div>
+    <!-- //.conBottom -->
+  </div>
+  <!-- //#notification.showCon -->
+  <!--[if lt IE 9]>
+    <script src="../../javascript/placeholders.min.js"></script>
+  <![endif]-->
+  <div class="topIcon"></div>
+</body>
+
+</html>

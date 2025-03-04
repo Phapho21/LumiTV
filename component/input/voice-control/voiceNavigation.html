@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=2.0,user-scalable=yes">
+  <title>TV Principle</title>
+  <link rel="stylesheet" href="../../../css/basic.css">
+  <link rel="stylesheet" href="../../../css/style.css">
+  <link rel="stylesheet" href="../../../css/flexslider.css">
+  <script src="../../../javascript/jquery-1.8.3.min.js"></script>
+  <script src="../../../javascript/jquery.flexslider-min.js"></script>
+  <script>
+  var jqv = jQuery.noConflict();
+  window.parent.menuReCall("dep3_2_1");
+  </script>
+  <script src="../../../javascript/sub_jquery.js"></script>
+  <script src="../../../javascript/placeholders.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="../../../javascript/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+  <div id="voiceNavigation" class="showCon">
+    <div class="conTop">
+      <h2>Voice Navigation</h2>
+      <div class="tabBoxWrap">
+        <ul class="tabBox clfix">
+          <li><a href="">Definition</a></li>
+          <li><a href="">Usage</a></li>
+          <li><a href="">Interaction</a></li>
+          <li><a href="">Specs</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- //.conTop -->
+    <div class="conBottom">
+      <div class="conBottomInner">
+        <!-- <div class="subConInTit">
+                    C_VOICE_NAVIGATION
+                  </div> -->
+        <dl class="infoList tabList type2 noFunction">
+          <dt>Definition</dt>
+          <dd>
+            <ul class="indentList type2">
+              <li>- This feature is for moving focus or selecting item to execute on the UI which is actually seen on the screen by saying voice navigation command.</li>
+              <li>- For moving focus or selecting Nth item, it is carried out on the item list where the current focus is located.</li>
+              <li>- For erroneous or incapable cases, relative error response message will be displayed on the voice chrome.</li>
+            </ul>
+            <dl class="infoList_1">
+              <dt>
+                1. Table of Voice Key for Global Registered Command
+              </dt>
+              <dd>
+                <img src="../../../img/input/voice/navigation/1.png" alt="">
+              </dd>
+              <dt>2. Table of Voice Key for System Registered Command</dt>
+              <dd><img src="../../../img/input/voice/navigation/2.png" alt=""></dd>
+            </dl>
+          </dd>
+          <dt>Usage</dt>
+          <dd>
+            When the focus is active on the UI, say the command while pressing the [VOICE] button
+          </dd>
+          <dt>Interaction</dt>
+          <dd>
+            <dl class="infoList_1">
+              <dt>1. Global Registered Command</dt>
+              <dd>
+                <dl class="infoList_1 type2">
+                  <dt>1.1. Basic Move</dt>
+                  <dd><img src="../../../img/input/voice/navigation/3.png" alt=""></dd>
+                  <dt>1.2. Move to First / Last Item</dt>
+                  <dd>
+                    <p><img src="../../../img/input/voice/navigation/4.png" alt=""></p>
+                    <dl class="infoList_1">
+                      <dt>Motion Feedback</dt>
+                      <dd>As for the moving motion, deprive focus from the current item and gain focus on the target item. It doesn’t have to show the process of moving between them.</dd>
+                      <dt>Horizontal list</dt>
+                      <dd>
+                        <img src="../../../img/input/voice/navigation/5.png" alt="">
+                      </dd>
+                      <dt>Vertical list</dt>
+                      <dd>
+                        <img src="../../../img/input/voice/navigation/6.png" alt="">
+                      </dd>
+                    </dl>
+                  </dd>
+                  <dt>1.3. Select</dt>
+                  <dd>
+                    <p><img src="../../../img/input/voice/navigation/7.png" alt=""></p>
+                    <dl class="infoList_1">
+                      <dt>Motion Feedback</dt>
+                      <dd>As for the moving motion, deprive focus from the current item and gain focus on the target item. It doesn’t have to show the process of moving between them.</dd>
+                      <dt>Define of &lt;&lt;Nth&gt;&gt; item</dt>
+                      <dd>
+                        <img src="../../../img/input/voice/navigation/8.png" alt="">
+                      </dd>
+                    </dl>
+                  </dd>
+                  <dt>1.4. Exit</dt>
+                  <dd>
+                    <p><img src="../../../img/input/voice/navigation/9.png" alt=""></p>
+                  </dd>
+                  <dt>1.5. Page Movement</dt>
+                  <dd>
+                    <p><img src="../../../img/input/voice/navigation/10.png" alt=""></p>
+                    <p>
+                      Vertical list(1-Direction) – Move vertically on the list
+                      <br> Horizontal list(1-Direction) – Move horizontally on the list
+                      <br> 2-directional Grid-type – Move vertically on the list
+                    </p>
+                    <p>
+                      - For 1-dimensional UI, there is either vertical list or horizontal list only. So the paging direction can be a single direction among left, right, up or down.
+                      <br> - For 2-dimensional UI and both side can be movable for paging, the paging direction is valid for vertical list only.
+                    </p>
+                    <dl class="infoList_1">
+                      <dt>Motion Feedback</dt>
+                      <dd>Refer to the Motion guide for Voice Control </dd>
+                      <dt>Horizontal list</dt>
+                      <dd>
+                        <img src="../../../img/input/voice/navigation/11.png" alt="">
+                      </dd>
+                      <dt>Vertical list</dt>
+                      <dd>
+                        <img src="../../../img/input/voice/navigation/12.png" alt="">
+                      </dd>
+                      <dt>Grid</dt>
+                      <dd>
+                        <img src="../../../img/input/voice/navigation/13.png" alt="">
+                      </dd>
+                      <dt>Layout 02</dt>
+                      <dd>
+                        <img src="../../../img/input/voice/navigation/14.png" alt="">
+                      </dd>
+                      <dt>Layout 03</dt>
+                      <dd>
+                        <img src="../../../img/input/voice/navigation/15.png" alt="">
+                      </dd>
+                      <dt>Tab UI ; Edent Home</dt>
+                      <dd>
+                        <ul class="indentList">
+                          <li>
+                            - Scroll to the next page within the same depth tile list where the focus is currently located.</li>
+                          <li>- Support alias command.</li>
+                          <li>- For example, these kinds of command will lead to the next page of current contents area ;
+                            <br> "Show me more apps (TBD) “, "Show me more things to watch (TBD) “,
+                            <br> “Show me more contents (TBD)”.
+                          </li>
+                        </ul>
+                        <p><img src="../../../img/input/voice/navigation/16.png" alt=""></p>
+                      </dd>
+                      <dt>Tab UI ; Setting Menu</dt>
+                      <dd><img src="../../../img/input/voice/navigation/17.png" alt=""></dd>
+                      <dt>Tab UI ; My content</dt>
+                      <dd><img src="../../../img/input/voice/navigation/18.png" alt=""></dd>
+                    </dl>
+                  </dd>
+                </dl>
+              </dd>
+              <dt>2. System Registered Command</dt>
+              <dd>
+                <dl class="infoList_1 type2">
+                  <dt>2.1. Previous/Next</dt>
+                  <dd>
+                    <p><img src="../../../img/input/voice/navigation/19.png" alt=""></p>
+                    <dl class="infoList_1">
+                      <dt>Define of Previous/Next in Horizontal List</dt>
+                      <dd><img src="../../../img/input/voice/navigation/20.png" alt=""></dd>
+                      <dt>Define of Previous/Next in Vertical List</dt>
+                      <dd>
+                        <img src="../../../img/input/voice/navigation/21.png" alt="">
+                      </dd>
+                      <dt>Define of Previous/Next in 2-Dimensional List : The focus will be moved to the right for “Next”, left for “Previous”</dt>
+                      <dd>
+                        <img src="../../../img/input/voice/navigation/22.png" alt="">
+                      </dd>
+                      <dt>When it reach the first / last item on the list</dt>
+                      <dd>
+                        It follows specification of the movement of remote control.
+                      </dd>
+                    </dl>
+                  </dd>
+                  <dt>2.2. Previous Page/Next Page</dt>
+                  <dd>
+                    <p><img src="../../../img/input/voice/navigation/23.png" alt=""></p>
+                    <p>
+                      Vertical list(1-Direction) – Move vertically on the list
+                      <br> Horizontal list(1-Direction) – Move horizontally on the list
+                      <br> 2-directional Grid-type – Move vertically on the list
+                    </p>
+                    <p>
+                      - For 1-dimensional UI, there is either vertical list or horizontal list only. So the paging direction can be a single direction among left, right, up or down.
+                      <br> - For 2-dimensional UI and both side can be movable for paging, the paging direction is valid for vertical list only.
+                    </p>
+                    <dl class="infoList_1">
+                      <dt>Motion Feedback</dt>
+                      <dd>Refer to the Motion guide for Voice Control </dd>
+                      <dt>Horizontal list</dt>
+                      <dd>
+                        <img src="../../../img/input/voice/navigation/24.png" alt="">
+                      </dd>
+                      <dt>Vertical list</dt>
+                      <dd>
+                        <img src="../../../img/input/voice/navigation/25.png" alt="">
+                      </dd>
+                      <dt>Grid</dt>
+                      <dd>
+                        <img src="../../../img/input/voice/navigation/26.png" alt="">
+                      </dd>
+                      <dt>Layout 02</dt>
+                      <dd>
+                        <img src="../../../img/input/voice/navigation/27.png" alt="">
+                      </dd>
+                      <dt>Layout 03</dt>
+                      <dd>
+                        <img src="../../../img/input/voice/navigation/28.png" alt="">
+                      </dd>
+                      <dt>Tab UI ; Edent Home</dt>
+                      <dd>
+                        <ul class="indentList">
+                          <li>
+                            - Scroll to the next page within the same depth tile list where the focus is currently located.</li>
+                          <li>- Support alias command.</li>
+                          <li>- For example, these kinds of command will lead to the next page of current contents area ;
+                            <br> "Show me more apps (TBD) “, "Show me more things to watch (TBD) “,
+                            <br> “Show me more contents (TBD)”.
+                          </li>
+                        </ul>
+                        <p><img src="../../../img/input/voice/navigation/29.png" alt=""></p>
+                      </dd>
+                      <dt>Tab UI ; Setting Menu</dt>
+                      <dd><img src="../../../img/input/voice/navigation/30.png" alt=""></dd>
+                    </dl>
+                  </dd>
+                  <dt>2.3. Move Multiple Steps</dt>
+                  <dd>
+                    <p><img src="../../../img/input/voice/navigation/31.png" alt=""></p>
+                    <dl class="infoList_1">
+                      <dt>Motion Feedback</dt>
+                      <dd>Refer to the Motion guide for Voice Control</dd>
+                      <dt>Horizontal List: The focus will be moved to the left or right by &lt;&lt;N&gt;&gt; steps in the horizontal direction.</dt>
+                      <dd>
+                        <img src="../../../img/input/voice/navigation/32.png" alt="">
+                      </dd>
+                      <dt>Vertical List: The focus will be moved to the upside or downside by &lt;&lt;N&gt;&gt; steps in the vertical direction. </dt>
+                      <dd>
+                        <img src="../../../img/input/voice/navigation/33.png" alt="">
+                      </dd>
+                      <dt>Layout 02</dt>
+                      <dd>
+                        <img src="../../../img/input/voice/navigation/34.png" alt="">
+                      </dd>
+                      <dt>Layout 03 (Vertically stacked horizontal lists with title name) : The focus will be moved to both the horizontal and the vertical direction.</dt>
+                      <dd>
+                        <img src="../../../img/input/voice/navigation/35.png" alt="">
+                      </dd>
+                      <dt>Grid (2-dimensional list without title name) : The focus will be moved to both the horizontal and the vertical direction.</dt>
+                      <dd>
+                        <img src="../../../img/input/voice/navigation/36.png" alt="">
+                      </dd>
+                      <dt>-Tab UI ; Eden Home (Layout displayed both 1st depth(bottom) and 2nd Depth(top) at the same time) : The focus will be moved within the same depth.</dt>
+                      <dd>
+                        <p><img src="../../../img/input/voice/navigation/37.png" alt=""></p>
+                      </dd>
+                      <dt>Tab UI ; Setting Menu (Layout displayed both 1st depth(left-side) and 2nd Depth(right-side) at the same time) : The focus will be moved within the same depth.</dt>
+                      <dd><img src="../../../img/input/voice/navigation/38.png" alt=""></dd>
+                      <dt>Tab UI ; My Content (Layout displayed both 1st depth(top) and 2nd Depth(bottom) at the same time) : The focus will be moved within the same depth.</dt>
+                      <dd><img src="../../../img/input/voice/navigation/39.png" alt=""></dd>
+                    </dl>
+                  </dd>
+                  <dt>2.4. Move to Nth Item</dt>
+                  <dd>
+                    <p><img src="../../../img/input/voice/navigation/40.png" alt=""></p>
+                    <dl class="infoList_1">
+                      <dt>Define of &lt;Nth&gt; Item</dt>
+                      <dd>* Refer to the chapter 1.3</dd>
+                      <dt>Motion Feedback</dt>
+                      <dt>Horizontal List</dt>
+                      <dd>
+                        <img src="../../../img/input/voice/navigation/41.png" alt="">
+                      </dd>
+                      <dt>Vertical List</dt>
+                      <dd>
+                        <img src="../../../img/input/voice/navigation/42.png" alt="">
+                      </dd>
+                      <dt>Layout 03</dt>
+                      <dd>
+                        <img src="../../../img/input/voice/navigation/43.png" alt="">
+                      </dd>
+                      <dt>Tab UI : Eden Home</dt>
+                      <dd>
+                        <img src="../../../img/input/voice/navigation/44.png" alt="">
+                      </dd>
+                      <dt>Tab UI: Setting menu</dt>
+                      <dd>
+                        <img src="../../../img/input/voice/navigation/45.png" alt="">
+                      </dd>
+                      <dt>Tab UI: My content</dt>
+                      <dd>
+                        <p><img src="../../../img/input/voice/navigation/46.png" alt=""></p>
+                      </dd>
+                    </dl>
+                  </dd>
+                  <dt>2.5. Jump to &lt;&lt;A&gt;&gt; in the screen </dt>
+                  <dd>
+                    <p><img src="../../../img/input/voice/navigation/47.png" alt=""></p>
+                    <dl class="infoList_1">
+                      <dt>Motion Feedback</dt>
+                      <dd>
+                        <p>As for the moving motion, deprive focus from the current item and gain focus on the target item. It doesn’t have to show the process of moving between them.</p>
+                        <p>*For its usage case, refer to the chapter 1.1. Move Multiple Steps.</p>
+                      </dd>
+                    </dl>
+                  </dd>
+                  <dt>2.6. Move focus on &lt;Category&gt;</dt>
+                  <dd>
+                    <p><img src="../../../img/input/voice/navigation/48.png" alt=""></p>
+                    <dl class="infoList_1">
+                      <dt>Define of &lt;Nth&gt; Item</dt>
+                      <dd>* Refer to the chapter 1.3</dd>
+                      <dt>Motion Feedback</dt>
+                      <dt>Layout 02</dt>
+                      <dd>
+                        <img src="../../../img/input/voice/navigation/49.png" alt="">
+                      </dd>
+                      <dt>Tab UI: Eden</dt>
+                      <dd>
+                        <img src="../../../img/input/voice/navigation/50.png" alt="">
+                      </dd>
+                      <dt>Tab UI: Setting menu</dt>
+                      <dd>
+                        <img src="../../../img/input/voice/navigation/51.png" alt="">
+                      </dd>
+                      <dt>Tab UI: My content</dt>
+                      <dd>
+                        <img src="../../../img/input/voice/navigation/52.png" alt="">
+                      </dd>
+                    </dl>
+                  </dd>
+                  <dt>2.7. Select on &lt;Category&gt;</dt>
+                  <dd>
+                    <p><img src="../../../img/input/voice/navigation/53.png" alt=""></p>
+                    <dl class="infoList_1">
+                      <dt>Define of &lt;Nth&gt; Item</dt>
+                      <dd>* Refer to the chapter 1.3</dd>
+                      <dt>Motion Feedback</dt>
+                      <dt>Layout 02</dt>
+                      <dd>
+                        <img src="../../../img/input/voice/navigation/54.png" alt="">
+                      </dd>
+                      <dt>Tab UI: Eden</dt>
+                      <dd>
+                        <img src="../../../img/input/voice/navigation/55.png" alt="">
+                      </dd>
+                      <dt>Tab UI: Setting menu</dt>
+                      <dd>
+                        <img src="../../../img/input/voice/navigation/56.png" alt="">
+                      </dd>
+                      <dt>Tab UI: My content</dt>
+                      <dd>
+                        <img src="../../../img/input/voice/navigation/57.png" alt="">
+                      </dd>
+                    </dl>
+                  </dd>
+                </dl>
+              </dd>
+            </dl>
+          </dd>
+          <dt>Specs</dt>
+          <dd>
+            <dl class="infoList_1">
+              <dt>Properties</dt>
+              <dd>
+                <dl class="infoList_1 type2 type6">
+                  <dt>- Mandatory / Option</dt>
+                  <dt>- Limitations</dt>
+                  <dd>
+                    <ul class="indentList">
+                      <li>. Voice navigational command should be registered as a Voice Key in general.</li>
+                      <li>. Some specific voice navigational command can be registered as a App-Control Command.</li>
+                    </ul>
+                  </dd>
+                  <dt>- Rules for the item inside / item outside</dt>
+                  <dt>- Inter-Component Navigation (※ The rule when the List / Tab / Button is displayed in the same screen)</dt>
+                  <dd>
+                    <ul class="indentList">
+                      <li>. Moving multiple steps is valid only within the same list of the content.</li>
+                      <li>. For moving across the component, use the single step movement.</li>
+                    </ul>
+                  </dd>
+                </dl>
+              </dd>
+            </dl>
+          </dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+  <!--[if lt IE 9]>
+        <script src="../../../javascript/placeholders.min.js"></script>
+    <![endif]-->
+  <div class="topIcon"></div>
+</body>
+
+</html>

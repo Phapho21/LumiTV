@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=2.0,user-scalable=yes">
+  <title>TV Principle</title>
+  <link rel="stylesheet" href="../../css/basic.css">
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="../../css/flexslider.css">
+  <script src="../../javascript/jquery-1.8.3.min.js"></script>
+  <script src="../../javascript/jquery.flexslider-min.js"></script>
+  <script>
+  var jqv = jQuery.noConflict();
+  window.parent.menuReCall("dep4_1");
+  </script>
+  <script src="../../javascript/sub_jquery.js"></script>
+  <script src="../../javascript/placeholders.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="../../javascript/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+  <!-- #overlay -->
+  <div id="overlay" class="showCon">
+    <div class="conTop">
+      <h2>Overlay</h2>
+      <div class="tabBoxWrap">
+        <ul class="tabBox clfix">
+          <li><a href="">OSD Type</a></li>
+          <li><a href="">Policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- //.conTop -->
+    <div class="conBottom">
+      <div class="conBottomInner">
+        <dl class="infoList tabList noFunction">
+          <dt>OSD Type</dt>
+          <dd>
+            <p>According to their forms and usages, OSDs are classified as follows :</p>
+            <ul class="listStyle02">
+              <li>
+                <img src="../../img/ui_strategy/overlay/1.png" alt="">
+              </li>
+            </ul>
+          </dd>
+          <dt>Policy</dt>
+          <dd>
+            <p>
+              If there is the overlay rule specifying specially in each IA specification, you have to apply the specifications above all.
+              <br><br>In case it is not so, follow under common specifications.
+            </p>
+            <dl class="infoList_1">
+              <dt style="margin-top: 35px;">Full Window</dt>
+              <dd>
+                <p>
+                  A full window is displayed on the whole screen on the top layer.
+                  <br> When a full window opens while an OSD is already being displayed, the previous OSD closes and only the new full window is displayed.
+                  <br> If the full screen originates from or is linked to the previous OSD, the UI should return to the previous OSD when the Return function is executed.
+                </p>
+              </dd>
+              <dt>Parial Window</dt>
+              <dd>
+                <dl class="basicDl">
+                  <dt>
+                    A partial window is overlaid over a source or a full window.
+                  </dt>
+                  <dd>
+                    <img src="../../img/ui_strategy/overlay/2.png" alt="">
+                  </dd>
+                  <dt>
+                    A partial window must not be overlaid over another partial OSD, such as partial window, popup, notice and control. Instead, the previous OSD closes and a new partial window opens.
+                  </dt>
+                  <dd>
+                    <img src="../../img/ui_strategy/overlay/3.png" alt="">
+                  </dd>
+                  <dt>
+                    Ongoing status information among notice will not close until the status changes.
+                  </dt>
+                  <dd>
+                    <img src="../../img/ui_strategy/overlay/4.png" alt="">
+                  </dd>
+                  <dt>
+                    If a partial window subordinate to an input source (such as Channel List, etc.) opens, the source is switched and the full window closes.
+                  </dt>
+                  <dd>
+                    <img src="../../img/ui_strategy/overlay/5.png" alt="">
+                  </dd>
+                </dl>
+              </dd>
+              <dt>Popup</dt>
+              <dd>
+                <dl class="basicDl">
+                  <dt>
+                    A popup usually originates from a full or partial window and is overlaid over the previous OSD.
+                  </dt>
+                  <dd>
+                    <img src="../../img/ui_strategy/overlay/6.png" alt="">
+                  </dd>
+                  <dt>
+                    A popup must not be overlaid over another notice and control. Instead, the previous OSD closes and a new popup opens.
+                  </dt>
+                  <dd>
+                    <img src="../../img/ui_strategy/overlay/7.png" alt="">
+                  </dd>
+                  <dt>
+                    When a new popup appear from the current popup, only the new one is displayed. When the new popup is closed, the previous popup is displayed.
+                  </dt>
+                  <dd>
+                    <img src="../../img/ui_strategy/overlay/8.png" alt="">
+                  </dd>
+                </dl>
+                <!-- .basicDl -->
+              </dd>
+              <dt>Notice</dt>
+              <dd>
+                <dl class="basicDl">
+                  <dt>
+                    A notice notifies users of a specific state or information as the first priority and therefore should be displayed on the top layer at any circumstance.
+                  </dt>
+                  <dd>
+                    <img src="../../img/ui_strategy/overlay/9.png" alt="">
+                  </dd>
+                  <dt>
+                    Notices are classified into normal event and ongoing status. Ongoing status includes pairing and mute.
+                    <br> Event notices will automatically timeout after a certain amount of time or immediately close when another function is executed.
+                    <br> When a new event appears, only the new one is displayed.
+                  </dt>
+                  <dd>
+                    <img src="../../img/ui_strategy/overlay/10.png" alt="">
+                  </dd>
+                  <dt>
+                    Ongoing status information will not close until the status changes and will remain even if another function is executed.
+                  </dt>
+                  <dd>
+                    <img src="../../img/ui_strategy/overlay/11.png" alt="">
+                  </dd>
+                </dl>
+                <!-- .basicDl -->
+              </dd>
+              <dt>Control</dt>
+              <dd>
+                <dl class="basicDl">
+                  <dt>
+                    Users use controls to control or set the previous OSD and therefore controls should be displayed on the top layer at any circumstance.
+                    <br> This is only if the previous OSD supports the control action using controls.
+                  </dt>
+                  <dd>
+                    <img src="../../img/ui_strategy/overlay/12.png" alt="">
+                  </dd>
+                  <dt>
+                    A control must not be overlaid over another notice and control. Instead, the previous OSD closes and a new control opens.
+                  </dt>
+                  <dd>
+                    <img src="../../img/ui_strategy/overlay/13.png" alt="">
+                  </dd>
+                </dl>
+                <!-- .basicDl -->
+              </dd>
+            </dl>
+          </dd>
+        </dl>
+      </div>
+      <!-- .conBottomInner -->
+    </div>
+  </div>
+  <!-- //#overlay.showCon -->
+  <!--[if lt IE 9]>
+    <script src="../../javascript/placeholders.min.js"></script>
+  <![endif]-->
+  <div class="topIcon"></div>
+</body>
+
+</html>

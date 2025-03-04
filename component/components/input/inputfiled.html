@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=2.0,user-scalable=yes">
+  <title>TV Principle</title>
+  <link rel="stylesheet" href="../../../css/basic.css">
+  <link rel="stylesheet" href="../../../css/style.css">
+  <link rel="stylesheet" href="../../../css/flexslider.css">
+  <script src="../../../javascript/jquery-1.8.3.min.js"></script>
+  <script src="../../../javascript/jquery.flexslider-min.js"></script>
+  <script>
+  var jqv = jQuery.noConflict();
+  window.parent.menuReCall("dep6_6_2");
+  </script>
+  <script src="../../../javascript/sub_jquery.js"></script>
+  <script src="../../../javascript/placeholders.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="../../../javascript/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+  <div id="inputfiled" class="showCon">
+    <div class="conTop">
+      <h2>Input Field</h2>
+      <div class="tabBoxWrap">
+        <ul class="tabBox clfix">
+          <li><a href="">Definition</a></li>
+          <li><a href="">Usage</a></li>
+          <li><a href="">Interaction</a></li>
+          <li><a href="">Specs</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- //.conTop -->
+    <div class="conBottom">
+      <div class="conBottomInner">
+        <div class="subConInTit">
+          C_INPUTFIELD
+        </div>
+        <dl class="infoList tabList type2">
+          <dt>Definition</dt>
+          <dd>
+            Input Field is used when user input character or number manually.
+          </dd>
+          <dt>Usage</dt>
+          <dd searchWord="C_INPUTFIELD">
+            <dl class="infoList_1 type2">
+              <dt>
+                <ul class="indentList">
+                  <li>- Use a text field when users need to enter characters or characters and numbers at the same time.
+                    <br> Provide an input method editor (IME) when the text field is selected. (**Refer to IME Overall Interaction IA Guideline for IME specification.)</li>
+                  <li>- Provide a label for a text field to aid user's comprehension.</li>
+                  <li>- Use hint text when it’s necessary to provide users with more information about what they have to enter.</li>
+                  <li>- Hint text can be a guide message or the latest value that a user previously typed into the text field.</li>
+                </ul>
+              </dt>
+              <dd>
+                <ul class="inlineList">
+                  <li><img src="../../../img/components/input/inputfiled/18.png" alt="" class="searchImg"></li>
+                  <li><img src="../../../img/components/input/inputfiled/19.png" alt=""></li>
+                  <li><img src="../../../img/components/input/inputfiled/20.png" alt=""></li>
+                  <li><img src="../../../img/components/input/inputfiled/21.png" alt=""></li>
+                </ul>
+              </dd>
+            </dl>
+          </dd>
+          <dt>Interaction</dt>
+          <dd>
+            <img src="../../../img/components/input/inputfiled/2.png" alt="">
+          </dd>
+          <dt>Specs</dt>
+          <dd>
+            <dl class="infoList_1">
+              <dt>Properties</dt>
+              <dd>
+                <dl class="infoList_1 type2 type5">
+                  <dt>Input field consists of the following elements :</dt>
+                  <dd>
+                    <dl class="infoList_1_1">
+                      <dt>1. Input field (<span class="col_ora">Mandatory</span>)</dt>
+                      <dd>
+                        <ul class="indentList">
+                          <li>- Provide an input field that allows users to enter text.</li>
+                        </ul>
+                      </dd>
+                      <dt>2. Text (<span class="col_blue">Optional</span>)</dt>
+                      <dd>
+                        <ul class="indentList">
+                          <li>- Provide text field to aid user’s comprehension.</li>
+                        </ul>
+                      </dd>
+                      <dt>3. Hint Field (<span class="col_blue">Optional</span>)</dt>
+                      <dd>
+                        <ul class="indentList">
+                          <li>- Use hint text when it’s necessary to provide users with more information about what they have to enter. If a hint text is not necessary, it can be left blank.</li>
+                          <li>- Display the latest value that a user previously typed into the input field if it should be continuously shown to the user.</li>
+                          <li>- Display asterisks (*) instead of the actual password when it is typed.</li>
+                        </ul>
+                      </dd>
+                      <dt>4. Cursor (<span class="col_ora">Mandatory</span>)</dt>
+                      <dd>
+                        <ul class="indentList">
+                          <li>- A cursor should blink when users is entering text into the text field.</li>
+                        </ul>
+                      </dd>
+                    </dl>
+                    <ul class="listStyle02">
+                      <li><img src="../../../img/components/input/inputfiled/3.png" alt=""></li>
+                    </ul>
+                  </dd>
+                </dl>
+              </dd>
+              <dt>Property Table</dt>
+              <dd>
+                <table class="propertyTbl">
+                  <colgroup>
+                    <col width="25%">
+                    <col width="15%">
+                    <col>
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <th class="propertyTblTit" scope="col" colspan="3">C_inputfield</th>
+                    </tr>
+                    <tr>
+                      <th scope="col">
+                        PROPERTY
+                      </th>
+                      <th scope="col">
+                        USE
+                      </th>
+                      <th scope="col">
+                        VALUE
+                      </th>
+                    </tr>
+                    <tr>
+                      <td>Input field</td>
+                      <td><span class="textO">◎</span></td>
+                      <td>&lt;&lt;value&gt;&gt;</td>
+                    </tr>
+                    <tr>
+                      <td>Text</td>
+                      <td></td>
+                      <td>&lt;&lt;value&gt;&gt;</td>
+                    </tr>
+                    <tr>
+                      <td>Hint Text</td>
+                      <td></td>
+                      <td>&lt;&lt;type the hint text or the latest value&gt;&gt;</td>
+                    </tr>
+                    <tr>
+                      <td>Cursor</td>
+                      <td><span class="textO">◎</span></td>
+                      <td>-</td>
+                    </tr>
+                    <tr>
+                      <th scope="col">
+                        FEATURE
+                      </th>
+                      <th scope="col" colspan="2">
+                        DESCRIPTION
+                      </th>
+                    </tr>
+                    <tr>
+                      <td>Password</td>
+                      <td colspan="2">Y/N</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </dd>
+              <dt>Visual</dt>
+              <dd>
+                <dl class="infoList_1 type2 type5">
+                  <dt>GUI</dt>
+                  <dd>
+                    <div class="visualImgBox"><img src="../../../img/components/input/inputfiled/9.png" alt=""></div>
+                    <dl class="visualTagList">
+                      <dt>C_INPUTFIELD_WHITE</dt>
+                      <dd><img src="../../../img/components/input/inputfiled/7.png" alt=""></dd>
+                      <dt>C_INPUTFIELD_WHITETEXT</dt>
+                      <dd><img src="../../../img/components/input/inputfiled/22.png" alt=""></dd>
+                    </dl>
+                  </dd>
+                  <dt>Motion</dt>
+                  <dd>
+                    <dl class="visualTagList">
+                      <dt>C_INPUTFIELD</dt>
+                      <dd><img src="../../../img/components/input/inputfiled/23.png" alt=""></dd>
+                      <dd><img src="../../../img/components/input/inputfiled/24.png" alt=""></dd>
+                      <dd><img src="../../../img/components/input/inputfiled/25.png" alt=""></dd>
+                      <dd><img src="../../../img/components/input/inputfiled/26.png" alt=""></dd>
+                    </dl>
+                  </dd>
+                </dl>
+                <div class="visualImgTxt"><img src="../../../img/components/input/inputfiled/8.png" alt="">
+                <div class="tempLinkBox">
+                    LINK : <a href="javascript:parent.parentLocationChg('visual-style/highlight')">R_HIGHLIGHT</a>
+                  </div>
+                  </div>
+                <div class="visualImgTxt"><img src="../../../img/components/input/inputfiled/27.png" alt=""></div>
+                <div class="btn_box">
+                  <a href="../../../resources/png/component/c_inputfield.zip" class="btn_download"><span>Download PNG Resources</span></a>
+                </div>
+              </dd>
+            </dl>
+          </dd>
+        </dl>
+        <dl class="tagDl">
+          <dt>*Tags :</dt>
+          <dd>
+            <span class="tagItem" linktag="dep6_6_3">1-line PIN Field</span>,
+            <span class="tagItem" linktag="dep6_6_4">2-line PIN Field</span>
+          </dd>
+        </dl>
+      </div>
+    </div>
+    <!-- //.conBottom -->
+  </div>
+  <!--[if lt IE 9]>
+    <script src="../../../javascript/placeholders.min.js"></script>
+  <![endif]-->
+  <div class="topIcon"></div>
+</body>
+
+</html>
